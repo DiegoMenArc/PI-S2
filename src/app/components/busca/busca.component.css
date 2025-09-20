@@ -1,0 +1,26 @@
+div{
+    width: 540px; 
+    padding: 10px 15px;
+
+    display: flex;
+    border-radius: 25px;
+    border: 1.65px solid #C7C7C7;
+    background: #FFF;
+}
+
+input{
+    flex-grow: 1;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+button{
+    background-color: #FFF;
+    border: none;    
+}
+
+input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+}

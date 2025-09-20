@@ -1,0 +1,29 @@
+<div class="header">
+    <div class="superior">
+        <img src="img/logo.png" alt="Logo mundo nostalgico" class="logo">
+
+        <div class="cep">
+            <img src="icons/localizacao.svg" alt="">
+            <p>Informe seu CEP</p>
+        </div>
+
+        <app-busca />
+
+        <nav class="icons">
+            <img src="icons/perfil.svg" alt="teste">
+            <img src="icons/favorito.svg" alt="">
+            <img src="icons/notificacao.svg" alt="">
+            <img src="icons/carrinho.svg" alt="">
+        </nav>
+    </div>
+
+    <div class="inferior">
+        <img src="icons/menu.svg" alt="">
+        <nav>
+            @for (elemento of elementos; track elemento.nome){
+                <app-botao-header [nome]="elemento.nome"></app-botao-header>
+            }
+        </nav>
+        <div></div>
+    </div>
+</div>

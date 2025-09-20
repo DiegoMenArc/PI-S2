@@ -1,0 +1,43 @@
+*{
+    color: white;
+}
+
+.logo{
+    width: 72px;    
+}
+
+.superior{
+    background-color: var(--azul3);
+    padding: 10px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cep{
+    display: flex;
+    gap: 5%;
+}
+
+.inferior{
+    background-color: var(--azul2);
+    padding: 10px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+
+    justify-content: space-between;
+    width: 261px;
+    display: flex;
+}
+
+.inferior nav{
+    display: flex;
+    gap: 10px;
+}

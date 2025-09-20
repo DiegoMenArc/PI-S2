@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* cores do site */
+    --amarelo:  #F5F50C;
+    --azul1:    #2CBFFF;
+    --azul2:    #2499C7;
+    --azul3:    #176C8E;
+    --azul4:    #006691;
+    --cinza1:   #A2A29D;
+    --cinza2:   #444444;
+
+    /* Fonte padrão */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
