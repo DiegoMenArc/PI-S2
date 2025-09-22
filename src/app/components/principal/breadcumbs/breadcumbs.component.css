@@ -1,0 +1,23 @@
+p{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.breadcumbs{
+    display: flex;
+    gap: 5px;
+
+    align-items: center;
+}
+
+.breadcumbs div{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cor{
+    color: red;
+    font-size: 10em;
+}

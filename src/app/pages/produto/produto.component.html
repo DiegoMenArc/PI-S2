@@ -1,1 +1,51 @@
-<p>produto works!</p>
+<app-header></app-header>
+<main>
+    <app-breadcumbs [pages]="page"></app-breadcumbs>
+    
+    <div class="produto_main">
+        <div class="imagens">
+            <img src="img/prod1.jpg" alt="imagem do produto">
+
+            <div>
+                <img src="img/prod1.jpg" alt="">
+            </div>
+        </div>
+        <div class="informacoes_main">
+            <div class="informacoes">
+                <h2>{{nome_prod}}</h2>
+                <div class="avaliacao">
+                    <div class="estrelas">
+                        <!-- Adicionar a logica das estrelas relacionado a avaliação -->
+                        <img src="icons/estrela.svg" alt="">
+                        <img src="icons/estrela.svg" alt="">
+                        <img src="icons/estrela.svg" alt="">
+                        <img src="icons/estrela.svg" alt="">
+                        <img src="icons/estrela.svg" alt="">
+                    </div>
+                    <p>5/5</p>
+                    <p>de 1700 clientes</p>
+                </div>
+                <p class="preco">R${{preco}}</p>
+                <p class="descricao">{{desc}}</p>
+            </div>
+
+            <div class="botoes">
+                <div class="group2">
+                    <button class="qtd">
+                        <img src="icons/subtrair.svg" alt="">
+                        {{qtd}}
+                        <img src="icons/somar.svg" alt="">
+                    </button>
+                    <button class="curtir">
+                        <img src="icons/coracao.svg" alt="">
+                    </button>
+                </div>
+                <button class="carrinho">
+                    Adicionar ao Carrinho
+                    <img src="icons/carrinho.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+<app-footer></app-footer>

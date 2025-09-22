@@ -1,0 +1,8 @@
+<div class="breadcumbs">
+    @for (page of pages; track page){
+        <div>
+            <p [style.color]="$last? 'var(--azul4)' : ''">{{page}}</p>
+            <img src="icons/breadchubs.svg" alt="seta para o lado" [style.display]="$last? 'none' : 'block'">
+        </div>
+    }
+</div>

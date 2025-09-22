@@ -6,6 +6,17 @@
     width: 72px;    
 }
 
+.group{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group img{
+    height: 50%;
+}
+
 .superior{
     background-color: var(--azul3);
     padding: 10px 60px;
@@ -18,6 +29,8 @@
 .cep{
     display: flex;
     gap: 5%;
+
+    align-items: center;
 }
 
 .inferior{
@@ -33,8 +46,12 @@
     display: flex;
 
     justify-content: space-between;
-    width: 261px;
+    width: 20%;
     display: flex;
+}
+
+.icons img{
+    width: 20px;
 }
 
 .inferior nav{
