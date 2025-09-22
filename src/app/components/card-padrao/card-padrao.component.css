@@ -1,0 +1,57 @@
+main{
+    display: flex;
+    width: 230px;
+    height: 345px;
+    padding: 10px;
+    flex-direction: column;
+
+    border-radius: 7px;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.image{
+    height: 50%;
+}
+
+.image img{
+    height: 100%;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    padding: 10px 0px;
+
+    gap: 5%;
+}
+
+.groupNome p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.estrelas{
+    display: flex;
+}
+
+.estrelas img{
+    width: 20px;
+}
+
+.valorCD{
+    font-size: 10px;
+}
+.valor{
+    font-size: 20px;
+    font-weight: 600;
+}
+.prest{
+    font-size: 12px;
+    color: var(--azul3);
+}
+.frete{
+    font-size: 14px;
+    color: var(--azul4);
+}

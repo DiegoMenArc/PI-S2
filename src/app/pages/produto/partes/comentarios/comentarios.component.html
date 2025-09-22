@@ -1,0 +1,66 @@
+<main>
+    <h2>Avaliações</h2>
+
+    <section>
+        <div class="group_b">
+            <div class="group-esquerda">
+                <div class="aval">
+                    <h3>Avaliações de Clientes</h3>
+
+                    <div class="aval-card1">
+                        <div class="estrelas">
+                                @for (item of mediaNota; track $index) {
+                                     <img src="icons/estrela.svg" alt="">
+                                }
+                        </div>
+                        <p>5/5 De 1.700 Clientes</p>
+                    </div>
+
+                    <div class="g-grafico">
+                        @for (item of totalAvaliacoes; track $index) {
+                            <div class="grafico">
+                                <p class="nome-grafico">{{item.estrela}} Estrelas</p>
+                                <div class="porcentagem" style="background: linear-gradient(90deg, #F5F50C 100%, #FFF 10%);" ></div>
+                                <p class="p">{{item.porcentagem}}%</p>
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                <div class="aval">
+                    <h3>Avalie este Produto</h3>
+                    <p class="p-esquerda">Compartilhe seus pensamentos com outros clientes</p>
+                    <button> Escreva uma Avaliação</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="group_coment">
+            <h3>Principais Avaliações</h3>
+
+            <div class="espacamento">
+                @for (avaliacao of avaliacoes; track $index) {
+                    <div class="coment">
+                        <div class="group">
+                            <div class="menu">   
+                                <div class="estrelas">
+                                    @for (item of avaliacao.nota; track $index) {
+                                         <img src="icons/estrela.svg" alt="">
+                                     }
+                                </div>
+                                
+                                <img src="icons/menuComent.svg">
+                            </div>
+                            <p class="nome">{{avaliacao.nome}}</p>
+                            <p class="comentario">{{avaliacao.comentario}}</p>
+                        </div>
+
+                        <p class="data">{{avaliacao.data}}</p>
+                    </div>
+                }
+            </div>
+
+            <p class="mais">Carregar mais comentarios </p>
+        </div>
+    </section>
+</main>

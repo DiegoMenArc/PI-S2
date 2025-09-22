@@ -1,0 +1,185 @@
+main{
+    padding: 30px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+section{
+    display: flex;
+
+    gap: 30px;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 500;
+
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.estrelas{
+    display: flex;
+}
+
+.estrelas img{
+    width: 17px;
+}
+
+.group_coment{
+    width: 75%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+
+    border-radius: 20px;
+    border: 1px solid #E7E7E7;
+    background-color: #fff;
+}
+
+.group_coment div{
+    width: 100%;
+}
+
+.coment{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 30px;
+    border-radius: 20px;
+    border: 1px solid #E7E7E7;
+}
+
+.nome{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.comentario{
+    color: var(--cinza2);
+    font-size: 14px;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.data{
+    color: var(--cinza1);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mais{
+    font-size: 14px;
+    color: var(--azul2);
+    font-weight: 600;
+}
+
+.group_b{
+    width: 25%;
+}
+
+.grafico{
+    display: flex;
+    gap: 5px;
+}
+
+.porcentagem{
+    width: 100%;
+    height: auto;
+
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
+}
+
+.nome-grafico{
+    width: 50%;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.aval-card1 p{
+    font-size: 12px;
+    color: var(--cinza1);
+}
+
+.aval-card1{
+    display: flex;
+    gap: 5px;
+}
+
+.aval{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+
+    border-radius: 20px;
+    border: 1px solid #E7E7E7;
+    background-color: #fff;
+}
+
+.g-grafico{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.p{
+    font-size: 14px;
+    width: 60px;
+}
+
+.espacamento{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.group-esquerda{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.p-esquerda{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+button{
+    display: flex;
+    height: 44px;
+    padding: 15px 30px;
+    justify-content: cen;
+    align-items: center;
+    align-self: stretch;
+    border: none;
+    border-radius: 15px;
+    background: #F5F50C;    
+    cursor: pointer;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+}

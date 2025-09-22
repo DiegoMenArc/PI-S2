@@ -1,0 +1,31 @@
+<main>
+    <h2>Especificações do Produto</h2>
+
+    <div class="group">
+        <div class="secttion">
+            <h3>Detalhes Tecnicos</h3>
+
+            <div class="cards">
+                @for (item of especificacoes; track $index) {
+                    <div>
+                        <p>{{item.especificao}}</p>
+                        <p>{{item.valor}}</p>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="secttion">
+            <h3>Informações Adicionais</h3>
+
+            <div class="cards">
+                @for (item of Adicionais; track $index) {
+                    <div>
+                        <p class="p1">{{item.especificao}}</p>
+                        <p class="p2">{{item.valor}}</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</main>

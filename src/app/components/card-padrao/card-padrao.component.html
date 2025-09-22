@@ -1,0 +1,22 @@
+<main>
+    <div class="image">
+        <img src="img/prod1.jpg" alt="produto">
+    </div>
+
+    <div class="group">
+        <div class="groupNome">
+            <p class=>{{nome}}</p>
+            <div class="estrelas">
+                @for(n of nota  ; track nota){
+                    <img src="icons/estrela.svg" alt="">
+                }
+            </div>
+        </div>
+        <div class="valores">
+            <p class="valorCD">R${{valorCD}}</p>
+            <p class="valor">R${{valor}}</p>
+            <p class="prest">{{prest}}</p>
+        </div>
+        <p class="frete">Frete Gratis</p>
+    </div>
+</main>
