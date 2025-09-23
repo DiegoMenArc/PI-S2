@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.admin-header {
+    display: flex;
+    height: 87px;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.busca-adm {
+    display: flex;
+    width: 535px;
+    height: 45px;
+    padding: 10px;
+    align-items: center;
+    gap: 50px;
+}
+
+.adm-login {
+    display: flex;
+    width: 141px;
+    align-items: center;
+    gap: 18px;
+}
+
+.login-txt1 {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.login-txt2{
+    font-size: 16px;
+}
