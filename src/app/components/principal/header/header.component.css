@@ -4,6 +4,7 @@
 
 .logo{
     width: 72px;    
+    cursor: pointer;
 }
 
 .group{
@@ -50,8 +51,14 @@
     display: flex;
 }
 
-.icons img{
+.icons a{
     width: 20px;
+    height: 20px;
+}
+
+.icons a img{
+    width: 100%;
+    height: 100%;
 }
 
 .inferior nav{

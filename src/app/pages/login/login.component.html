@@ -1,0 +1,11 @@
+<main>
+    <form #usuarioForm="ngForm">
+        <input type="text" name="usuario" [(ngModel)]="usuario" required>
+        <input type="password" name="senha" [(ngModel)]="senha" required>
+        <button [disabled]="!usuarioForm.form.valid" type="submit" [routerLink]="verificarLink(usuarioForm)" (click)="validar()">Entrar</button>
+    </form>
+
+    @if(verificar) {
+        <p>{{credenciais}}</p>
+    }
+</main>

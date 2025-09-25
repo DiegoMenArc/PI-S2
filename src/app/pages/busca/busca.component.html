@@ -1,0 +1,60 @@
+<app-header></app-header>
+<main>
+    <app-breadcumbs [pages]="['Home', _buscaService.buscaAtual]"></app-breadcumbs>
+    <div class="group">
+        <div class="filtro">
+            <div>
+                <h3>{{_buscaService.buscaAtual}}</h3>
+                <p>300 resultados</p>
+            </div>
+
+            <div class="group_input">
+                <h3>Anos</h3>
+                <div class="inputs">
+                    @for(ano of anos; track ano){
+                        <div class="input">
+                            <input type="checkbox">
+                            <p>{{ano}}</p>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="group_input">
+                <h3>Categorias</h3>
+                <div class="inputs">
+                    @for(categoria of categorias; track categoria){
+                        <div class="input">
+                            <input type="checkbox">
+                            <p>{{categoria}}</p>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="group_input">
+                <h3>Marcas</h3>
+                <div class="inputs">
+                    @for(marca of marcas; track marca){
+                        <div class="input">
+                            <input type="checkbox">
+                            <p>{{marca}}</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="principal_cards">
+            <h2>Resultados</h2>
+            <div class="spc_card">
+                 @for(card of cards; track card.nome){
+                    <app-cardPadrao></app-cardPadrao>
+                }
+            </div>
+            <div>Restante</div>
+        </div>
+    </div>
+    <app-carrosselprod></app-carrosselprod>
+    <app-carrosselprod></app-carrosselprod>
+</main>

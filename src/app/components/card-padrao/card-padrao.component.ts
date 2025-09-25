@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-cardPadrao',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './card-padrao.component.html',
   styleUrl: './card-padrao.component.css'
 })

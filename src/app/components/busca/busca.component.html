@@ -1,4 +1,4 @@
-<div>
-    <input type="text" placeholder="Buscar">
-    <button><img src="icons/lupa.svg" alt="img"></button>
-</div>
+<form  #busca="ngForm">
+    <input type="text" name="buscar" [(ngModel)]="buscar" placeholder="Buscar" />
+    <button type="submit" [routerLink]="pesquisar(busca)" (click)="getInformacao(busca.form.value.buscar)"><img src="icons/lupa.svg" alt="img"></button>
+</form>

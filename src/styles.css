@@ -12,6 +12,7 @@
     --cinza2:   #444444;
 
     --fundo:    #F7F7F7;
+    --fontPadrao: "Montserrat", sans-serif;
     /* Fonte padrão */
 }
 
@@ -19,5 +20,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fontPadrao
+    );
 }

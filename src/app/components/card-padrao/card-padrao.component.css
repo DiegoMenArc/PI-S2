@@ -4,6 +4,7 @@ main{
     height: 345px;
     padding: 10px;
     flex-direction: column;
+    cursor: pointer;
 
     border-radius: 7px;
     background: #FFF;
