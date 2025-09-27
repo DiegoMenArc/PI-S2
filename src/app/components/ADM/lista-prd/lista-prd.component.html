@@ -1,1 +1,103 @@
-<p>lista-prd works!</p>
+<div class="conteiner">
+        <div class="painel">
+            <div class="painel-head">
+                <input type="text" name="" class="buscador-prd" id="busca-prd" placeholder="Buscar produtos">
+                <button type="button" class="add-btn">Adicionar <img src="icons/adm/plus-icon.svg" alt=""></button>
+            </div>
+            <div class="painel-content">
+
+                <div class="content-head">
+                    <input type="checkbox"  name="" id="check-prd">
+                    <div class="cont-cabecalho produtos">
+                        <p>{{tipos[0]}}</p>
+                        <div class="cont-cabecalho-nav">
+                            <img src="icons/adm/Vector-up.svg" alt="">
+                            <img src="icons/adm/Vector-down.svg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="cont-cabecalho preco">
+                        <p>{{tipos[1]}}</p>
+                        <div class="cont-cabecalho-nav">
+                            <img src="icons/adm/Vector-up.svg" alt="">
+                            <img src="icons/adm/Vector-down.svg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="cont-cabecalho tamanho">
+                        <p>{{tipos[2]}}</p>
+                        <div class="cont-cabecalho-nav">
+                            <img src="icons/adm/Vector-up.svg" alt="">
+                            <img src="icons/adm/Vector-down.svg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="cont-cabecalho qtd">
+                        <p>{{tipos[3]}}</p>
+                        <div class="cont-cabecalho-nav">
+                            <img src="icons/adm/Vector-up.svg" alt="">
+                            <img src="icons/adm/Vector-down.svg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="cont-cabecalho data">
+                        <p>{{tipos[4]}}</p>
+                        <div class="cont-cabecalho-nav">
+                            <img src="icons/adm/Vector-up.svg" alt="">
+                            <img src="icons/adm/Vector-down.svg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="cont-cabecalho ações">
+                        <p>{{tipos[5]}}</p>
+                        <div class="cont-cabecalho-nav">
+                            <img src="icons/adm/Vector-up.svg" alt="">
+                            <img src="icons/adm/Vector-down.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-lista">
+                    <div class="listador-instacia">
+                        <input type="checkbox" name="" id="check-prd">
+                        <div class="sobre-prd">
+                            <img src="icons/adm/prd-frame.svg" alt="imagem do produto">
+                            <div class="sobre-prd-txt">
+                                <p>{{codPrd}}</p>
+                                <p>{{nomeProduto}}</p>
+                            </div>
+                        </div>
+
+                        <p class="prc">R${{preco}}</p>
+                        <p class="tmn">{{tamanhoPrd}}</p>
+                        <p class="qtds">{{qtdPrd}}</p>
+                        <p class="datas">{{data}}</p>
+
+                        <div class="acoes-prd">
+                            <img src="icons/adm/eye.svg" alt="">
+                            <img src="icons/adm/edit.svg" alt="">
+                            <img src="icons/adm/trash.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="painel-bottom">
+                <div class="marcador">
+                    <p class="page-marc">1</p>
+                    <p class="pages-total"> - 4</p>
+                    <p class="page-contador">de {{numPages}} páginas</p>
+                </div>
+
+                <div class="nav-pages">
+                    <p>The page on</p>
+
+                    <div class="nav-page-arrows">
+                        <button class="arrow anterior" disabled="disabled"> <img src="icons/adm/anterior.svg" alt=""></button>
+                        <button class="arrow posterior"> <img src="icons/adm/posterior.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>

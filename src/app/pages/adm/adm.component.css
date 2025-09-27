@@ -1,0 +1,12 @@
+.conteiner{
+    display: flex;
+    height: 100vh;
+}
+
+.main{
+    height: 100%;    
+}
+
+.nav{
+    height: 100%;    
+}

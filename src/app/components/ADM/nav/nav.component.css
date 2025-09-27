@@ -1,5 +1,6 @@
-.admin-nav{
-    float: left;
+.admin-nav {
+    color: var(--branco);
+    font-family: "Montserrat", "Sans-serif";
 }
 
 .nav-head {
@@ -12,19 +13,47 @@
     align-self: stretch;
 
     background-color: #2499C7;
+    border-bottom: 4px solid var(--branco);
+    font-family: "Montserrat";
 }
 
 .nav-lista {
+    height: 666px;
+
     display: flex;
-    width: 280px;
     padding: 30px 10px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 22px;
-    flex: 1 0 0;
-    align-self: stretch;
-
+    
     background-color: #2499C7;
+}
+
+.listador{
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    gap: 1vh;
+    padding: 0 20px;
+}
+
+.file, .user{
+    margin-left: 5px;
+}
+
+.listador li{
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    gap: 1vw;   
+
+
+}
+
+.listador li:hover{
+    background-color: var(--azul4);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .nav-logo {
