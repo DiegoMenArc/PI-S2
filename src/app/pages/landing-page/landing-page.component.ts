@@ -8,6 +8,7 @@ import { CarrosselMarcaComponent } from "./pages/carrossel-marca/carrossel-marca
 @Component({
   selector: 'app-landing-page',
   imports: [HeaderComponent, FooterComponent],
+  imports: [CarrosselComponent, CarrosselMarcaComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css'
 })
