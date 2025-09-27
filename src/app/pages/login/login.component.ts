@@ -19,14 +19,14 @@ export class LoginComponent {
     if(e.form.value.usuario === "admin" && e.form.value.senha === "1234" ){
       return "/adm";
     }
-    else{ 
+    else{
       return null;
     }
   }
-  
+
   validar(){
     this.verificar = true;
-    this.credenciais="Credenciais invalidas"; 
+    this.credenciais="Credenciais invalidas";
   }
 
 }

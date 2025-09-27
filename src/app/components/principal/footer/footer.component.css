@@ -1,0 +1,38 @@
+main{
+  background-color: var(--azul4);
+  color: #FFF;
+}
+
+
+.inferior{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+}
+
+.inferior P{
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.inferior .icones{
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inferior .icones img{
+  width: 20px;
+  height: 20px;
+}
+
+.links{
+  display: flex;
+}
+
+.meiosP{
+  display: flex;
+}

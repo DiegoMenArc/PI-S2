@@ -25,8 +25,8 @@ export class CarrosselComponent {
   ];
 
   slideConfig = {
-    "slidesToShow": 4,
-    "slidesToScroll": 4,
+    "slidesToShow": 6,
+    "slidesToScroll": 6,
     "arrows": true,
     "autoplay":true,
     "autoplaySpeed": 5000,
@@ -34,6 +34,24 @@ export class CarrosselComponent {
     "infinite": true,
 
     "responsive" : [{
+      "breakpoint" : 1730,
+      "settings": {
+        "arrows": true,
+        "infinite": true,
+        "slidesToShow": 5,
+        "slidesToScroll": 5
+      }
+    },
+    {
+      "breakpoint" : 1500,
+      "settings": {
+        "arrows": true,
+        "infinite": true,
+        "slidesToShow": 4,
+        "slidesToScroll": 4
+      }
+    },
+    {
       "breakpoint" : 992,
       "settings": {
         "arrows": true,

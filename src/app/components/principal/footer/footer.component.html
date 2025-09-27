@@ -1,1 +1,32 @@
-<p>footer works!</p>
+<main>
+  <div class="superior">
+    <div>
+      <img src="img/logo.png" alt="" width="100px">
+      <div>
+        <p>Pagamentos disponiveis</p>
+        <div class="meiosP">
+          @for (item of links; track $index) {
+            <img src="" alt="">
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="links">
+      @for (link of links; track $index) {
+        <p>{{link}}</p>
+      }
+    </div>
+  </div>
+
+
+
+  <div class="inferior">
+    <p> Mundo nostalgico {{arroba}} Todos Os direitos Reservados</p>
+    <div class="icones">
+      @for (icone of icones; track $index) {
+        <img [src]="icone.caminho" [alt]="icone.desc"/>
+      }
+    </div>
+  </div>
+</main>
