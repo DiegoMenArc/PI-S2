@@ -20,9 +20,11 @@ describe('CarrosselMarcaComponent', () => {
   });
 
   it('deve começar na primeira imagem', () => {
-    expect(component.indiceAtual).toBe(0);
-    expect(component.imagens[component.indiceAtual]).toBe('assets/img1.jpg');
-  });
+  expect(component.indiceAtual).toBe(0);
+  expect(component.nom[component.indiceAtual].img)
+    .toBe("http://placehold.it/350x150/000000");
+});
+
 
   it('deve ir para a próxima imagem', () => {
     component.proximo();
@@ -31,6 +33,6 @@ describe('CarrosselMarcaComponent', () => {
 
   it('deve voltar para a imagem anterior', () => {
     component.anterior();
-    expect(component.indiceAtual).toBe(component.imagens.length - 1);
+    expect(component.indiceAtual).toBe(component.nom.length - 1);
   });
 });

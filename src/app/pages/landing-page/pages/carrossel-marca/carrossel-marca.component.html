@@ -4,8 +4,8 @@
   <button (click)="anterior()" aria-label="Imagem anterior">⭠</button>
 
   <div class="carrossel-imagem">
-    <img [src]="imagens[indiceAtual]" [alt]="'Imagem ' + (indiceAtual + 1)">
-    <img [src]="imagens[indiceAtual]" [alt]="'Imagem ' + (indiceAtual + 1)">
+    <img [src]="nom[indiceAtual]" [alt]="'Imagem ' + (indiceAtual + 1)">
+    <img [src]="nom[indiceAtual]" [alt]="'Imagem ' + (indiceAtual + 1)">
   </div>
 
   <button (click)="proximo()" aria-label="Próxima imagem">⭢</button>
