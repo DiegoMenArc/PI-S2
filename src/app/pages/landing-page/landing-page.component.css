@@ -1,3 +1,17 @@
 .teste{
     background-color: var(--amarelo);
 }
+
+#CaixaPromocao
+{
+display: flex;
+height: 365px;
+padding: 136px 574px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+align-self: stretch;
+
+background: var(--Azul1, #176C8E);
+}
