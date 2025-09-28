@@ -1,4 +1,4 @@
-#Carrosselm
+#carrosselm
 {
 display: flex;
 height: 132px;
@@ -50,5 +50,5 @@ width: 146px;
 height: 146px;
 flex-shrink: 0;
 aspect-ratio: 1/1;
-background: url() lightgray 50% / cover no-repeat;
+background:  lightgray 50% / cover no-repeat;
 }
