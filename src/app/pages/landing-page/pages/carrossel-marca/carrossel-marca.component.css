@@ -33,7 +33,7 @@ align-items: center;
 gap: 10px;
 
 border-radius: 10px;
-border: 1px solid #2499C7;
+border: 1px solid #006691;
 }
 
 #box
@@ -50,5 +50,5 @@ width: 146px;
 height: 146px;
 flex-shrink: 0;
 aspect-ratio: 1/1;
-background: url() lightgray 50% / cover no-repeat;
+background: lightgray 50% / cover no-repeat;
 }
