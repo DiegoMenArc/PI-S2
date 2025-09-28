@@ -1,11 +1,12 @@
 .conteiner {
     display: flex;
-    padding: 0 30px 30px 30px;
+    width: 85vw;
+    padding: 1vh 1vw;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     flex: 1 0 0;
-    align-self: stretch;
+    
 
     font-family: "Montserrat", "Sans-serif";
 }
@@ -20,7 +21,7 @@
     align-self: stretch;
 
     border-radius: 20px;
-    border: 1px solid var(--fundo);
+    border: 1px solid rgb(216, 216, 216);
     background: linear-gradient(0deg, #FFF 0%, #FFF 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #FFF;
 }
 
@@ -86,6 +87,11 @@
     color: #F7F7F7;
 }
 
+.add-btn:hover{
+    background: var(--azul3);
+    cursor:pointer;
+}
+
 .cont-cabecalho {
     display: flex;
     justify-content: space-between;
@@ -102,6 +108,11 @@
     display: flex;
     flex-direction: column;
     gap: 2px;
+}
+
+.cont-cabecalho-nav > img:hover{
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
 }
 
 .content-lista {
@@ -142,7 +153,12 @@
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
-    height: 30px;
+    height: 4vh;
+    padding: 0 1vw;
+    
+    margin-top: 1vh;
+    border-radius: 1vh;
+    border: 1px solid var(--azul1);
 }
 
 .marcador {
@@ -186,4 +202,9 @@
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+}
+
+.acoes-icon:hover{
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
 }

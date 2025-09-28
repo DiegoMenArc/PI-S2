@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './adm-header.component.css'
 })
 export class AdmHeaderComponent {
-
+  username:String = "Alessandro";
+  user_role:String = "Admin";
 }
