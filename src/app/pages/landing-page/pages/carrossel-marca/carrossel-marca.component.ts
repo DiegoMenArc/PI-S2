@@ -10,5 +10,24 @@ import { AdmComponent } from "../../../adm/adm.component";
   
 })
 export class CarrosselMarcaComponent {
+imagens: string[] = [
+    'img/image 24.png',
+    'img/image 24.png',
+    'img/image 24.png',
+    'img/image 24.png'
+  ];
 
-}
+  // Índice da imagem atual
+  indiceAtual = 0;
+
+  // Próxima imagem
+  proximo(): void {
+    this.indiceAtual = (this.indiceAtual + 1) % this.imagens.length;
+  }
+
+  // Imagem anterior
+  anterior(): void {
+    this.indiceAtual = (this.indiceAtual - 1 + this.imagens.length) % this.imagens.length;
+  }
+} 
+
