@@ -7,6 +7,7 @@ import { AdmComponent } from "../../../adm/adm.component";
   imports: [CarrosselComponent, AdmComponent],  
   templateUrl: './carrossel-marca.component.html',
   styleUrl: './carrossel-marca.component.css'
+  
 })
 export class CarrosselMarcaComponent {
 
