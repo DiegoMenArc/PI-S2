@@ -11,11 +11,13 @@ import { AdmComponent } from "../../../adm/adm.component";
   
 })
 export class CarrosselMarcaComponent {
-nom = [
-  {img: "http://placehold.it/350x150/000000"},
-  {img: "http://placehold.it/350x150/232142"},
-  {img: "http://placehold.it/350x150/531232"},
-  {img: "http://placehold.it/350x150/742343"} 
+nom: string[] = [
+    '/img/image 24.png',
+    '/img/logo.png',
+    'assets/img3.jpg',
+    'assets/img4.jpg'
+
+    
   ];
 
   // Índice da imagem atual
