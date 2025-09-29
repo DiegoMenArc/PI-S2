@@ -7,6 +7,7 @@ import { ProdutoComponent } from './pages/produto/produto.component';
 import { AdmComponent } from './pages/adm/adm.component';
 import { LoginComponent } from './pages/login/login.component';
 import { BuscaComponent } from './pages/busca/busca.component';
+import { InfoUserComponent } from './pages/userAdm/info-user/info-user.component';
 
 export const routes: Routes = [
     { path: '', component: LandingPageComponent},
@@ -14,4 +15,5 @@ export const routes: Routes = [
     { path: 'adm', component: AdmComponent},
     { path: 'login', component: LoginComponent},
     { path: 'busca/:busca', component: BuscaComponent},
+    { path: 'usuario/:id/informacoes', component: InfoUserComponent},
 ];

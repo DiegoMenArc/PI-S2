@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { UsuarioService } from '../../services/usuario.service';
 
 @Component({
   selector: 'login',
@@ -9,6 +10,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+  _usuarioAtual = inject(UsuarioService);
   usuario = "";
   senha = "";
   credenciais = "";
@@ -18,6 +20,10 @@ export class LoginComponent {
   verificarLink(e:any){
     if(e.form.value.usuario === "admin" && e.form.value.senha === "1234" ){
       return "/adm";
+    }
+    else if(e.form.value.usuario=== "valdir" && e.form.value.senha === "1234"){
+      this._usuarioAtual.fazerLogin();
+      return "/";
     }
     else{
       return null;

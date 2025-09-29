@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { BuscaComponent } from '../../busca/busca.component';
 import { BotaoHeaderComponent } from '../botao-header/botao-header.component'
 import { RouterLink } from '@angular/router';
+import { UsuarioService } from '../../../services/usuario.service';
 
 
 @Component({
@@ -12,6 +13,8 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+   _usuarioAtual = inject(UsuarioService);
+
   elementos = [
     {nome:'Ofertas'},
     {nome:'Categoria'},
@@ -20,4 +23,12 @@ export class HeaderComponent {
     {nome:'Colecionaveis'},
     {nome:'Franquias'}
   ]
+
+  caminho(){
+    let rota="";
+
+    (this._usuarioAtual.usuario==="")?rota="/login":rota="/usuario/10/informacoes";
+
+    return rota;
+  }
 }

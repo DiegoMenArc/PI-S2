@@ -26,6 +26,25 @@ export class FooterComponent {
     }
   ]
 
+  pagamentos = [
+    {
+      caminho:"img/visa.png",
+      desc:"visa"
+    },
+    {
+      caminho:"img/paypal.png",
+      desc:"paypal"
+    },
+    {
+      caminho:"img/apple.png",
+      desc:"apple"
+    },
+    {
+      caminho:"img/google.png",
+      desc:"google"
+    }
+  ]
+
   arroba = "@";
 
   links = ["Sobre nós", "Acessibilidade", "Ajuda", "Perguntas Frequentes"]

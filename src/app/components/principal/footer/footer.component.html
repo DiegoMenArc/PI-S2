@@ -1,12 +1,12 @@
 <main>
   <div class="superior">
-    <div>
+    <div class="group1">
       <img src="img/logo.png" alt="" width="100px">
-      <div>
+      <div class="group2">
         <p>Pagamentos disponiveis</p>
         <div class="meiosP">
-          @for (item of links; track $index) {
-            <img src="" alt="">
+          @for (item of pagamentos; track $index) {
+            <img [src]="item.caminho" [alt]="item.desc">
           }
         </div>
       </div>

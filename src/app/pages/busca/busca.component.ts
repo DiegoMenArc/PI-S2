@@ -5,10 +5,13 @@ import { FiltrosComponent } from './partes/filtros/filtros.component';
 import { BuscaService } from '../../services/busca.service';
 import { CardPadraoComponent } from '../../components/card-padrao/card-padrao.component';
 import { CarrosselprodComponent } from '../produto/partes/carrosselprod/carrosselprod.component';
+import { FooterComponent } from '../../components/principal/footer/footer.component';
+
+
 
 @Component({
   selector: 'busca',
-  imports: [HeaderComponent,BreadcumbsComponent, FiltrosComponent, CardPadraoComponent, CarrosselprodComponent],
+  imports: [HeaderComponent,BreadcumbsComponent, FiltrosComponent, CardPadraoComponent, CarrosselprodComponent, FooterComponent],
   templateUrl: './busca.component.html',
   styleUrl: './busca.component.css'
 })
