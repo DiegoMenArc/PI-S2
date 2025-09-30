@@ -1,0 +1,22 @@
+#CaixaPromocao
+{
+display: flex;
+width: 1122px;
+height: 365px;
+padding: 136px 574px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+margin: auto;
+
+
+background: var(--Azul1, #176C8E);
+}
+
+img
+{
+width: 1122px;
+height: 364px;
+flex-shrink: 0;
+}

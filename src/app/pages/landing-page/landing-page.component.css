@@ -1,17 +1,10 @@
-.teste{
-    background-color: var(--amarelo);
-}
-
-#CaixaPromocao
-{
+#landing{
 display: flex;
-height: 365px;
-padding: 136px 574px;
-justify-content: center;
-align-items: center;
+width: 1440px;
+height: 3431px;
+flex-direction: column;
+align-items: flex-start;
 gap: 10px;
-flex-shrink: 0;
-align-self: stretch;
-
-background: var(--Azul1, #176C8E);
 }
+
+

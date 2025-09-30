@@ -1,0 +1,61 @@
+.carrossel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carrossel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 500%; /* 5 produtos */
+}
+
+.carrossel-item {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.botao {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 10;
+}
+
+.botao.esquerda {
+  left: 10px;
+}
+
+.botao.direita {
+  right: 10px;
+}
+
+.indicadores {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicadores span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: gray;
+  margin: 0 5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.indicadores span.ativo {
+  background: red;
+}
