@@ -1,0 +1,94 @@
+<div class="conteiner">
+    <div class="col1">
+        <div class="info-prd">
+            <p>Informações do Produto</p>
+            <div class="input-boxes">
+
+                <div class="input-box nome">
+                    <label for="insere-nome">{{ acoes[0] }}</label>
+                    <input type="text" name="peidador" id="insere-nome">
+                </div>
+
+                <div class="input-box nome">
+                    <label for="insere-desc">{{ acoes[1] }}</label>
+                    <input type="text" name="peidador" id="insere-desc">
+                </div>
+
+                <div class="input-box-valores">
+                    <div class="input-box qtd">
+                        <label for="insere-qtd">{{ acoes[2] }}</label>
+                        <input type="text" name="peidador" id="insere-qtd">
+                    </div>
+                    <div class="input-box preco">
+                        <label for="insere-desc">{{ acoes[3] }}</label>
+                        <input type="text" name="peidador" id="insere-preco">
+                    </div>
+                </div>
+
+                <div class="input-box-infos">
+                    <div class="input-box anoL">
+                        <label for="insere-qtd">{{ acoes[4] }}</label>
+                        <input type="text" name="peidador" id="insere-qtd">
+                    </div>
+                    <div class="input-box marca">
+                        <label for="insere-marca">{{ acoes[5] }}</label>
+                        <input type="text" name="peidador" id="insere-marca">
+                    </div>
+                </div>
+
+                <div class="input-box ctg">
+                    <form>
+                        <select name="categorias" required="required">
+                            <option value="">Escolha uma categoria</option>
+                            @for(item of categorias, track categorias.item){
+                            <option value="marca1">{{categorias[item]}}</option>
+                            }
+
+                        </select>
+                        <button class="button-ctg" type="submit">Enviar</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col2">
+
+        <div class="espec-prd">
+            <p>Especificações do Produto</p>
+            <div class="input-cont espec">
+                <label for="">Especificação</label>
+                <input type="text" name="" id="" placeholder="Informe a Especificação">
+            </div>
+            <div class="input-cont valor">
+                <label for="">Valor</label>
+                <input type="text" name="" id="" placeholder="Informe o Valor">                
+            </div>
+            <button type="submit">Adicionar Especificação <img src="icons/add-icon.svg" alt=""></button>
+        </div>
+
+        <div class="imgs-prd">
+            <p>Imagens do Produto</p>
+            <div class="molduras">
+                <div class="moldura 1">
+
+                </div>
+                <div class="moldura 2">
+
+                </div>
+                <div class="moldura 3">
+
+                </div>
+                <div class="moldura 4">
+
+                </div>
+            </div>
+        </div>
+
+        <button type="submit">
+            SALVAR
+            <img src="/public/icons/add-icon.svg" alt="">
+        </button>
+
+    </div>
+</div>

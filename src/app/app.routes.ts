@@ -8,12 +8,16 @@ import { AdmComponent } from './pages/adm/adm.component';
 import { LoginComponent } from './pages/login/login.component';
 import { BuscaComponent } from './pages/busca/busca.component';
 import { InfoUserComponent } from './pages/userAdm/info-user/info-user.component';
+import { AdmEditComponent } from './pages/adm/adm-edit/adm-edit.component';
+import { AdmAddComponent } from './pages/adm/adm-add/adm-add.component';
 
 export const routes: Routes = [
     { path: '', component: LandingPageComponent},
     { path: 'produto', component: ProdutoComponent},
-    { path: 'adm', component: AdmComponent},
     { path: 'login', component: LoginComponent},
     { path: 'busca/:busca', component: BuscaComponent},
     { path: 'usuario/:id/informacoes', component: InfoUserComponent},
+    { path: 'adm', component: AdmComponent},
+    { path: 'adm/edit', component: AdmEditComponent},
+    { path: 'adm/add', component: AdmAddComponent}
 ];
