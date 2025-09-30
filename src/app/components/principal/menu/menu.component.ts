@@ -1,14 +1,16 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { UsuarioService } from '../../../services/usuario.service';
+
 @Component({
   selector: 'app-menu',
+  standalone: true,
   imports: [RouterLink],
   templateUrl: './menu.component.html',
-  styleUrl: './menu.component.css'
+  styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
-_usuarioAtual = inject(UsuarioService);
+  _usuarioAtual = inject(UsuarioService);
 
   elementos = [
     {nome:'Entrar'},
@@ -19,13 +21,11 @@ _usuarioAtual = inject(UsuarioService);
     {nome:'Ajuda'},
     {nome:'Política de privacidade'},
     {nome:'Termos e condições'}
-  ]
+  ];
 
-  caminho(){
-    let rota="";
-
-    (this._usuarioAtual.usuario==="")?rota="/login":rota="/usuario/10/informacoes";
-
-    return rota;
+  caminho() {
+    return this._usuarioAtual?.usuario === ""
+      ? "/login"
+      : "/usuario/10/informacoes";
   }
 }

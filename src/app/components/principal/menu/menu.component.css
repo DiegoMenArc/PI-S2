@@ -1,82 +1,49 @@
-.menu-lateral {
-    width: 417px;
-    height: 537px;
-    background: #fff;
-    border-radius: 0 20px 20px 0;
-    padding: 10px;
-    font-family: Inter;
-}
-
 .menu-topo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px; 
 }
 
-.usuario {
-    display: flex;
-    width: 418px;
-    padding: 4px 3px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    background: #d9d9d9;
+.icone-circulo {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 64px;
+  background: #006691;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
 }
 
-.icone-usuario {
-    width: 75.726px;
-    height: 71.167px;
-    flex-shrink: 0;
+.retangulo {
+  width: 286px;
+  height: 41.253px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #2499C7;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
 }
 
-.bot {
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
+.btn {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.bot.entrar {
-    width: 164.678px;
-    height: 50.211px;
-    flex-shrink: 0;
-    border-radius: 0 13px 13px 0;
-    background: #F5F50C;
+.btn.entrar {
+  background: #ff0;
+  color: #000;
 }
 
-.bot.cadastrar {
-    width: 334.729px;
-    height: 50.211px;
-    flex-shrink: 0;
-    border-radius: 0 13px 13px 0;
-    background: #006691;
-}
-
-.menu-opcoes {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.opcao {
-    width: 64px;
-    height: 64px;
-    flex-shrink: 0;
-    background: #2499c7;
-    color: #fff;
-    border: none;
-    padding: 8px;
-    border-radius: 6px;
-    text-align: left;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.opcao.texto {
-    width: 286px;
-    height: 41.253px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: #2499C7;
+.btn.cadastrar {
+  background: #006691;
+  color: #fff;
 }
