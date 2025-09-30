@@ -8,14 +8,19 @@
 .nav-head {
     display: flex;
     height: 10vh;
+    justify-items: center;
+    justify-content: space-between;
     align-items: center;
-    align-self: stretch;
+
+    padding: 0 0.5vw;
 
     background-color: #2499C7;
-    border-bottom: 4px solid var(--branco);
-    font-family: "Montserrat";
 
     border-bottom: 1px solid #006691;
+}
+.nav-head img{
+    width: 3vw;
+    height: 3vh;
 }
 
 .nav-lista {
@@ -53,17 +58,17 @@
     width: fit-content;
     border-radius: 20px;
     padding: 1vh 1vw;
+    cursor: pointer;
 }
 
 .nav-logo {
+    height: fit-content;
+    width: fit-content;
+
     color: #FFF;
-
+    
     text-align: center;
-    font-family: Bangers;
-    font-size: 22.713px;
-    font-style: normal;
+    font-family: "Montserrat", "Sans-serif";
+    font-size: 1rem;
     font-weight: 400;
-    line-height: normal;
-
-
 }

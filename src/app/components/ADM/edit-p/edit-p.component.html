@@ -40,9 +40,8 @@
                     <form>
                         <select name="categorias" required="required">
                             <option value="">Escolha uma categoria</option>
-                            @for(item of categorias, track categorias.item){
-                            <option value="marca1">{{categorias[item]}}</option>
-                            }
+                            <option value="marca1">{{categorias[0]}}</option>
+                            
 
                         </select>
                         <button class="button-ctg" type="submit">Enviar</button>
@@ -57,14 +56,16 @@
         <div class="espec-prd">
             <p>Especificações do Produto</p>
             <div class="input-cont espec">
-                <label for="">Especificação</label>
-                <input type="text" name="" id="" placeholder="Informe a Especificação">
+                <label for="insere-esp">Especificação</label>
+                <input type="text" name="" id="insere-esp" placeholder="Informe a Especificação">
             </div>
             <div class="input-cont valor">
-                <label for="">Valor</label>
-                <input type="text" name="" id="" placeholder="Informe o Valor">                
+                <label for="insere-val">Valor</label>
+                <input type="text" name="" id="insere-val" placeholder="Informe o Valor">                
             </div>
-            <button type="submit">Adicionar Especificação <img src="icons/add-icon.svg" alt=""></button>
+            <div class="espec-button">
+                <button type="submit">Adicionar Especificação <img src="icons/add-icon.svg" alt=""></button>
+            </div>  
         </div>
 
         <div class="imgs-prd">
@@ -84,8 +85,8 @@
                 </div>
             </div>
         </div>
-
-        <button type="submit">
+        
+        <button class="save-button" type="submit">
             SALVAR
             <img src="/public/icons/add-icon.svg" alt="">
         </button>

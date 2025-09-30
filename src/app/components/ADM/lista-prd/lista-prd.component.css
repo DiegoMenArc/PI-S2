@@ -101,7 +101,8 @@
 }
 
 .cont-cabecalho.produtos {
-    width: 200px;
+    width: 17vw;
+    margin-right: 2vw;
 }
 
 .cont-cabecalho-nav {
@@ -195,7 +196,7 @@
     display: flex;
     width: 100px;
     align-items: center;
-    gap: 10px;
+    gap: 1vw;
 }
 
 .acoes-prd img {
@@ -207,4 +208,8 @@
 .acoes-icon:hover{
     cursor: pointer;
     transform: scale(1.2, 1.2);
+}
+
+#check-prd-head{
+    margin-right: 2vw;
 }
