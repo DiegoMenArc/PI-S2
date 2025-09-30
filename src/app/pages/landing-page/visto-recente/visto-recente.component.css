@@ -1,47 +1,72 @@
-.carrossel {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
+#carrossel
+{
+display: flex;
+height: 455px;
+padding: 0 13px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+align-self: stretch;
+}
+
+#carrossel2
+{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 13px;
+align-self: stretch;
+}
+
+#carrossel3
+{
+display: flexbox;
+width: 1290px;
+flex-direction: column;
+align-items: center;
+gap: 13px;
+}
+
+#carrocel4
+{
+display: flex;
+width: 100px;
+padding: 0 3px;
+justify-content: space-between;
+align-items: center;
+}
+
+#carrocel5
+{
+display: flex;
+width: 499px;
+justify-content: space-between;
+align-items: start;
+flex-shrink: 0;
+
+}
+
+.carrossel-container {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
-.carrossel-wrapper {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 500%; /* 5 produtos */
-}
+.carrossel-slide {
+overflow: hidden;
+flex-wrap: nowrap;
 
-.carrossel-item {
-  flex: 0 0 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.botao {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 0.5rem;
-  z-index: 10;
-}
-
-.botao.esquerda {
-  left: 10px;
-}
-
-.botao.direita {
-  right: 10px;
+display: flex;
+align-items: flex-start;
+gap: 15px;
+align-self: stretch;
 }
 
 .indicadores {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   margin-top: 10px;
 }
 
@@ -52,10 +77,35 @@
   background: gray;
   margin: 0 5px;
   cursor: pointer;
-  display: inline-block;
-  transition: background 0.3s;
+
+  
 }
 
 .indicadores span.ativo {
-  background: red;
+  background: #2499C7;
+}
+
+.bot
+{
+display: flex;
+width: 50px;
+height: 50px;
+justify-content: center;
+align-items: center;
+gap: 5px;
+cursor: pointer;
+
+border-radius: 10px;
+border: 1px solid #2499C7;
+}
+
+button:hover {
+  background: #006691;
+  color: #fff;
+}
+
+#titulo
+{
+    display: flex;
+    
 }
