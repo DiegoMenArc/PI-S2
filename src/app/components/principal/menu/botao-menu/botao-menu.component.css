@@ -1,6 +1,20 @@
-/* ======================== */
-/* TOPO (perfil + entrar/cadastrar) */
-/* ======================== */
+/* Container principal do menu */
+#menu-container {
+  width: 417px;
+  height: 537px; /* fechado */
+  border-radius: 0 20px 20px 0;
+  background: #FFF;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: height 0.3s ease;
+}
+
+/* Quando submenu está aberto */
+#menu-container.aberto {
+  height: 690px; /* aumenta */
+}
+
+/* Topo do menu */
 #menu-topo {
   display: flex;
   align-items: center;
@@ -51,9 +65,7 @@
   color: #fff;
 }
 
-/* ======================== */
-/* MENU LATERAL */
-/* ======================== */
+/* Itens do menu lateral */
 #menu-lateral {
   margin-top: 20px;
   display: flex;
@@ -61,7 +73,6 @@
   gap: 12px;
 }
 
-/* Botões principais */
 #menu-lateral button {
   display: flex;
   align-items: center;
@@ -82,34 +93,46 @@
   background: #1d83aa;
 }
 
-/* Ícones dentro dos botões */
-#menu-lateral button::before {
-  content: '';
-  width: 32px;
-  height: 32px;
+/* Ícones */
+.icone {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: #006691;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   color: #ff0;
-  font-size: 16px;
+  font-size: 18px;
 }
 
-/* Submenu */
-.submenu {
+/* Submenu dentro do Ajuda */
+.submenu-container {
+  width: 242px;
+  height: 172px;
+  border-radius: 10px;
+  background: #EDEDED;
+  padding: 12px;
+  margin-left: 40px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-left: 40px;
-  background: #f3f3f3;
-  padding: 10px;
-  border-radius: 8px;
+  gap: 10px;
 }
 
-.submenu button {
+.submenu-container button {
   background: #2499C7;
   color: #fff;
   font-size: 13px;
   padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.submenu-container button:hover {
+  background: #1d83aa;
+}
+
+.seta {
+  margin-left: auto;
 }

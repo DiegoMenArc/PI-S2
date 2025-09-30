@@ -1,28 +1,31 @@
 <main>
-<div id="menu-topo">
-    <div id="icone-circulo"> <span id="icone-usuario"></span> </div>
-        <div id="retangulo"> 
-            <button id="btnEntrar">Entrar</button> 
+  <div id="menu-container" [class.aberto]="submenuAberto">
+    <div id="menu-topo">
+      <div id="icone-circulo"><span id="icone-usuario"><img src="/icons/perfil.svg" alt="Icone do perfil"></span></div>
+      <div id="retangulo"> 
+        <button id="btnEntrar">Entrar</button> 
         <button id="btnCadastrar">Cadastrar</button>
-    </div>
-</div>
-
-<div id="menu-lateral">
-    <button id="btnCarrinho"><span class="icone">🎁</span>Minhas compras</button>
-    <button id="btnPresente"><span class="icone">🎁</span>Listas de presente</button>
-    <button id="btnAvaliacao"><span class="icone">🎁</span>Minhas avaliações</button>
-    
-    <button id="btnAjuda" (click)="toggleSubmenu()">
-      <span class="icone">🎁</span> Ajuda
-      <span>{{ submenuAberto ? '▲' : '▼' }}</span>
-    </button>
-
-    <div *ngIf="submenuAberto" id="subMenu">
-      <button id="btnAcessibilidade"><span class="icone">🎁</span> Acessibilidade</button>
-      <button id="btnContato"><span class="icone">🎁</span> Contato</button>
+      </div>
     </div>
 
-    <button id="btnPrivacidade">Política de privacidade</button>
-    <button id="btnTermos">Termos e condições</button>
+    <div id="menu-lateral">
+      <button id="btnCarrinho"><span class="icone"><img src="icons/carrinhoAmarelo.svg" alt="Carrinho"></span> Minhas compras</button>
+      <button id="btnPresente"><span class="icone"><img src="icons/presenteAmarelo.svg" alt="Lista de Presente"></span> Listas de presente</button>
+      <button id="btnAvaliacao"><span class="icone"><img src="icons/estrelaAmarela.svg" alt="Avaliações"></span> Minhas avaliações</button>
+      
+      <button id="btnAjuda" (click)="toggleSubmenu()">
+        <span class="icone"><img src="icons/ajudaAmarelo.svg" alt="Ajuda"></span> Ajuda
+        <span class="seta">{{ submenuAberto ? '▲' : '▼' }}</span>
+      </button>
+
+      <!-- Submenu -->
+      <div *ngIf="submenuAberto" class="submenu-container">
+        <button id="btnAcessibilidade"><span class="icone"><img src="icons/acessibilidadeAmarelo.svg" alt="Acessibilidade"></span> Acessibilidade</button>
+        <button id="btnContato"><span class="icone"><img src="icons/contatoAmarelo.svg" alt="Contato"></span> Contato</button>
+      </div>
+
+      <button id="btnPrivacidade">Política de privacidade</button>
+      <button id="btnTermos">Termos e condições</button>
+    </div>
   </div>
 </main>
