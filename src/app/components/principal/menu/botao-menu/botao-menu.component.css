@@ -1,0 +1,115 @@
+/* ======================== */
+/* TOPO (perfil + entrar/cadastrar) */
+/* ======================== */
+#menu-topo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#icone-circulo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #006691;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 28px;
+}
+
+#retangulo {
+  width: 286px;
+  height: 42px;
+  border-radius: 10px;
+  background: #006691;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+}
+
+#btnEntrar,
+#btnCadastrar {
+  flex: 1;
+  height: 100%;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#btnEntrar {
+  background: #ff0;
+  color: #000;
+  margin-right: 5px;
+}
+
+#btnCadastrar {
+  background: #006691;
+  color: #fff;
+}
+
+/* ======================== */
+/* MENU LATERAL */
+/* ======================== */
+#menu-lateral {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Botões principais */
+#menu-lateral button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #2499C7;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+#menu-lateral button:hover {
+  background: #1d83aa;
+}
+
+/* Ícones dentro dos botões */
+#menu-lateral button::before {
+  content: '';
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #006691;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff0;
+  font-size: 16px;
+}
+
+/* Submenu */
+.submenu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 40px;
+  background: #f3f3f3;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.submenu button {
+  background: #2499C7;
+  color: #fff;
+  font-size: 13px;
+  padding: 8px 12px;
+}

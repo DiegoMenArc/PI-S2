@@ -1,0 +1,28 @@
+<main>
+<div id="menu-topo">
+    <div id="icone-circulo"> <span id="icone-usuario"></span> </div>
+        <div id="retangulo"> 
+            <button id="btnEntrar">Entrar</button> 
+        <button id="btnCadastrar">Cadastrar</button>
+    </div>
+</div>
+
+<div id="menu-lateral">
+    <button id="btnCarrinho"><span class="icone">🎁</span>Minhas compras</button>
+    <button id="btnPresente"><span class="icone">🎁</span>Listas de presente</button>
+    <button id="btnAvaliacao"><span class="icone">🎁</span>Minhas avaliações</button>
+    
+    <button id="btnAjuda" (click)="toggleSubmenu()">
+      <span class="icone">🎁</span> Ajuda
+      <span>{{ submenuAberto ? '▲' : '▼' }}</span>
+    </button>
+
+    <div *ngIf="submenuAberto" id="subMenu">
+      <button id="btnAcessibilidade"><span class="icone">🎁</span> Acessibilidade</button>
+      <button id="btnContato"><span class="icone">🎁</span> Contato</button>
+    </div>
+
+    <button id="btnPrivacidade">Política de privacidade</button>
+    <button id="btnTermos">Termos e condições</button>
+  </div>
+</main>
