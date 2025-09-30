@@ -1,0 +1,23 @@
+<div class="carrossel">
+  <!-- Botão anterior -->
+  <button class="botao esquerda" (click)="anterior()">⏪</button>
+
+  <!-- Área de slides -->
+  <div class="carrossel-wrapper" [style.transform]="transformStyle">
+    <div class="carrossel-item" *ngFor="let produto of produtos">
+      <app-cardPadrao></app-cardPadrao>
+
+    </div>
+  </div>
+
+  <!-- Botão próximo -->
+  <button class="botao direita" (click)="proximo()">⏩</button>
+</div>
+
+<!-- Indicadores (bolinhas) -->
+<div class="indicadores">
+  <span *ngFor="let p of produtos; let i = index"
+        (click)="irPara(i)"
+        [class.ativo]="i === indiceAtual">
+  </span>
+</div>
