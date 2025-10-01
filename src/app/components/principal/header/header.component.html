@@ -2,15 +2,12 @@
     <div class="superior">
         <div class="group">
             <img src="img/logo.png" alt="Logo mundo nostalgico" class="logo" routerLink="/">
-
             <div class="cep">
                 <img src="icons/localizacao.svg" alt="">
                 <p>Informe seu CEP</p>
             </div>
         </div>
-
         <app-busca />
-
         <nav class="icons">
             <a [href]="caminho()"><img src="icons/perfil.svg" alt="perfil"></a>
             <a href=""><img src="icons/favorito.svg" alt=""></a>
@@ -20,7 +17,7 @@
     </div>
 
     <div class="inferior">
-        <img src="icons/menu.svg" alt="">
+        <a href="#" (click)="abrirMenu()"><img src="icons/menu.svg" alt="Menu"></a>
         <nav>
             @for (elemento of elementos; track elemento.nome){
                 <app-botao-header [nome]="elemento.nome"></app-botao-header>
@@ -29,3 +26,5 @@
         <div></div>
     </div>
 </div>
+
+<app-menu [visivel]="menuAberto" (fecharMenu)="fecharMenu()"></app-menu>

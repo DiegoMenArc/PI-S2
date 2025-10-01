@@ -1,8 +1,9 @@
-<app-header></app-header>
+<app-header (abrirCardEvent)="toggleCard()"></app-header>
 <div id="lading">
-<app-botaomenu></app-botaomenu>
+<app-botaomenu *ngIf="mostrarCard"></app-botaomenu>
 
-<app-card-promocao></app-card-promocao>
+<app-card-promocao *ngIf="mostrarCard"></app-card-promocao>
+
 <app-carrossel-marca></app-carrossel-marca>
 <app-visto-recente></app-visto-recente>
 </div>

@@ -1,31 +1,27 @@
-import { Component, inject } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { UsuarioService } from '../../../services/usuario.service';
 
 @Component({
-  selector: 'app-menu',
-  standalone: true,
-  imports: [RouterLink],
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+    selector: 'app-menu',
+    standalone: true,
+    imports: [CommonModule, RouterLink],
+    templateUrl: './menu.component.html',
+    styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
-  _usuarioAtual = inject(UsuarioService);
+    @Input() visivel: boolean = false;
+    @Output() fecharMenu = new EventEmitter<void>();
 
-  elementos = [
-    {nome:'Entrar'},
-    {nome:'Cadastrar'},
-    {nome:'Minhas compras'},
-    {nome:'Lista de presente'},
-    {nome:'Minhas avaliações'},
-    {nome:'Ajuda'},
-    {nome:'Política de privacidade'},
-    {nome:'Termos e condições'}
-  ];
+    submenuAberto = false;
 
-  caminho() {
-    return this._usuarioAtual?.usuario === ""
-      ? "/login"
-      : "/usuario/10/informacoes";
-  }
+    toggleSubmenu() {
+        this.submenuAberto = !this.submenuAberto;
+    }
+
+    fechar() {
+        // Este método é chamado quando o botão 'X' ou o overlay são clicados.
+        // Ele emite o evento 'fecharMenu' para o componente pai (HeaderComponent).
+        this.fecharMenu.emit();
+    }
 }
