@@ -8,7 +8,7 @@ describe('BotaoMenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MenuComponent] // se for standalone, usa imports
+      imports: [MenuComponent] 
     })
     .compileComponents();
 
