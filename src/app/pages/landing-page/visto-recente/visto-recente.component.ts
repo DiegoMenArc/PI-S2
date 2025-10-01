@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardPadraoComponent } from '../../../components/card-padrao/card-padrao.component';
 
@@ -9,20 +9,17 @@ import { CardPadraoComponent } from '../../../components/card-padrao/card-padrao
   styleUrl: './visto-recente.component.css'
 })
 export class VistoRecenteComponent {
-
-produtos = [
+  produtos = [
     { imagem: 'assets/produto1.jpg'},
     { imagem: 'assets/produto2.jpg'},
     { imagem: 'assets/produto3.jpg', nome: 'Smartwatch', preco: 'R$ 299,90' },
     { imagem: 'assets/produto4.jpg', nome: 'Mochila Casual', preco: 'R$ 89,90' },
     { imagem: 'assets/produto5.jpg', nome: 'Camiseta Premium', preco: 'R$ 59,90' },
-
     { imagem: 'assets/produto1.jpg', nome: 'Tênis Esportivo', preco: 'R$ 199,90' },
     { imagem: 'assets/produto2.jpg', nome: 'Fone Bluetooth', preco: 'R$ 149,90' },
     { imagem: 'assets/produto3.jpg', nome: 'Smartwatch', preco: 'R$ 299,90' },
     { imagem: 'assets/produto4.jpg', nome: 'Mochila Casual', preco: 'R$ 89,90' },
     { imagem: 'assets/produto5.jpg', nome: 'Camiseta Premium', preco: 'R$ 59,90' },
-
     { imagem: 'assets/produto1.jpg', nome: 'Tênis Esportivo', preco: 'R$ 199,90' },
     { imagem: 'assets/produto2.jpg', nome: 'Fone Bluetooth', preco: 'R$ 149,90' },
     { imagem: 'assets/produto3.jpg', nome: 'Smartwatch', preco: 'R$ 299,90' },
@@ -30,7 +27,7 @@ produtos = [
     { imagem: 'assets/produto5.jpg', nome: 'Camiseta Premium', preco: 'R$ 59,90' }
   ];
 
-  paginaAtual = 0; // índice da página
+  paginaAtual = 0;
   produtosPorPagina = 5;
 
   totalPaginas() {
@@ -54,3 +51,4 @@ produtos = [
     return this.produtos.slice(inicio, inicio + this.produtosPorPagina);
   }
 }
+2
