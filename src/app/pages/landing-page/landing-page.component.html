@@ -1,6 +1,6 @@
-<app-header (abrirCardEvent)="abrirCard()"></app-header>
+<app-header (abrirCardEvent)="toggleCard()"></app-header>
 <div id="lading">
-<app-botaomenu></app-botaomenu>
+<app-botaomenu *ngIf="mostrarCard"></app-botaomenu>
 
 <app-card-promocao *ngIf="mostrarCard"></app-card-promocao>
 
