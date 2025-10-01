@@ -20,8 +20,6 @@ export class MenuComponent {
     }
 
     fechar() {
-        // Este método é chamado quando o botão 'X' ou o overlay são clicados.
-        // Ele emite o evento 'fecharMenu' para o componente pai (HeaderComponent).
         this.fecharMenu.emit();
     }
 }

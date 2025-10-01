@@ -1,7 +1,6 @@
-/* Container principal do menu */
 #menu-container {
   width: 417px;
-  height: 537px; /* fechado */
+  height: 537px;
   border-radius: 0 20px 20px 0;
   background: #FFF;
   padding: 20px;
@@ -9,12 +8,10 @@
   transition: height 0.3s ease;
 }
 
-/* Quando submenu está aberto */
 #menu-container.aberto {
-  height: 690px; /* aumenta */
+  height: 690px;
 }
 
-/* Topo do menu */
 #menu-topo {
   display: flex;
   align-items: center;
@@ -65,7 +62,6 @@
   color: #fff;
 }
 
-/* Itens do menu lateral */
 #menu-lateral {
   margin-top: 20px;
   display: flex;
@@ -93,7 +89,6 @@
   background: #1d83aa;
 }
 
-/* Ícones */
 .icone {
   width: 40px;
   height: 40px;
@@ -106,7 +101,6 @@
   font-size: 18px;
 }
 
-/* Submenu dentro do Ajuda */
 .submenu-container {
   width: 242px;
   height: 172px;

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Importação correta do CommonModule
+import { CommonModule } from '@angular/common'; 
 
 import { HeaderComponent } from '../../components/principal/header/header.component';
 import { FooterComponent } from '../../components/principal/footer/footer.component';
@@ -13,7 +13,6 @@ import { CarrosselOfertasComponent } from './carrossel-ofertas/carrossel-ofertas
 
 @Component({
   selector: 'app-landing-page',
-  // Substitua a importação do NgIf pelo CommonModule
   imports: [
     HeaderComponent,
     FooterComponent,
@@ -31,14 +30,12 @@ import { CarrosselOfertasComponent } from './carrossel-ofertas/carrossel-ofertas
   styleUrl: './landing-page.component.css'
 })
 export class LandingPageComponent {
-  mostrarCard: boolean = false; // começa oculto
+  mostrarCard: boolean = false;
 
-  // função que vai ser chamada pelos botões do header
   toggleCard() {
     this.mostrarCard = !this.mostrarCard;
   }
 
-  // se você quiser só abrir e fechar separadamente:
   abrirCard() {
     this.mostrarCard = true;
   }
