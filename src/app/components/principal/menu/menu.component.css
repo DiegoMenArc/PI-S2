@@ -1,68 +1,95 @@
+/* menu.component.css */
 #menu-container {
-    position: fixed;
-    top: 0;
-    left: -417px; /* Esconde o menu para a esquerda */
-    z-index: 1000;
-    width: 417px;
-    height: 100vh;
-    border-radius: 0 20px 20px 0;
-    background: #FFF;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: left 0.3s ease; /* Transição para o movimento */
+  position: fixed;
+  top: 0;
+  left: -417px; /* escondido */
+  z-index: 1000;
+  width: 417px;
+  height: 100vh;
+  border-radius: 0 20px 20px 0;
+  background: #FFF;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: left 0.3s ease;
 }
 
-/* Quando visível, move para a direita */
+/* quando aberto */
 #menu-container.aberto {
-    left: 0;
-  }
+  left: 0;
+}
 
-.menu-topo {
+#menu-topo {
   display: flex;
   align-items: center;
-  gap: 5px; 
+  gap: 10px;
 }
 
-.icone-circulo {
+#icone-circulo {
   width: 64px;
   height: 64px;
-  flex-shrink: 0;
-  border-radius: 64px;
+  border-radius: 50%;
   background: #006691;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 24px;
 }
 
-.retangulo {
+#retangulo {
   width: 286px;
-  height: 41.253px;
-  flex-shrink: 0;
+  height: 42px;
   border-radius: 10px;
   background: #2499C7;
-
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 5px;
+  align-items: center;
+  padding: 3px;
 }
 
-.btn {
+#btnEntrar,
+#btnCadastrar {
+  flex: 1;
   border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+  border-radius: 8px;
+  padding: 8px;
 }
 
-.btn.entrar {
+#btnEntrar {
   background: #ff0;
   color: #000;
+  margin-right: 5px;
 }
 
-.btn.cadastrar {
+#btnCadastrar {
   background: #006691;
   color: #fff;
+}
+
+/* itens */
+#menu-lateral {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#menu-lateral button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #2499C7;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+#menu-lateral button:hover {
+  background: #1d83aa;
 }
