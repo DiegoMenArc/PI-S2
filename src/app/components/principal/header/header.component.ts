@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, EventEmitter, Output, inject } from '@angular/core';
 
 import { BuscaComponent } from '../../busca/busca.component';
 import { BotaoHeaderComponent } from '../botao-header/botao-header.component'
@@ -15,6 +15,8 @@ import { UsuarioService } from '../../../services/usuario.service';
 export class HeaderComponent {
    _usuarioAtual = inject(UsuarioService);
 
+   @Output() abrirCardEvent = new EventEmitter<void>();
+
   elementos = [
     {nome:'Ofertas'},
     {nome:'Categoria'},
@@ -30,5 +32,9 @@ export class HeaderComponent {
     (this._usuarioAtual.usuario==="")?rota="/login":rota="/usuario/10/informacoes";
 
     return rota;
+  }
+
+  abrirCard() {
+    this.abrirCardEvent.emit();
   }
 }

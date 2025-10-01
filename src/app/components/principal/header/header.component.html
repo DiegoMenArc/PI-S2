@@ -20,10 +20,10 @@
     </div>
 
     <div class="inferior">
-        <img src="icons/menu.svg" alt="">
+        <a href="caminho()"><img src="icons/menu.svg" alt="" (click)="abrirCard()"></a>
         <nav>
             @for (elemento of elementos; track elemento.nome){
-                <app-botao-header [nome]="elemento.nome"></app-botao-header>
+                <app-botao-header [nome]="elemento.nome" (click)="abrirCard()"></app-botao-header>
             }
         </nav>
         <div></div>

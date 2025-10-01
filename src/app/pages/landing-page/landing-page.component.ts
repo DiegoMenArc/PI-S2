@@ -16,5 +16,20 @@ import { BotaoHeaderComponent } from "../../components/principal/botao-header/bo
   styleUrl: './landing-page.component.css'
 })
 export class LandingPageComponent {
+  
+  mostrarCard: boolean = false; // começa oculto
 
+  // função que vai ser chamada pelos botões do header
+  toggleCard() {
+    this.mostrarCard = !this.mostrarCard;
+  }
+
+  // se você quiser só abrir e fechar separadamente:
+  abrirCard() {
+    this.mostrarCard = true;
+  }
+
+  fecharCard() {
+    this.mostrarCard = false;
+  }
 }
