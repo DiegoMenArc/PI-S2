@@ -6,17 +6,17 @@ import { BuscaService } from '../../services/busca.service';
 import { CardPadraoComponent } from '../../components/card-padrao/card-padrao.component';
 import { CarrosselprodComponent } from '../produto/partes/carrosselprod/carrosselprod.component';
 import { FooterComponent } from '../../components/principal/footer/footer.component';
-
-
-
 @Component({
   selector: 'busca',
-  imports: [HeaderComponent,BreadcumbsComponent, FiltrosComponent, CardPadraoComponent, CarrosselprodComponent, FooterComponent],
+  imports: [HeaderComponent, BreadcumbsComponent, FiltrosComponent, CardPadraoComponent, CarrosselprodComponent, FooterComponent],
   templateUrl: './busca.component.html',
   styleUrl: './busca.component.css'
 })
 export class BuscaComponent {
   _buscaService = inject(BuscaService) ;
+
+  // Variável para controlar a visibilidade do menu
+  menuAberto: boolean = false; 
 
   cards = [
     {nome:""},
