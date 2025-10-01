@@ -1,3 +1,22 @@
+#menu-container {
+    position: fixed;
+    top: 0;
+    left: -417px; /* Esconde o menu para a esquerda */
+    z-index: 1000;
+    width: 417px;
+    height: 100vh;
+    border-radius: 0 20px 20px 0;
+    background: #FFF;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease; /* Transição para o movimento */
+}
+
+/* Quando visível, move para a direita */
+#menu-container.aberto {
+    left: 0;
+  }
+
 .menu-topo {
   display: flex;
   align-items: center;
