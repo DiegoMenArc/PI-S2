@@ -1,73 +1,69 @@
-#carrossel
-{
-display: flex;
-height: 455px;
-padding: 0 13px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-align-self: stretch;
+.container-carrossel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+  gap: 20px;
 }
 
-#carrossel2
-{
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 13px;
-align-self: stretch;
+.cabecalho-carrossel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#carrossel3
-{
-display: flexbox;
-width: 1290px;
-flex-direction: column;
-align-items: center;
-gap: 13px;
-}
-
-#carrocel4
-{
-display: flex;
-width: 100px;
-padding: 0 3px;
-justify-content: space-between;
-align-items: center;
-}
-
-#carrocel5
-{
-display: flex;
-width: 499px;
-justify-content: space-between;
-align-items: start;
-flex-shrink: 0;
-
-}
-
-.carrossel-container {
+.textos-cabecalho {
   display: flex;
   align-items: center;
-  position: relative;
+  gap: 10px;
 }
 
-.carrossel-slide {
-overflow: hidden;
-flex-wrap: nowrap;
+.titulo-carrossel {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
 
-display: flex;
-align-items: flex-start;
-gap: 15px;
-align-self: stretch;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.link-carrossel {
+  font-size: 14px;
+  cursor: pointer;
+
+color: #18B1C6;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.conteudo-carrossel {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative; /* O ponto chave: define o contexto para os botões absolutos */
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-carrossel {
+  display: flex;
+  overflow: hidden;
+  flex: 1;
+  gap: 15px;
+  align-items: flex-start;
+  transition: transform 0.5s ease-in-out;
 }
 
 .indicadores {
   display: flex;
-  justify-content: end;
-  margin-top: 10px;
+  gap: 5px;
 }
 
 .indicadores span {
@@ -75,18 +71,34 @@ align-self: stretch;
   height: 12px;
   border-radius: 50%;
   background: gray;
-  margin: 0 5px;
   cursor: pointer;
-
-  
+  transition: background 0.3s;
 }
 
 .indicadores span.ativo {
   background: #2499C7;
 }
 
-.bot
-{
+.botao-navegacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #2499C7;
+  cursor: pointer;
+  color: #2499C7;
+  font-size: 20px;
+  font-weight: bold;
+  flex-shrink: 0;
+  z-index: 10;
+  position: absolute; /* O segredo: tira os botões do fluxo de layout */
+  top: 50%;
+  transform: translateY(-50%); /* Centraliza verticalmente */
+ 
+}
+
+.botao-navegacao.anterior {
+left: -60px; /* Ajusta a posição para que a borda do botão fique alinhada com os cards */
 display: flex;
 width: 50px;
 height: 50px;
@@ -99,13 +111,28 @@ border-radius: 10px;
 border: 1px solid #2499C7;
 }
 
+.botao-navegacao.proximo {
+right: -50px; /* Ajusta a posição para que a borda do botão fique alinhada com os cards */
+
+display: flex;
+width: 50px;
+height: 50px;
+justify-content: center;
+align-items: center;
+gap: 5px;
+cursor: pointer;
+
+border-radius: 10px;
+border: 1px solid #2499C7;
+}
+
+app-cardPadrao {
+  flex-shrink: 0;
+  width: calc((100% - (4 * 15px)) / 5);
+}
+
 button:hover {
   background: #006691;
   color: #fff;
 }
 
-#titulo
-{
-    display: flex;
-    
-}
