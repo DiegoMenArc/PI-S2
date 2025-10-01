@@ -1,3 +1,46 @@
+/* Adicione o estilo para o overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente */
+    z-index: 999; /* Abaixo do menu */
+    display: none; /* Escondido por padrão */
+}
+
+.overlay.visivel {
+    display: block; /* Visível quando o menu está aberto */
+}
+
+/* Adicione um novo estilo para o cabeçalho do menu, se necessário, para alinhar o X */
+#menu-header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.titulo-menu {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--azul3); /* Ou a cor que você preferir */
+}
+
+.botao-fechar {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+
+.botao-fechar:hover {
+    color: #666;
+}
+
 /* menu.component.css */
 #menu-container {
   position: fixed;

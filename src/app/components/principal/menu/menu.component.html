@@ -1,4 +1,6 @@
 <main>
+  <div class="overlay" [class.visivel]="visivel" (click)="fechar()"></div>
+
     <div id="menu-container" [class.aberto]="visivel">
         <div id="menu-topo">
             <div id="icone-circulo"><span id="icone-usuario"><img src="/icons/perfil.svg" alt="Icone do perfil"></span></div>
@@ -7,6 +9,11 @@
                 <button id="btnCadastrar">Cadastrar</button>
             </div>
         </div>
+
+        <div id="menu-header-flex">
+                <span class="titulo-menu">Olá, Paulo</span>
+                <button class="botao-fechar" (click)="fechar()">X</button>
+            </div>
 
         <div id="menu-lateral">
             <button id="btnCarrinho"><span class="icone"><img src="icons/carrinhoAmarelo.svg" alt="Carrinho"></span> Minhas compras</button>
