@@ -4,7 +4,7 @@ width: 1440px;
 height: 3431px;
 flex-direction: column;
 align-items: flex-start;
-gap: 10px;
+
 
 background: var(--fundo-mais-escuro, #F7F7F7);
 }

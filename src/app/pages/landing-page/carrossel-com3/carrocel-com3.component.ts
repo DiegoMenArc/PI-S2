@@ -3,18 +3,14 @@ import { CommonModule } from '@angular/common';
 import { CardPadraoComponent } from '../../../components/card-padrao/card-padrao.component';
 
 @Component({
-  selector: 'app-visto-recente',
+  selector: 'app-carrocel-com3',
   imports: [CommonModule, CardPadraoComponent],
-  templateUrl: './visto-recente.component.html',
-  styleUrl: './visto-recente.component.css'
+  templateUrl: './carrocel-com3.component.html',
+  styleUrl: './carrocel-com3.component.css'
 })
-export class VistoRecenteComponent {
+export class CarrocelCom3Component {
+
   produtos = [
-    { imagem: 'image 24.png'},
-    { imagem: 'image 24.png'},
-    { imagem: 'image 24.png'},
-    { imagem: 'image 24.png'},
-    { imagem: 'image 24.png'},
     { imagem: 'image 24.png'},
     { imagem: 'image 24.png'},
     { imagem: 'image 24.png'},
@@ -27,7 +23,7 @@ export class VistoRecenteComponent {
   ];
 
   paginaAtual = 0;
-  produtosPorPagina = 5;
+  produtosPorPagina = 3;
 
   totalPaginas() {
     return Math.ceil(this.produtos.length / this.produtosPorPagina);
@@ -50,4 +46,3 @@ export class VistoRecenteComponent {
     return this.produtos.slice(inicio, inicio + this.produtosPorPagina);
   }
 }
-2

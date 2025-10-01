@@ -9,6 +9,7 @@ import { CardPromocaoComponent } from './card-promocao/card-promocao.component';
 import { VistoRecenteComponent } from './visto-recente/visto-recente.component';
 import { BotaoMenuComponent } from '../../components/principal/menu/botao-menu/botao-menu.component';
 import { BotaoHeaderComponent } from '../../components/principal/botao-header/botao-header.component';
+import { CarrosselOfertasComponent } from './carrossel-ofertas/carrossel-ofertas.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -22,7 +23,9 @@ import { BotaoHeaderComponent } from '../../components/principal/botao-header/bo
     VistoRecenteComponent,
     BotaoMenuComponent,
     BotaoHeaderComponent,
-    CommonModule // Importação correta aqui
+    CommonModule,
+    CarrosselOfertasComponent,
+    // Importação correta aqui
   ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css'
