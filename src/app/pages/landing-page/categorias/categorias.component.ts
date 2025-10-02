@@ -1,26 +1,36 @@
 import { Component } from '@angular/core';
 
-
-
 @Component({
   selector: 'app-categorias',
-  imports: [],
   templateUrl: './categorias.component.html',
-  styleUrl: './categorias.component.css',
+  styleUrls: ['./categorias.component.css'],
 })
-export class CategoriasComponent 
-{
-  paginaAtual = 0;
+export class CategoriasComponent {
+  paginaAtual = 1; // começamos na primeira página real
+  totalPaginas = 2; // número de páginas reais
+  transition = 'transform 0.6s ease-in-out';
 
   proximo() {
-    if (this.paginaAtual < 1) {
-      this.paginaAtual++;
-    }
+    this.paginaAtual++;
   }
 
   anterior() {
-    if (this.paginaAtual > 0) {
-      this.paginaAtual--;
+    this.paginaAtual--;
+  }
+
+  ajustarLoop() {
+    // Se passou do último clone → volta para primeira real
+    if (this.paginaAtual > this.totalPaginas) {
+      this.transition = 'none';
+      this.paginaAtual = 1;
+      setTimeout(() => (this.transition = 'transform 0.6s ease-in-out'));
+    }
+
+    // Se passou do clone inicial → volta para última real
+    if (this.paginaAtual === 0) {
+      this.transition = 'none';
+      this.paginaAtual = this.totalPaginas;
+      setTimeout(() => (this.transition = 'transform 0.6s ease-in-out'));
     }
   }
 }

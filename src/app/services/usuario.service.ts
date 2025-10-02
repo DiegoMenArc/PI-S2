@@ -4,9 +4,17 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UsuarioService {
-  usuario=""
+  usuario = "";
 
-  fazerLogin(){
-    this.usuario = "Valdir"
+  fazerLogin() {
+    this.usuario = "Valdir";
+  }
+
+  fazerLogout() {
+    this.usuario = "";
+  }
+
+  estaLogado(): boolean {
+    return this.usuario !== "";
   }
 }

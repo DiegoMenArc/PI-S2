@@ -112,6 +112,27 @@ background-color: #1d83aa;
 color: #fff;
 }
 
+#btnSair {
+  width: 140px;
+  height: 40px;
+  background: #ff4d4d; 
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 13px;
+  transition: background 0.3s ease;
+  display: flex;             
+  align-items: center;       
+  justify-content: center;   
+  gap: 8px;
+}
+
+#btnSair:hover {
+  background-color: #cc0000; 
+  color: #fff;
+}
+
 #menu-lateral {
 margin-top: 20px;
 display: flex;
