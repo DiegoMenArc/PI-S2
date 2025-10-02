@@ -18,9 +18,15 @@
     </div>
 
     <div id="menu-login">
-      <button id="btnEntrar" routerLink="/login" (click)="fechar()">Entrar</button>
-      <button id="btnCadastrar" routerLink="/login" (click)="fechar()">Cadastrar</button>
-    </div>
+  <ng-container *ngIf="!usuarioLogado; else logado">
+    <button id="btnEntrar" routerLink="/login" (click)="fechar()">Entrar</button>
+    <button id="btnCadastrar" routerLink="/login" (click)="fechar()">Cadastrar</button>
+  </ng-container>
+
+  <ng-template #logado>
+    <button id="btnSair" (click)="logout()"><img src="/icons/perfilLogout.svg" alt="Icone do perfil">Sair</button>
+  </ng-template>
+</div>
 
     <div id="menu-lateral">
       <button id="btnCarrinho">
