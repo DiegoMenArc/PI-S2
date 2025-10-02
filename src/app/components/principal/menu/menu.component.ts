@@ -1,6 +1,7 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { UsuarioService } from '../../../services/usuario.service'; // ajuste o caminho conforme sua pasta
 
 @Component({
     selector: 'app-menu',
@@ -15,11 +16,18 @@ export class MenuComponent {
 
     submenuAberto = false;
 
+    // injetando o serviço
+    _usuarioAtual = inject(UsuarioService);
+
     toggleSubmenu() {
         this.submenuAberto = !this.submenuAberto;
     }
 
     fechar() {
         this.fecharMenu.emit();
+    }
+
+    get usuarioLogado() {
+        return this._usuarioAtual.usuario;
     }
 }

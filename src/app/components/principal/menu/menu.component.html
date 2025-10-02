@@ -7,14 +7,19 @@
         <div id="icone-circulo-grande">
           <img src="/icons/perfil.svg" alt="Icone do perfil">
         </div>
-        <span class="titulo-menu">Olá, Paulo</span>
+        <span class="titulo-menu" *ngIf="usuarioLogado; else semLogin">
+          Olá, {{ usuarioLogado }}
+        </span>
+        <ng-template #semLogin>
+          <span class="titulo-menu">Bem-vindo</span>
+        </ng-template>
       </div>
       <button class="botao-fechar" (click)="fechar()">X</button>
     </div>
 
     <div id="menu-login">
-      <button id="btnEntrar">Entrar</button>
-      <button id="btnCadastrar">Cadastrar</button>
+      <button id="btnEntrar" routerLink="/login" (click)="fechar()">Entrar</button>
+      <button id="btnCadastrar" routerLink="/login" (click)="fechar()">Cadastrar</button>
     </div>
 
     <div id="menu-lateral">
