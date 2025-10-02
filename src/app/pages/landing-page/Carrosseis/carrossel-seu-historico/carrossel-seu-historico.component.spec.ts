@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CarrocelSeuHistoricoComponent } from './carrocel-seu-historico.component';
+import { CarrocelSeuHistoricoComponent } from './carrossel-seu-historico.component';
 
 describe('CarrocelSeuHistoricoComponent', () => {
   let component: CarrocelSeuHistoricoComponent;

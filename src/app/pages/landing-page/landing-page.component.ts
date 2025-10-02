@@ -11,7 +11,7 @@ import { BotaoHeaderComponent } from '../../components/principal/botao-header/bo
 import { CarrosselOfertasComponent } from './Carrosseis/carrossel-ofertas/carrossel-ofertas.component';
 import { CarrosselMaisAcessadosComponent } from './Carrosseis/carrossel-mais-acessados/carrossel-mais-acessados.component';
 import { MaisVendidosComponent } from './Carrosseis/mais-vendidos/mais-vendidos.component';
-import { CarrocelSeuHistoricoComponent } from './Carrosseis/carrocel-seu-historico/carrocel-seu-historico.component';
+import { CarrocelSeuHistoricoComponent } from './Carrosseis/carrossel-seu-historico/carrossel-seu-historico.component';
 import { CategoriasComponent } from './categorias/categorias.component';
 
 @Component({

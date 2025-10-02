@@ -5,8 +5,8 @@ import { CardPadraoComponent } from '../../../../components/card-padrao/card-pad
 @Component({
   selector: 'app-carrocel-seu-historico',
   imports: [CommonModule, CardPadraoComponent],
-  templateUrl: './carrocel-seu-historico.component.html',
-  styleUrl: './carrocel-seu-historico.component.css'
+  templateUrl: './carrossel-seu-historico.component.html',
+  styleUrl: './carrossel-seu-historico.component.css'
 })
 export class CarrocelSeuHistoricoComponent {
 
