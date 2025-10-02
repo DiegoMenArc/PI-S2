@@ -1,1 +1,74 @@
-<p>adm-add works!</p>
+
+<main>
+    <app-nav class="teste"></app-nav>   
+    <div class="groupPrincipal">
+        <app-adm-header></app-adm-header>
+        <section>
+            <div class="titulo">
+                <h1>Produtos</h1>
+                <app-breadcumbs [pages]="paginas"></app-breadcumbs>
+            </div>
+            <div class="groupCards">
+                <form #produtoForm="ngForm" class="formCard">
+                    <h2>informações do Produto</h2>
+
+                    <div class="input">
+                        <p>Nome do produto</p>
+                        <input type="text" name="usuario" [(ngModel)]="usuario" >
+                    </div>
+                    <div class="input">
+                        <p>Nome do produto</p>
+                        <input type="text" name="usuario" [(ngModel)]="usuario" >
+                    </div>
+                    
+                    <div class="inputsDiv">
+                        <div class="input">
+                            <p>Nome do produto</p>
+                            <input type="text" name="usuario" [(ngModel)]="usuario" >
+                        </div>
+                        <div class="input">
+                            <p>Nome do produto</p>
+                            <input type="text" name="usuario" [(ngModel)]="usuario" >
+                        </div>              
+                    </div>
+                
+                    <div class="inputsDiv">
+                        <div class="input">
+                            <p>Nome do produto</p>
+                            <input type="text" name="usuario" [(ngModel)]="usuario" >
+                        </div>
+                        <div class="input">
+                            <p>Nome do produto</p>
+                            <input type="text" name="usuario" [(ngModel)]="usuario" >
+                        </div>              
+                    </div>
+
+                    <div class="input">
+                        <p>Nome do produto</p>
+                        <input type="text" name="usuario" [(ngModel)]="usuario" >
+                    </div>
+                </form>
+
+                <div class="groupDireita">
+                    <form #produtoForm="ngForm" class="formCard">
+                        <h2>Especificações do produto</h2>
+
+                        <div class="input">
+                            <p>Nome do produto</p>
+                            <input type="text" name="usuario" [(ngModel)]="usuario" >
+                        </div>
+                    </form>
+                    <form #produtoForm="ngForm" class="formCard">
+                        <h2>Especificações do produto</h2>
+
+                        <div class="input">
+                            <p>Nome do produto</p>
+                            <input type="text" name="usuario" [(ngModel)]="usuario" >
+                        </div>
+                    </form>
+                    <button>Adicionar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>

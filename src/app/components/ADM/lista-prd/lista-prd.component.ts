@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-lista-prd',
-  imports: [],
+  imports: [ RouterLink ],
   templateUrl: './lista-prd.component.html',
   styleUrl: './lista-prd.component.css'
 })

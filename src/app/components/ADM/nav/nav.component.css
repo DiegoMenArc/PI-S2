@@ -2,7 +2,9 @@
     color: var(--branco);
     font-family: "Montserrat", "Sans-serif";
     width: 15vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #2499C7;
 }
 
 .nav-head {
@@ -24,21 +26,15 @@
 }
 
 .nav-lista {
-    height: 90vh;
-
     display: flex;
-    padding: 2vw 2vh;
+    padding: 1vw 1vh;
     flex-direction: column;
     align-items: flex-start;
-    
-    background-color: #2499C7;
 }
 
 .listador{
     display: flex;
     flex-direction: column; 
-    width: fit-content;
-    gap: 3vh;
     padding: 10% 5%;
 }
 
@@ -47,9 +43,9 @@
 }
 
 .listador li{
+    padding: 10px ;
     display: flex;
     flex-direction: row;
-    align-self: stretch;
     gap: 1vw;   
 }
 
@@ -57,7 +53,6 @@
     background-color: var(--azul4);
     width: fit-content;
     border-radius: 20px;
-    padding: 1vh 1vw;
     cursor: pointer;
 }
 
