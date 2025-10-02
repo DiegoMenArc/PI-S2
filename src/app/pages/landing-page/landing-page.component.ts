@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
 
-import { HeaderComponent } from '../../components/principal/header/header.component';
+import { MenuHeaderComponent } from '../../components/principal/menu-header/menu-header.component';
 import { FooterComponent } from '../../components/principal/footer/footer.component';
 import { CarrosselComponent } from "../../components/carrossel/carrossel.component";
 import { CarrosselMarcaComponent } from "./pages/carrossel-marca/carrossel-marca.component";
@@ -14,7 +14,7 @@ import { CarrosselOfertasComponent } from './carrossel-ofertas/carrossel-ofertas
 @Component({
   selector: 'app-landing-page',
   imports: [
-    HeaderComponent,
+    MenuHeaderComponent,
     FooterComponent,
     CarrosselComponent,
     CarrosselMarcaComponent,
@@ -30,17 +30,5 @@ import { CarrosselOfertasComponent } from './carrossel-ofertas/carrossel-ofertas
   styleUrl: './landing-page.component.css'
 })
 export class LandingPageComponent {
-  mostrarCard: boolean = false;
-
-  toggleCard() {
-    this.mostrarCard = !this.mostrarCard;
-  }
-
-  abrirCard() {
-    this.mostrarCard = true;
-  }
-
-  fecharCard() {
-    this.mostrarCard = false;
-  }
+  
 }
