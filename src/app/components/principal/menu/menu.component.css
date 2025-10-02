@@ -53,7 +53,7 @@
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background: var(--amarelo); 
+    background: #2499c7; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,12 +103,18 @@
 #btnCadastrar {
     width: 165px;
     height: 50px;
-    background: #006691;
-    color: #fff;
+    background: #f5f50c;
+    color: #000;
     border: none;
     font-weight: bold;
     cursor: pointer;
     border-radius: 13px;
+}
+
+#btnEntrar:hover, #btnCadastrar:hover{
+
+  background-color: #1d83aa;
+  color: #fff;
 }
 
 /* Menu lateral */
