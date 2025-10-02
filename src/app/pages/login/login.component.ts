@@ -19,7 +19,7 @@ export class LoginComponent {
 
   verificarLink(e:any){
     if(e.form.value.usuario === "admin" && e.form.value.senha === "1234" ){
-      return "/adm";
+      return "/adm/produto";
     }
     else if(e.form.value.usuario=== "valdir" && e.form.value.senha === "1234"){
       this._usuarioAtual.fazerLogin();
