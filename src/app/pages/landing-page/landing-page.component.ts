@@ -12,6 +12,7 @@ import { CarrosselOfertasComponent } from './Carrosseis/carrossel-ofertas/carros
 import { CarrosselMaisAcessadosComponent } from './Carrosseis/carrossel-mais-acessados/carrossel-mais-acessados.component';
 import { MaisVendidosComponent } from './Carrosseis/mais-vendidos/mais-vendidos.component';
 import { CarrocelSeuHistoricoComponent } from './Carrosseis/carrocel-seu-historico/carrocel-seu-historico.component';
+import { CategoriasComponent } from './categorias/categorias.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -29,6 +30,7 @@ import { CarrocelSeuHistoricoComponent } from './Carrosseis/carrocel-seu-histori
     CarrosselMaisAcessadosComponent,
     MaisVendidosComponent,
     CarrocelSeuHistoricoComponent,
+    CategoriasComponent,
     // Importação correta aqui
   ],
   templateUrl: './landing-page.component.html',
