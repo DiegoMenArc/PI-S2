@@ -63,6 +63,7 @@ line-height: normal;
 }
 
 .indicadores {
+  width: 65px;
   display: flex;
   gap: 5px;
 }
