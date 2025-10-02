@@ -5,21 +5,7 @@
     <button class="botao-nav esq" (click)="anterior()">◀</button>
 
     <div class="carrossel-janela">
-      <div
-        class="carrossel-faixa"
-        [style.transform]="'translateX(-' + paginaAtual * 100 + '%)'"
-        [style.transition]="transition"
-        (transitionend)="ajustarLoop()"
-      >
-        <!-- Clone da última página -->
-        <div class="pagina">
-          <button class="categoria">Peões</button>
-          <button class="categoria">Veículos</button>
-          <button class="categoria">Esportes</button>
-          <button class="categoria">Infláveis</button>
-        </div>
-
-        <!-- Página 1 -->
+      <div class="carrossel-faixa" [style.transform]="'translateX(-' + paginaAtual * 50 + '%)'">
         <div class="pagina">
           <button class="categoria">Clássicos</button>
           <button class="categoria">Articuláveis</button>
@@ -27,15 +13,13 @@
           <button class="categoria">Blocos de Construção</button>
         </div>
 
-        <!-- Página 2 -->
         <div class="pagina">
           <button class="categoria">Peões</button>
           <button class="categoria">Veículos</button>
           <button class="categoria">Esportes</button>
           <button class="categoria">Infláveis</button>
         </div>
-
-        <!-- Clone da primeira página -->
+        
         <div class="pagina">
           <button class="categoria">Clássicos</button>
           <button class="categoria">Articuláveis</button>
@@ -44,7 +28,7 @@
         </div>
       </div>
     </div>
-
+    
     <button class="botao-nav dir" (click)="proximo()">▶</button>
   </div>
 </div>
