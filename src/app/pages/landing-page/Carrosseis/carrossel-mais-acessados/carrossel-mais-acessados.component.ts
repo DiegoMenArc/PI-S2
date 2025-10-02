@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardPadraoComponent } from '../../../components/card-padrao/card-padrao.component';
+import { CardPadraoComponent } from '../../../../components/card-padrao/card-padrao.component';
 
 @Component({
-  selector: 'app-visto-recente',
+  selector: 'app-carrossel-mais-acessados',
   imports: [CommonModule, CardPadraoComponent],
-  templateUrl: './visto-recente.component.html',
-  styleUrl: './visto-recente.component.css'
+  templateUrl: './carrossel-mais-acessados.component.html',
+  styleUrl: './carrossel-mais-acessados.component.css'
 })
-export class VistoRecenteComponent {
+export class CarrosselMaisAcessadosComponent {
   produtos = [
     { imagem: 'image 24.png'},
     { imagem: 'image 24.png'},
@@ -48,5 +48,5 @@ export class VistoRecenteComponent {
   get produtosPaginaAtual() {
     const inicio = this.paginaAtual * this.produtosPorPagina;
     return this.produtos.slice(inicio, inicio + this.produtosPorPagina);
-  }
+}
 }

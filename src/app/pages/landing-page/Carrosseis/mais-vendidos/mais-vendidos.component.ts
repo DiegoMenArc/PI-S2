@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardPadraoComponent } from '../../../components/card-padrao/card-padrao.component';
+import { CardPadraoComponent } from '../../../../components/card-padrao/card-padrao.component';
 
 @Component({
-  selector: 'app-visto-recente',
+  selector: 'app-mais-vendidos',
   imports: [CommonModule, CardPadraoComponent],
-  templateUrl: './visto-recente.component.html',
-  styleUrl: './visto-recente.component.css'
+  templateUrl: './mais-vendidos.component.html',
+  styleUrl: './mais-vendidos.component.css'
 })
-export class VistoRecenteComponent {
+export class MaisVendidosComponent {
+
   produtos = [
     { imagem: 'image 24.png'},
     { imagem: 'image 24.png'},

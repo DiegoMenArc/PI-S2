@@ -5,6 +5,7 @@
   align-items: flex-start;
   padding: 80px 0;
   background-color: #ffffff;
+ 
 }
 
 /* Container do conteúdo. Distribui o espaço entre os blocos. */
@@ -15,6 +16,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 80px;
+  
 }
 
 /* Bloco do card solitário (à esquerda) */
@@ -24,13 +26,25 @@
   align-items: flex-start;
   gap: 15px;
   flex-shrink: 0;
+  padding: 5px;
+  position: relative;
+  right: 5px;
+  
+  right: 35px;
 }
 
-#card-sozinho h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #333;
-  margin: 0;
+
+p
+{
+margin: 0 auto;
+color: #000;
+align-self: stretch;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 
 /* Bloco do carrossel (à direita) */
@@ -140,7 +154,3 @@ app-carrocel-com3
     width: 180%;
 }
 
-app-cardPadrao
-{
-    
-}

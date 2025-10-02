@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardPadraoComponent } from '../../../components/card-padrao/card-padrao.component';
+import { CardPadraoComponent } from '../../../../components/card-padrao/card-padrao.component';
 
 @Component({
   selector: 'app-carrocel-com3',

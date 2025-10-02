@@ -1,0 +1,26 @@
+<div class="container-carrossel">
+  <div class="cabecalho-carrossel">
+    <div class="textos-cabecalho">
+      <p class="titulo-carrossel">Seu histórico</p>
+      <p class="link-carrossel">Ir para meu histórico de navegação</p>
+    </div>
+
+    <div class="indicadores">
+      <span *ngFor="let i of [].constructor(totalPaginas()); let idx = index"
+            (click)="irParaPagina(idx)"
+            [class.ativo]="idx === paginaAtual">
+      </span>
+    </div>
+  </div>
+
+  <div class="conteudo-carrossel">
+    <button class="botao-navegacao anterior" (click)="anterior()">◀</button>
+
+    <!-- Aqui adicionei a classe "animar" -->
+    <div class="slide-carrossel animar">
+      <app-cardPadrao *ngFor="let produto of produtosPaginaAtual"></app-cardPadrao>
+    </div>
+
+    <button class="botao-navegacao proximo" (click)="proximo()">▶</button>
+  </div>
+</div><p>carrocel-seu-historico works!</p>
