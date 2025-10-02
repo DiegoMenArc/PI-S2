@@ -1,39 +1,146 @@
-#carrossel
-{
-display: flex;
-height: 471px;
-padding: 0 129px;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
+/* Container principal. Centraliza o conteúdo. */
+#carrossel {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 0;
+  background-color: #ffffff;
 }
 
-#carrossel2
-{
-display: flex;
-width: 1182px;
-justify-content: center;
-align-items: center;
-gap: 100px;
+/* Container do conteúdo. Distribui o espaço entre os blocos. */
+#carrossel2 {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
 }
 
-#card-sozinho
-{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-gap: 9px;
-align-self: stretch;
+/* Bloco do card solitário (à esquerda) */
+#card-sozinho {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
 }
 
-#naosei
+#card-sozinho h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+/* Bloco do carrossel (à direita) */
+#naosei {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  position: relative; /* Importante para o posicionamento das setas */
+}
+
+/* **Importante**: Estilos dentro do seu componente <app-carrocel-com3> */
+/* Adicione estes estilos ao CSS do seu componente, não no CSS principal */
+
+/* Container geral do carrossel */
+.carrossel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Espaço entre o cabeçalho e os cards */
+  position: relative;
+}
+
+/* Cabeçalho do carrossel (Ofertas, Mais Ofertas, pontos) */
+.carrossel-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.carrossel-header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.carrossel-header a {
+  font-size: 0.8rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.carrossel-header .dots {
+  display: flex;
+  gap: 8px;
+  margin-left: auto; /* Empurra os pontos para a direita */
+}
+
+.carrossel-header .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.carrossel-header .dot.active {
+  background-color: #007bff;
+}
+
+/* Container que envolve os cards */
+.carrossel-cards-wrapper {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden; /* Esconde o que está fora da tela */
+  position: relative;
+}
+
+/* Estilos para cada card individual */
+.carrossel-cards-wrapper .card {
+  width: 250px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 15px;
+}
+
+/* Posicionamento das setas de navegação */
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.seta.esquerda {
+  left: -20px;
+}
+
+.seta.direita {
+  right: -20px;
+}
+
+app-carrocel-com3
 {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 12px;
-flex: 1 0 0;
-align-self: stretch;
+    width: 180%;
+}
+
+app-cardPadrao
+{
+    
 }
