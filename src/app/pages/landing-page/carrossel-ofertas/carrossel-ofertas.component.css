@@ -1,0 +1,39 @@
+#carrossel
+{
+display: flex;
+height: 471px;
+padding: 0 129px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+}
+
+#carrossel2
+{
+display: flex;
+width: 1182px;
+justify-content: center;
+align-items: center;
+gap: 100px;
+}
+
+#card-sozinho
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 9px;
+align-self: stretch;
+}
+
+#naosei
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 12px;
+flex: 1 0 0;
+align-self: stretch;
+}
