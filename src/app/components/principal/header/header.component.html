@@ -17,7 +17,9 @@
     </div>
 
     <div class="inferior">
-        <a href="#" (click)="abrirMenu()"><img src="icons/menu.svg" alt="Menu"></a>
+        <button type="button" class="menu-btn" (click)="abrirMenuEvent.emit()">
+            <img src="icons/menu.svg" alt="Menu">
+        </button>
         <nav>
             @for (elemento of elementos; track elemento.nome){
                 <app-botao-header [nome]="elemento.nome"></app-botao-header>
@@ -26,5 +28,3 @@
         <div></div>
     </div>
 </div>
-
-<app-menu [visivel]="menuAberto" (fecharMenu)="fecharMenu()"></app-menu>

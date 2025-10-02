@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 
 //Paginas 
 
+import { MenuHeaderComponent } from './components/principal/menu-header/menu-header.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { ProdutoComponent } from './pages/produto/produto.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -12,12 +13,18 @@ import { AdmAddComponent } from './pages/adm/adm-add/adm-add.component';
 import { AdmComponent } from './pages/adm/adm.component';
 
 export const routes: Routes = [
-    { path: '', component: LandingPageComponent},
-    { path: 'produto', component: ProdutoComponent},
-    { path: 'login', component: LoginComponent},
-    { path: 'busca/:busca', component: BuscaComponent},
-    { path: 'usuario/:id/informacoes', component: InfoUserComponent},
-    { path: 'adm', component: AdmComponent},
-    { path: 'adm/edit', component: AdmEditComponent},
-    { path: 'adm/add', component: AdmAddComponent}
+  {
+    path: '',
+    component: MenuHeaderComponent, 
+    children: [
+      { path: '', component: LandingPageComponent },
+      { path: 'produto', component: ProdutoComponent },
+      { path: 'busca/:busca', component: BuscaComponent }
+    ]
+  },
+  { path: 'login', component: LoginComponent },
+  { path: 'usuario/:id/informacoes', component: InfoUserComponent },
+  { path: 'adm', component: AdmComponent },
+  { path: 'adm/edit', component: AdmEditComponent },
+  { path: 'adm/add', component: AdmAddComponent }
 ];

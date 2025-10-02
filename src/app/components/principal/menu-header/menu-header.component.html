@@ -1,0 +1,7 @@
+<app-header (abrirMenuEvent)="abrirMenu()"></app-header>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
+
+<app-menu [visivel]="menuAberto" (fecharMenu)="fecharMenu()"></app-menu>
