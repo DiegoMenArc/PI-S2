@@ -14,38 +14,39 @@
 
                     <div class="input">
                         <p>Nome do produto</p>
-                        <input type="text" name="usuario" [(ngModel)]="usuario" > //input em componente
+                        <input type="text" name="nome" [(ngModel)]="produto.nome" placeholder="Digite o nome">
+                         <!-- //input em componente -->
                     </div>
                     <div class="input">
-                        <p>Nome do produto</p>
-                        <input type="text" name="usuario" [(ngModel)]="usuario" >
+                        <p>Descrição do produto</p>
+                        <input type="text" name="descricao" [(ngModel)]="produto.descricao" placeholder="Digite a descrição">
                     </div>
                     
                     <div class="inputsDiv">
                         <div class="input">
-                            <p>Nome do produto</p>
-                            <input type="text" name="usuario" [(ngModel)]="usuario" >
+                            <p>Quantidade</p>
+                            <input type="text" name="quantidade" [(ngModel)]="produto.qtd" placeholder="Digite a quantidade">
                         </div>
                         <div class="input">
-                            <p>Nome do produto</p>
-                            <input type="text" name="usuario" [(ngModel)]="usuario" >
+                            <p>Preço</p>
+                            <input type="text" name="preco" [(ngModel)]="produto.preco" placeholder="Digite o preço">
                         </div>              
                     </div>
                 
                     <div class="inputsDiv">
                         <div class="input">
-                            <p>Nome do produto</p>
-                            <input type="text" name="usuario" [(ngModel)]="usuario" >
+                            <p>Ano de lançamento</p>
+                            <input type="text" name="lancamento" [(ngModel)]="produto.anoLancamento" placeholder="Digite o ano de lançamento">
                         </div>
                         <div class="input">
-                            <p>Nome do produto</p>
-                            <input type="text" name="usuario" [(ngModel)]="usuario" >
+                            <p>Marca</p>
+                            <input type="text" name="marca" [(ngModel)]="produto.marca" placeholder="Digite a marca">
                         </div>              
                     </div>
 
                     <div class="input">
-                        <p>Nome do produto</p>
-                        <input type="text" name="usuario" [(ngModel)]="usuario" >
+                        <p>Categoria</p>
+                        <input type="text" name="categoria" [(ngModel)]="produto.categoria" placeholder="Digite o nome">
                     </div>
                 </form>
 
@@ -53,20 +54,51 @@
                     <form #produtoForm="ngForm" class="formCard">
                         <h2>Especificações do produto</h2>
 
-                        <div class="input">
-                            <p>Nome do produto</p>
-                            <input type="text" name="usuario" [(ngModel)]="usuario" >
-                        </div>
+                        @for(especificacao of produto.especificacoes; track $index){
+                            <div class="inputsDiv">
+                                <div class="input">
+                                    <p>Categoria</p>
+                                    <input type="text" name="especificao" [(ngModel)]="especificacao.especificacao" placeholder="Digite a categoria">
+                                </div>
+                                <div class="input">
+                                    <p>Valor</p>
+                                    <input type="text" name="valor" [(ngModel)]="especificacao.valor" placeholder="Digite o valor">
+                                </div>              
+                            </div>   
+                        }
+
+                        <button class="add-button" (click)="addEspecificacao()"><p>Adicionar Especificação </p><img src="icons/adm/add-white-icon.svg" alt=""></button>
                     </form>
                     <form #produtoForm="ngForm" class="formCard">
-                        <h2>Especificações do produto</h2>
+                        <h2>Imagens do produto</h2>
 
-                        <div class="input">
-                            <p>Nome do produto</p>
-                            <input type="text" name="usuario" [(ngModel)]="usuario" >
+                        <div class="imgs-prd">
+                            <div class="molduras">
+                                <div class="moldura 1">
+                                    <img src="icons/adm/img-frame-icon.svg" alt="">
+                                    Img 1
+                                </div>
+                                <div class="moldura 2">
+                                    <img src="icons/adm/img-frame-icon.svg" alt="">
+                                    Img 2
+                                </div>
+                                <div class="moldura 3">
+                                    <img src="icons/adm/img-frame-icon.svg" alt="">
+                                    Img 3
+                                </div>
+                                <div class="moldura 4">
+                                    <img src="icons/adm/img-frame-icon.svg" alt="">
+                                    Img 4
+                                </div>
+                                <div class="moldura 4">
+                                    <img src="icons/adm/img-frame-icon.svg" alt="">
+                                    Img 5
+                                </div>
+
+                            </div>
                         </div>
                     </form>
-                    <button class="add-button">Adicionar <img src="icons/adm/add-white-icon.svg" alt=""></button>
+                    <button class="add-button" routerLink="/adm/produto" (click)="addProd()">Adicionar <img src="icons/adm/add-white-icon.svg" alt=""></button>
                 </div>
             </div>
         </section>
