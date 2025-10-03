@@ -2,3 +2,12 @@
     display: flex;
     flex-direction: row;
 }
+.col2{
+    display: flex;
+    flex-direction: column;
+}
+
+.cont{
+    display: flex;
+    width: 1000px;
+}

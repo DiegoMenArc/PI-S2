@@ -11,3 +11,10 @@
 .nav{
     height: 100vh;    
 }
+
+.secao-head{
+    display: flex;
+    flex-direction: column;
+    margin: 0 1vw;
+    margin: 1rem 1vw;
+}
