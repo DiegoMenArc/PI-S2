@@ -1,8 +1,8 @@
 <div class="group">
-    <ngx-slick-carousel class="carousel" 
-                        #slickModal="slick-carousel" 
+    <ngx-slick-carousel class="carousel"
+                        #slickModal="slick-carousel"
                         [config]="slideConfig">
-        @for (slide of slides; track slide.img) {
+        @for (slide of slides; track $index) {
             <app-cardPadrao ngxSlickItem> </app-cardPadrao>
         }
     </ngx-slick-carousel>

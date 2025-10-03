@@ -8,6 +8,7 @@
   margin: 50px auto 100px auto;
   position: relative;
   background: white;  /* só pra testar */
+  margin-bottom: 15px;
 }
 
 #carrossel-imagem {

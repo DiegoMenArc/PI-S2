@@ -1,16 +1,16 @@
 <main>
-    <app-breadcumbs [pages]="['Home', _buscaService.buscaAtual]"></app-breadcumbs>
+    <app-breadcumbs [pages]="['Home', busca()]"></app-breadcumbs>
     <div class="group">
         <div class="filtro">
             <div>
-                <h3>{{_buscaService.buscaAtual}}</h3>
+                <h3>{{busca()}}</h3>
                 <p>300 resultados</p>
             </div>
 
             <div class="group_input">
                 <h3>Anos</h3>
                 <div class="inputs">
-                    @for(ano of anos; track ano){
+                    @for(ano of anos; track $index){
                         <div class="input">
                             <input type="checkbox">
                             <p>{{ano}}</p>
@@ -22,7 +22,7 @@
             <div class="group_input">
                 <h3>Categorias</h3>
                 <div class="inputs">
-                    @for(categoria of categorias; track categoria){
+                    @for(categoria of categorias; track $index){
                         <div class="input">
                             <input type="checkbox">
                             <p>{{categoria}}</p>
@@ -34,7 +34,7 @@
             <div class="group_input">
                 <h3>Marcas</h3>
                 <div class="inputs">
-                    @for(marca of marcas; track marca){
+                    @for(marca of marcas; track $index){
                         <div class="input">
                             <input type="checkbox">
                             <p>{{marca}}</p>
@@ -47,7 +47,7 @@
         <div class="principal_cards">
             <h2>Resultados</h2>
             <div class="spc_card">
-                 @for(card of cards; track card.nome){
+                 @for(card of cards; track $index){
                     <app-cardPadrao></app-cardPadrao>
                 }
             </div>

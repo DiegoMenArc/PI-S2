@@ -6,7 +6,7 @@
     align-items: flex-start;
     gap: 10px;
     flex: 1 0 0;
-    
+
 
     font-family: "Montserrat", "Sans-serif";
 }
@@ -90,6 +90,7 @@
 .add-btn:hover{
     background: var(--azul3);
     cursor:pointer;
+    transition: 500ms;
 }
 
 .cont-cabecalho {
@@ -114,6 +115,7 @@
 .cont-cabecalho-nav > img:hover{
     cursor: pointer;
     transform: scale(1.2, 1.2);
+    transition: 1000ms;
 }
 
 .content-lista {
@@ -129,6 +131,7 @@
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
+    height: 100px;
 
     border-bottom: 1px solid #F7F7F7;
 }
@@ -156,7 +159,7 @@
     align-self: stretch;
     height: 4vh;
     padding: 0 1vw;
-    
+
     margin-top: 1vh;
     border-radius: 1vh;
     border: 1px solid var(--azul1);
@@ -180,13 +183,12 @@
     justify-items: center;
     justify-content: center;
     gap: 6px;
-    align-self: stretch;
 }
 
 .arrow {
     display: flex;
     padding: 4px 6px;
-    align-items: c;
+    align-items: center;
 
     border-radius: 5px;
     border: 1px solid #B0B0B0;
@@ -199,6 +201,11 @@
     gap: 1vw;
 }
 
+.sobre-prd img{
+  height: 60px;
+  width: 60px;
+}
+
 .acoes-prd img {
     width: 24px;
     height: 24px;
@@ -208,6 +215,7 @@
 .acoes-icon:hover{
     cursor: pointer;
     transform: scale(1.2, 1.2);
+    transition: 1000ms;
 }
 
 #check-prd-head{

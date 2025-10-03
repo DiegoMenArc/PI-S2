@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; 
+import { CommonModule } from '@angular/common';
 import { MenuHeaderComponent } from '../../components/principal/menu-header/menu-header.component';
 import { FooterComponent } from '../../components/principal/footer/footer.component';
 import { CarrosselComponent } from "../../components/carrossel/carrossel.component";
@@ -37,5 +37,5 @@ import { CategoriasComponent } from './categorias/categorias.component';
   styleUrl: './landing-page.component.css'
 })
 export class LandingPageComponent {
-  
+
 }

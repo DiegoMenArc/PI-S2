@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';  
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { UsuarioService } from '../../services/usuario.service';
@@ -20,11 +20,15 @@ export class LoginComponent {
 
 
   verificarLink(e:any){
-    if(e.form.value.usuario === "admin" && e.form.value.senha === "1234" ){
-      return "/adm";
+    let user = e.form.value.usuario;
+    let pass = e.form.value.senha;
+    
+    if(user === "admin" && pass === "1234" ){
+      this._usuarioAtual.fazerLogin(user);
+      return "/adm/produto";
     }
-    else if(e.form.value.usuario=== "valdir" && e.form.value.senha === "1234"){
-      this._usuarioAtual.fazerLogin();
+    else if(user === "valdir" && pass === "1234"){
+      this._usuarioAtual.fazerLogin(user);
       return "/";
     }
     else{

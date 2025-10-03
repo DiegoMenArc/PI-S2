@@ -26,6 +26,6 @@ export class HeaderComponent {
   ];
 
   caminho() {
-    return this._usuarioAtual.usuario === '' ? '/login' : '/usuario/10/informacoes';
+    return (this._usuarioAtual.usuario === 'admin') ? '/adm/produto' :(this._usuarioAtual.usuario === "")? '/login' : `/usuario/${this._usuarioAtual.usuario}/informacoes`;
   }
 }

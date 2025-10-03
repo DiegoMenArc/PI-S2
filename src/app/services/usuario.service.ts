@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 export class UsuarioService {
   usuario = "";
 
-  fazerLogin() {
-    this.usuario = "Valdir";
+  fazerLogin(usuario:string) {
+    this.usuario = usuario;
   }
 
   fazerLogout() {

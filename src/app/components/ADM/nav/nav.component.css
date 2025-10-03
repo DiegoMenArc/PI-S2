@@ -2,7 +2,9 @@
     color: var(--branco);
     font-family: "Montserrat", "Sans-serif";
     width: 15vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #2499C7;
 }
 
 .nav-head {
@@ -24,22 +26,18 @@
 }
 
 .nav-lista {
-    height: 90vh;
-
     display: flex;
-    padding: 2vw 2vh;
+    padding: 1vw 1vh;
     flex-direction: column;
     align-items: flex-start;
-    
-    background-color: #2499C7;
+    width: 100%;
 }
 
 .listador{
     display: flex;
     flex-direction: column; 
-    width: fit-content;
-    gap: 3vh;
     padding: 10% 5%;
+    width: 100%;
 }
 
 .file, .user{
@@ -47,18 +45,20 @@
 }
 
 .listador li{
+    padding: 10px ;
     display: flex;
     flex-direction: row;
-    align-self: stretch;
     gap: 1vw;   
+    width: 100%;
 }
 
 .listador li:hover{
     background-color: var(--azul4);
     width: fit-content;
     border-radius: 20px;
-    padding: 1vh 1vw;
     cursor: pointer;
+    width: 100%;
+    transition: 500ms;
 }
 
 .nav-logo {
@@ -71,4 +71,12 @@
     font-family: "Montserrat", "Sans-serif";
     font-size: 1rem;
     font-weight: 400;
+}
+
+.nav-logo{
+    cursor: pointer;
+}
+
+.nav-head img{
+    cursor: pointer;
 }

@@ -1,7 +1,7 @@
 <main>
     <h2>Resultados</h2>
     <div>
-        @for(card of cards; track card.nome){
+        @for(card of cards; track $index){
             <app-cardPadrao></app-cardPadrao>
         }
     </div>
