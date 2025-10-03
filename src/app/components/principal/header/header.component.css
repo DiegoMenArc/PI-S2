@@ -1,26 +1,23 @@
-*{
-    color: white;
-}
+* { color: white; font-family: "Montserrat";}
 
 
-
-.logo{
+.logo {
     width: 72px;
     cursor: pointer;
 }
 
-.group{
+.group {
     width: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.group img{
+.group img {
     height: 50%;
 }
 
-.superior{
+.superior {
     background-color: var(--azul3);
     padding: 10px 60px;
 
@@ -29,14 +26,14 @@
     align-items: center;
 }
 
-.cep{
+.cep {
     display: flex;
     gap: 5%;
 
     align-items: center;
 }
 
-.inferior{
+.inferior {
     background-color: var(--azul2);
     padding: 10px 60px;
 
@@ -45,37 +42,38 @@
     align-items: center;
 }
 
-.icons{
+.icons {
     display: flex;
 
     justify-content: space-between;
     width: 20%;
+    height: fit-content;
     display: flex;
 }
 
-.icons a{
+.icons a {
     width: 20px;
     height: 20px;
 }
 
-.icons a img{
-    width: 100%;
-    height: 100%;
+.icons a img {
+    width: 150%;
+    height: 150%;
 }
 
-.inferior nav{
+.inferior nav {
     display: flex;
     gap: 10px;
 }
 
 .menu-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
 
 .menu-btn img {
-  width: 24px;
-  height: 24px;
+    width: 24px;
+    height: 24px;
 }

@@ -8,12 +8,14 @@
     --azul2:    #2499C7;
     --azul3:    #176C8E;
     --azul4:    #006691;
+    --azul5:    #004563;
     --cinza1:   #A2A29D;
     --cinza2:   #444444;
     --branco:   #FFFFFF;
-    --borda:    1px solid rgba(114, 114, 114, 0.2);;
+    --borda:    1px solid rgba(115, 115, 115, 0.2);;
 
     --fundo:    #F7F7F7;
+    --fundo-escuro: rgb(25, 25, 25);
     --fontPadrao: "Montserrat", sans-serif;
     /* Fonte padrão */
 }

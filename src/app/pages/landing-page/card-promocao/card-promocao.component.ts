@@ -8,12 +8,12 @@ import { Component } from '@angular/core';
 })
 export class CardPromocaoComponent {
 
-   imagens: string[] = [
-    '/img/image 24.png',
+  imagens: string[] = [
+    '/img/furbies.jpg',
     '/img/logo.png',
-    '/img/image 24.png',
+    '/img/furbies.jpg',
     '/img/logo.png',
-    '/img/image 24.png',
+    '/img/furbies.jpg',
     '/img/logo.png'
   ];
 
@@ -35,7 +35,6 @@ export class CardPromocaoComponent {
 
   proximo(): void {
     this.indiceAtual = (this.indiceAtual + 1) % this.imagens.length;
-
   }
 
 }

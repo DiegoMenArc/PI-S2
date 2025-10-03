@@ -1,10 +1,19 @@
 /* Container do carrossel (pai de tudo) */
 .carrossel-container {
-  width: 700px;
-  margin: 0 auto;
+  width: 100%;
   text-align: center;
-  margin-bottom: 100px;
-  margin-top: 0 auto;
+  justify-content: center;
+  justify-items: center;
+  padding: 3vh 2vw;
+  margin-bottom: 2%;
+
+  border-top: 1px solid rgba(100, 100, 100, 0.2);
+  border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+  background-color: var(--fundo);
+}
+
+.conteiner-box{
+  width: 70%;
 }
 
 /* Novo contêiner para a linha de botões e carrossel */
@@ -13,7 +22,6 @@
   align-items: center; /* Alinha os itens verticalmente no centro */
   justify-content: space-between; /* Espaço entre os botões de seta e a janela */
   width: 100%; /* Ocupa a largura total do carrossel-container */
-
 }
 
 .titulo {
@@ -26,6 +34,7 @@
 /* Área visível */
 .carrossel-janela {
   overflow: hidden;
+
   flex: 1; /* Permite que a janela do carrossel ocupe o espaço restante */
   margin: 0 10px; /* Adiciona um pequeno espaço entre as setas e a janela */
 }
@@ -46,7 +55,7 @@
   grid-auto-flow: column;
   gap: 20px; /* Define o espaçamento entre os botões */
   flex: 0 0 50%;
-  width: 50%;
+  width: 20%;
   padding: 20px 0;
   box-sizing: border-box;
   justify-content: center; /* Centraliza a grade horizontalmente */

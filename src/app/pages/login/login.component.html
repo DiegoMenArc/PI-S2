@@ -2,49 +2,52 @@
 
 <main class="container">
   <div id="fundo">
-    <span class="loginTitulo">Login</span>
 
-    <div id="ngEmail">
-      <form class="loginForm" #usuarioForm="ngForm">
-        
-         <span id="tituloEmail">E-mail</span>
-        <input id="btnEmail" name="usuario" placeholder="E-mail" [(ngModel)]="usuario" required>
+    <div class="content-box">
+      <span class="loginTitulo">Login</span>
 
-         <span id="tituloSenha">Senha</span>
-        <input id="btnSenha" type="password" name="senha" placeholder="Senha" [(ngModel)]="senha" required>
-      </form>
-    </div>
+      <div id="ngEmail">
+        <form class="loginForm" #usuarioForm="ngForm">
 
-    <div id="conta">
-      <button class="btnLogin" [disabled]="!usuarioForm.form.valid" 
-              type="submit" 
-              [routerLink]="verificarLink(usuarioForm)" 
-              (click)="validar()">
-        Entrar <img src="icons/loginEntrar.svg" alt="Icone de entrar">
-      </button>
+          <span id="tituloEmail">E-mail</span>
+          <input id="btnEmail" name="usuario" placeholder="E-mail" [(ngModel)]="usuario" required>
 
-      <button class="btnCadastro" [disabled]="!usuarioForm.form.valid" 
-              type="submit" 
-              [routerLink]="verificarLink(usuarioForm)" 
-              (click)="validar()">
-        Criar conta <img src="icons/user-add.svg" alt="Icone de criar conta">
-      </button>
-    </div>
+          <span id="tituloSenha">Senha</span>
+          <input id="btnSenha" type="password" name="senha" placeholder="Senha" [(ngModel)]="senha" required>
+        </form>
+        <p class="fgt-senha">Esqueci minha senha</p>
+      </div>
 
-    <div class="divider">
-      <span>ou</span>
-    </div>
 
-    <div class="socialLogin">
-      <button><img src="icons/Icon-google.svg" alt="Google"> Google</button>
-      <button><img src="icons/facebook-icon.svg" alt="Facebook"> Facebook</button>
-    </div>
 
-    <div class="mensagemErro">
-      @if(verificar) {
+      <div id="conta">
+        <button class="btnLogin" [disabled]="!usuarioForm.form.valid" type="submit"
+          [routerLink]="verificarLink(usuarioForm)" (click)="validar()">
+          Entrar <img src="icons/loginEntrar.svg" alt="Icone de entrar">
+        </button>
+
+        <button class="btnCadastro" [disabled]="!usuarioForm.form.valid" type="submit"
+          [routerLink]="verificarLink(usuarioForm)" (click)="validar()">
+          Criar conta <img src="icons/user-add.svg" alt="Icone de criar conta">
+        </button>
+      </div>
+
+      <div class="divider">
+        <span>ou</span>
+      </div>
+
+      <div class="socialLogin">
+        <button><img src="icons/Icon-google.svg" alt="Google"> Google</button>
+        <button><img src="icons/facebook-icon.svg" alt="Facebook"> Facebook</button>
+      </div>
+
+      <div class="mensagemErro">
+        @if(verificar) {
         <p>{{credenciais}}</p>
-      }
+        }
+      </div>
     </div>
+
   </div>
 </main>
 

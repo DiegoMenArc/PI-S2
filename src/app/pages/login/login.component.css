@@ -1,17 +1,43 @@
+.conteiner{
+  font-family: "Montserrat", "Sans-serif";
+}
+
 #fundo {
   display: flex;
-  width: 720px;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 55%;
   height: auto;
   padding: 50px 120px;
-  flex-direction: column;
+  margin: 0 auto;
+
   align-items: center;
   gap: 24px;
   flex-shrink: 0;
-  justify-content: center;
+  
   border-right: 2px solid var(--azul3, #006691);
   border-left: 2px solid var(--azul3, #006691);
   background: rgba(44, 191, 255, 0.54);
+}
+
+.content-box{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2vh;
+}
+
+.fgt-senha{
+  width: fit-content;
+  align-self: center;
   margin: 0 auto;
+}
+
+.fgt-senha:hover{
+  color: var(--azul2);
+  cursor: pointer;
+  transition: 700ms;
 }
 
 .loginTitulo {
@@ -59,10 +85,11 @@
 
 #conta {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  flex-direction: row;
+  gap: 1vw;
   align-items: center;
   width: 100%;
+  padding: 0 5vw;
 }
 
 .btnLogin, .btnCadastro {
@@ -100,7 +127,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #666;
+  color: var(--azul3);
   font-size: 14px;
   width: 100%;
   margin: 20px 0;
@@ -110,7 +137,7 @@
 .divider::after {
   content: "";
   flex: 1;
-  border-bottom: 5px solid #ccc;
+  border-bottom: 3px solid var(--azul3);
 }
 
 .divider:not(:empty)::before {
@@ -125,6 +152,7 @@
   display: flex;
   justify-content: center;
   gap: 15px;
+  height: 50px;
 }
 
 .socialLogin button {

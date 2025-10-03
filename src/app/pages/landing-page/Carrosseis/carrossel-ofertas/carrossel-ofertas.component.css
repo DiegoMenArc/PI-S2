@@ -5,8 +5,6 @@
   align-items: flex-start;
   padding: 10px 0 10px 0;
   background-color: #ffffff;
-  margin-bottom: 90px;
-
 }
 
 /* Container do conteúdo. Distribui o espaço entre os blocos. */
@@ -17,7 +15,6 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 80px;
-
 }
 
 /* Bloco do card solitário (à esquerda) */
