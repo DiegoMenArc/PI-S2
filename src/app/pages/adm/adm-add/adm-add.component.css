@@ -81,18 +81,57 @@ h2{
 }
 
 .add-button{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    min-width: 192px;
+    height: 44px;
+    padding: 15px;
+    border-radius: 15px;
     border: none;
-    border-radius: 2vh;
-    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     color: white;
+    font-size: 16px;
+    font-weight: 600;
     background-color: var(--azul2);
-    
-    width: 40%;
-    height: 5vh;
-    padding: 1vh 2vw;
+    cursor: pointer;
     
     align-self: flex-end;
+}
+
+.add-button p{
+    margin-right: 10px;
+}
+
+.add-button:hover{
+    background-color: var(--azul3);
+}
+
+.imgs-prd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.molduras {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: flex-start;
+    gap: 2vw;
+    width: 100%;
+}
+
+.moldura {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    border: 1px dashed var(--Cerulean-Blue-600, #1A71F6);
+    background: var(--Cerulean-Blue-50, #EEF7FF);
 }

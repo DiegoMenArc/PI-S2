@@ -6,33 +6,33 @@
 
                 <div class="input-box nome">
                     <label for="insere-nome">{{ acoes[0] }}</label>
-                    <input type="text" name="peidador" id="insere-nome">
+                    <input type="text" name="peidador" [value]="_produtos[busca()].nome" id="insere-nome">
                 </div>
 
                 <div class="input-box nome">
                     <label for="insere-desc">{{ acoes[1] }}</label>
-                    <input type="text" name="peidador" id="insere-desc">
+                    <input type="text" name="peidador"  [value]="_produtos[busca()].descricao"  id="insere-desc">
                 </div>
 
                 <div class="input-box-valores">
                     <div class="input-box qtd">
                         <label for="insere-qtd">{{ acoes[2] }}</label>
-                        <input type="text" name="peidador" id="insere-qtd">
+                        <input type="text" name="peidador"  [value]="_produtos[busca()].qtd"  id="insere-qtd">
                     </div>
                     <div class="input-box preco">
                         <label for="insere-desc">{{ acoes[3] }}</label>
-                        <input type="text" name="peidador" id="insere-preco">
+                        <input type="text" name="peidador"  [value]="_produtos[busca()].preco"  id="insere-preco">
                     </div>
                 </div>
 
                 <div class="input-box-infos">
                     <div class="input-box anoL">
                         <label for="insere-qtd">{{ acoes[4] }}</label>
-                        <input type="text" name="peidador" id="insere-qtd">
+                        <input type="text" name="peidador"  [value]="_produtos[busca()].anoLancamento"  id="insere-qtd">
                     </div>
                     <div class="input-box marca">
                         <label for="insere-marca">{{ acoes[5] }}</label>
-                        <input type="text" name="peidador" id="insere-marca">
+                        <input type="text" name="peidador"  [value]="_produtos[busca()].marca"  id="insere-marca">
                     </div>
                 </div>
 
@@ -54,14 +54,17 @@
 
         <div class="espec-prd">
             <p>Especificações do Produto</p>
-            <div class="input-cont espec">
-                <label for="insere-esp">Especificação</label>
-                <input type="text" name="" id="insere-esp" placeholder="Informe a Especificação">
-            </div>
-            <div class="input-cont valor">
-                <label for="insere-val">Valor</label>
-                <input type="text" name="" id="insere-val" placeholder="Informe o Valor">                
-            </div>
+            @for(espec of _produtos[busca()].especificacoes; track $index)
+            {
+                <div class="input-cont espec">
+                    <label for="insere-esp">Especificação</label>
+                    <input type="text" name="" id="insere-esp" [value]="espec.especificacao" placeholder="Informe a Especificação">
+                </div>
+                <div class="input-cont valor">
+                    <label for="insere-val">Valor</label>
+                    <input type="text" name="" id="insere-val" [value]="espec.valor" placeholder="Informe o Valor">                
+                </div>
+            }
             <div >
                 <button class="espec-btn" type="submit">Adicionar Especificação <img src="icons/adm/add-blue-icon.svg" alt=""></button>
             </div>  
