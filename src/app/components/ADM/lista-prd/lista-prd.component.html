@@ -56,30 +56,32 @@
                         </div>
                     </div>
                 </div>
+                @for (produto of _produtos; track $index) {
 
                 <div class="content-lista">
                     <div class="listador-instacia">
                         <input type="checkbox" name="" id="check-prd">
                         <div class="sobre-prd">
-                            <img src="icons/adm/prd-frame.svg" alt="imagem do produto">
+                            <img [src]="getImg(produto)" alt="imagem do produto">
                             <div class="sobre-prd-txt">
-                                <p>{{codPrd}}</p>
-                                <p>{{nomeProduto}}</p>
+                                <p>{{produto.id}}</p>
+                                <p>{{produto.nome}}</p>
                             </div>
                         </div>
 
-                        <p class="prc">R${{preco}}</p>
-                        <p class="tmn">{{tamanhoPrd}}</p>
-                        <p class="qtds">{{qtdPrd}}</p>
-                        <p class="datas">{{data}}</p>
+                        <p class="prc">R${{produto.preco}}</p>
+                        <p class="tmn">{{produto.tamanho}}</p>
+                        <p class="qtds">{{produto.qtd}}</p>
+                        <p class="datas">{{produto.data}}</p>
 
                         <div class="acoes-prd">
-                            <img class="acoes-icon olho" src="icons/adm/eye.svg" alt="">
+                            <img class="acoes-icon olho" src="icons/adm/eye.svg" alt="" (click)="addProd()">
                             <img class="acoes-icon edit" src="icons/adm/edit.svg" alt="" [routerLink]="['edit']">
-                            <img class="acoes-icon lixo" src="icons/adm/trash.svg" alt="">
+                            <img class="acoes-icon lixo" src="icons/adm/trash.svg" alt="" (click)="removerProd($index)">
                         </div>
                     </div>
                 </div>
+              }
             </div>
 
             <div class="painel-bottom">

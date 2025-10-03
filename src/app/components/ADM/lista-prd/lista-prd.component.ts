@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { ProdutosService } from '../../../services/produtos.service';
 
 
 @Component({
@@ -9,6 +10,20 @@ import { RouterLink } from '@angular/router';
   styleUrl: './lista-prd.component.css'
 })
 export class ListaPrdComponent {
+    _produtosMain = inject(ProdutosService);
+    _produtos = this._produtosMain.produtos;
+
+    getImg(prod:any){
+      return prod.img[0];
+    }
+
+    addProd(){
+      this._produtosMain.adiconarProduto();
+    }
+
+    removerProd(posicao:number){
+      this._produtosMain.removerProduto(posicao);
+    }
     codPrd:number = 0;
     nomeProduto:String = "Produto Legal";
     preco:number = 0;

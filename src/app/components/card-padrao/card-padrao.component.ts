@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './card-padrao.component.css'
 })
 export class CardPadraoComponent {
-  nota = ['','','','',''];
+  nota = [' ',' ',' ',' ',' '];
 
   nome = "Casinha de brinquedo"
   valorCD = 99.00

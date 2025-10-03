@@ -14,6 +14,17 @@ export class ProdMainComponent {
 
   qtd = 1;
 
+  aumentarQtd(){
+    this.qtd++;
+    console.log(this.qtd);
+  }
+
+  diminuirQtd(){
+    if(this.qtd>=0){
+      this.qtd--;
+    }
+  }
+
   nome_prod = "Casinha de Brinquedo"
   preco = 50.00
   desc = "Uma casa de brinquedo bacana para as suas crianças entrarem no mundo da imaginação"

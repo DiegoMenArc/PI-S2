@@ -7,7 +7,7 @@
         <div class="groupNome">
             <p class=>{{nome}}</p>
             <div class="estrelas">
-                @for(n of nota  ; track nota){
+                @for(n of nota  ; track $index){
                     <img src="icons/estrela.svg" alt="">
                 }
             </div>
