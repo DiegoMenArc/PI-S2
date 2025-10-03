@@ -152,6 +152,8 @@ line-height: normal;
 
 app-carrocel-com3
 {
-    width: 180%;
+    width: 95%;
+    position: relative;
+    right: -145px;
 }
 

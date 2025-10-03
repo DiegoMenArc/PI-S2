@@ -112,8 +112,8 @@ display: flex;
  overflow: hidden;
 
 flex: 1;
- gap: 15px;
-
+ gap: 10px;
+width: 100%;
 align-items: flex-start;
 
 transition: transform 0.5s ease-in-out;
@@ -126,6 +126,8 @@ transition: transform 0.5s ease-in-out;
 
 display: flex;
  gap: 5px;
+ position: relative;
+ right: -275px;
 
 }
 
@@ -222,7 +224,7 @@ border: 1px solid #2499C7;
 
 .botao-navegacao.proximo {
 
-right: 467px; /* Ajusta a posição para que a borda do botão fique alinhada com os cards */
+right: -5px; /* Ajusta a posição para que a borda do botão fique alinhada com os cards */
 
 
 
@@ -254,7 +256,7 @@ app-cardPadrao {
 
 flex-shrink: 0;
 
-width: calc((100% - (4 * 15px)) / 5);
+width: calc((100% - (4 * 15px)) / 3);
 
 }
 
