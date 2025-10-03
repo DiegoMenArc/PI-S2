@@ -3,8 +3,8 @@
   width: 700px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 15px;
-  margin-top: auto;
+  margin-bottom: 35px;
+  margin-top: 0 auto;
 }
 
 /* Novo contêiner para a linha de botões e carrossel */
@@ -13,6 +13,7 @@
   align-items: center; /* Alinha os itens verticalmente no centro */
   justify-content: space-between; /* Espaço entre os botões de seta e a janela */
   width: 100%; /* Ocupa a largura total do carrossel-container */
+
 }
 
 .titulo {
@@ -43,7 +44,7 @@
   grid-template-columns: auto-flow;
   grid-auto-columns: minmax(min-content, max-content);
   grid-auto-flow: column;
-  gap: 15px; /* Define o espaçamento entre os botões */
+  gap: 20px; /* Define o espaçamento entre os botões */
   flex: 0 0 50%;
   width: 50%;
   padding: 20px 0;
