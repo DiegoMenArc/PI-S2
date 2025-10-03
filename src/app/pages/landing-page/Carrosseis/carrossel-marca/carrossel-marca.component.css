@@ -5,7 +5,7 @@
   padding: 20px 0;    /* tira os 70px laterais que causam deslocamento */
   justify-content: center; /* centraliza imagens */
   align-items: center;
-  margin: 50px auto 150px auto;
+  margin: 50px auto 100px auto;
   position: relative;
   background: white;  /* só pra testar */
 }

@@ -1,11 +1,21 @@
-<main>
-    <form #usuarioForm="ngForm">
-        <input type="text" name="usuario" [(ngModel)]="usuario" required>
-        <input type="password" name="senha" [(ngModel)]="senha" required>
-        <button [disabled]="!usuarioForm.form.valid" type="submit" [routerLink]="verificarLink(usuarioForm)" (click)="validar()">Entrar</button>
-    </form>
+<app-menu-header></app-menu-header>
+<main class="container">
+    <div id="fundo">
+        <span class="loginTitulo">Login</span>
+    <div>
+        <form #usuarioForm="ngForm">
+        <input id="btnEmail" name="usuario" [(ngModel)]="usuario" required>
+        
+        <input id="btnSenha" type="password" name="senha" [(ngModel)]="senha" required>        
+    </form>    
+</div>
+
+<button class="btnLogin"[disabled]="!usuarioForm.form.valid" type="submit" [routerLink]="verificarLink(usuarioForm)" (click)="validar()">Entrar</button>
+<button class="btnLogin"[disabled]="!usuarioForm.form.valid" type="submit" [routerLink]="verificarLink(usuarioForm)" (click)="validar()">Criar conta</button>
 
     @if(verificar) {
         <p>{{credenciais}}</p>
     }
+    </div>
 </main>
+<app-footer></app-footer>

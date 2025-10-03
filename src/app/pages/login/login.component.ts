@@ -2,10 +2,12 @@ import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { UsuarioService } from '../../services/usuario.service';
+import { MenuHeaderComponent } from "../../components/principal/menu-header/menu-header.component";
+import { FooterComponent } from "../../components/principal/footer/footer.component";
 
 @Component({
   selector: 'login',
-  imports: [FormsModule, RouterLink],
+  imports: [FormsModule, RouterLink, MenuHeaderComponent, FooterComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

@@ -1,0 +1,41 @@
+#fundo {
+    display: flex;
+    width: 720px;
+    height: 900px;
+    padding: 50px 120px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+    justify-content: center;
+    border-right: 2px solid var(--Azul3, #006691);
+    border-left: 2px solid var(--Azul3, #006691);
+    background: rgba(44, 191, 255, 0.54);
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+#btnEmail {
+
+}
+
+#btnSenha {
+
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btnLogin{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
