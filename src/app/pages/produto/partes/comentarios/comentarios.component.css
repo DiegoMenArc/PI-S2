@@ -183,3 +183,18 @@ button{
     font-style: normal;
     font-weight: 600;
 }
+
+.mais:hover{
+    color: var(--azul4);
+    cursor: pointer;
+    transition: 700ms;
+}
+
+.avaliacao-btn:hover{
+    background-color: #d4d410;
+    transition: 700ms;
+}
+
+.avaliacao-btn:active{
+    background-color: rgb(156, 134, 37)
+}

@@ -145,6 +145,17 @@ main{
     border: none;
 }
 
+.carrinho:hover{
+    background: #2184ac;
+    transition: 700ms;
+    cursor: pointer;
+}
+
+.carrinho:active{
+    background: #1f6f8f;
+    transition: 300ms;
+}
+
 .group2{
     display: flex;
     justify-content: space-between;
