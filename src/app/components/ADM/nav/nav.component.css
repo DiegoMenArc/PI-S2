@@ -30,12 +30,14 @@
     padding: 1vw 1vh;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
 }
 
 .listador{
     display: flex;
     flex-direction: column; 
     padding: 10% 5%;
+    width: 100%;
 }
 
 .file, .user{
@@ -47,6 +49,7 @@
     display: flex;
     flex-direction: row;
     gap: 1vw;   
+    width: 100%;
 }
 
 .listador li:hover{
@@ -54,6 +57,8 @@
     width: fit-content;
     border-radius: 20px;
     cursor: pointer;
+    width: 100%;
+    transition: 500ms;
 }
 
 .nav-logo {
