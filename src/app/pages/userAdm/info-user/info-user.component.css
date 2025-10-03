@@ -1,0 +1,12 @@
+.page-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.page-main{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 2rem;
+}

@@ -1,0 +1,74 @@
+.conteiner {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    gap: 5rem;
+    flex: 1 0 0;
+    align-self: stretch;
+
+    background-color: var(--fundo);
+    font-family: "Montserrat", "Sans-serif";
+    padding: 1vh 1vw;
+}
+
+.cont-ttl{
+    align-self: stretch;
+}
+
+.btn-conta {
+    display: flex;
+    width: 15vw;
+    height: 7vh;
+    padding: 1vh 2vw;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--branco);
+    border-radius: 12px;
+    background: var(--Azul3, #176C8E);
+}
+
+.btn-conta:hover {
+    background-color: var(--Azul4, #006691);
+    transition: 700ms;
+    cursor: pointer;
+}
+
+.lista-opcoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.opcao {
+    display: flex;
+    width: 15vw;
+    height: 6vh;
+    padding: 1vh 2vw;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+    background-color: var(--Azul2, #2499C7);
+    color: var(--branco);
+}
+
+.opcao:hover{
+    background-color: var(--Azul3, #176C8E);
+    cursor: pointer;
+    transition: 700ms;  
+}
+
+
+.sair{
+    background-color: rgba(121, 121, 121, 0.9);
+}
+
+.sair:hover{
+    background-color: rgba(114, 17, 17, 0.9);
+    cursor: pointer;
+    transition: 700ms;   
+}
