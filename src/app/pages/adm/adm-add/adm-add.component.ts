@@ -14,5 +14,5 @@ import { FormsModule } from '@angular/forms';
 export class AdmAddComponent {
   paginas = ["Produtos", "adicionarProduto"];
 
-  usuario = "B a c a n a";
+  usuario = "Bacana";
 }
