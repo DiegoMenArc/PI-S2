@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 
-//Paginas 
+//Paginas
 
 import { MenuHeaderComponent } from './components/principal/menu-header/menu-header.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
@@ -15,7 +15,7 @@ import { AdmComponent } from './pages/adm/adm.component';
 export const routes: Routes = [
   {
     path: '',
-    component: MenuHeaderComponent, 
+    component: MenuHeaderComponent,
     children: [
       { path: '', component: LandingPageComponent },
       { path: 'produto', component: ProdutoComponent },
@@ -24,7 +24,7 @@ export const routes: Routes = [
   },
   { path: 'login', component: LoginComponent },
   { path: 'usuario/:id/informacoes', component: InfoUserComponent },
-  { path: 'adm', component: AdmComponent },
+  { path: 'adm/produto', component: AdmComponent },
   { path: 'adm/edit', component: AdmEditComponent },
-  { path: 'adm/add', component: AdmAddComponent }
+  { path: 'adm/produto/add', component: AdmAddComponent }
 ];
