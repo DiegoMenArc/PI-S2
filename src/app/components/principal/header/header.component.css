@@ -33,6 +33,10 @@
     align-items: center;
 }
 
+.cep:hover{
+    cursor: pointer;
+}
+
 .inferior {
     background-color: var(--azul2);
     padding: 10px 60px;
