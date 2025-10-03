@@ -1,8 +1,10 @@
 /* Container do carrossel (pai de tudo) */
 .carrossel-container {
-  width: 600px;
-  margin: 50px auto;
+  width: 700px;
+  margin: 0 auto;
   text-align: center;
+  margin-bottom: 15px;
+  margin-top: auto;
 }
 
 /* Novo contêiner para a linha de botões e carrossel */
@@ -14,10 +16,10 @@
 }
 
 .titulo {
-  margin-bottom: 20px;
   font-size: 22px;
   font-weight: bold;
   color: #333;
+  margin-top: auto;
 }
 
 /* Área visível */
@@ -65,7 +67,7 @@
   /* white-space: nowrap; */
   /* overflow: hidden; */
   /* text-overflow: ellipsis; */
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .categoria:hover {
