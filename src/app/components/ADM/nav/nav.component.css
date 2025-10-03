@@ -72,3 +72,11 @@
     font-size: 1rem;
     font-weight: 400;
 }
+
+.nav-logo{
+    cursor: pointer;
+}
+
+.nav-head img{
+    cursor: pointer;
+}
