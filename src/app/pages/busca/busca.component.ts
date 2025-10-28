@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { BreadcumbsComponent } from '../../components/principal/breadcumbs/breadcumbs.component';
 import { FiltrosComponent } from './partes/filtros/filtros.component';
-import { BuscaService } from '../../services/busca.service';
+import { BuscaService } from '../../core/services/busca.service';
 import { CardPadraoComponent } from '../../components/card-padrao/card-padrao.component';
 import { CarrosselprodComponent } from '../produto/partes/carrosselprod/carrosselprod.component';
 import { FooterComponent } from '../../components/principal/footer/footer.component';

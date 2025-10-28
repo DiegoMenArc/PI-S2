@@ -1,7 +1,7 @@
 import { Component, EventEmitter, inject, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { BuscaService } from '../../services/busca.service';
+import { BuscaService } from '../../core/services/busca.service';
 
 @Component({
   selector: 'app-busca',

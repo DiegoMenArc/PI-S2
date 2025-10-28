@@ -4,7 +4,7 @@ import { NavComponent } from '../../../components/ADM/nav/nav.component';
 import { ListaPrdComponent } from '../../../components/ADM/lista-prd/lista-prd.component';
 import { BreadcumbsComponent } from '../../../components/principal/breadcumbs/breadcumbs.component';
 import { FormsModule } from '@angular/forms';
-import { ProdutosService } from '../../../services/produtos.service';
+import { ProdutosService } from '../../../core/services/produtos.service';
 import { RouterLink } from '@angular/router';
 import { data } from 'jquery';
 
