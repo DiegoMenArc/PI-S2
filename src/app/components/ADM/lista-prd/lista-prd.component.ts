@@ -1,6 +1,7 @@
-import { Component, inject } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 import { ProdutosService } from '../../../core/services/produtos.service';
+import { Produto } from '../../../core/types/types';
 
 
 @Component({
@@ -9,9 +10,20 @@ import { ProdutosService } from '../../../core/services/produtos.service';
   templateUrl: './lista-prd.component.html',
   styleUrl: './lista-prd.component.css'
 })
-export class ListaPrdComponent {
-    _produtosMain = inject(ProdutosService);
-    _produtos = this._produtosMain.produtos;
+export class ListaPrdComponent implements OnInit {
+    listarProduto:Produto[] = [];
+
+    constructor(
+      private service: ProdutosService,
+      private router: Router
+    ){}
+
+    ngOnInit(): void {
+      this.service.listarProdutos().subscribe((produto)=>{
+        this.listarProduto = produto;
+      });
+    }
+
     numPages=1;
 
     getEdit(n:number){
@@ -23,7 +35,12 @@ export class ListaPrdComponent {
     }
 
     removerProd(posicao:number){
-      this._produtosMain.removerProduto(posicao);
+      if(posicao){
+        this.service.removerProduto(posicao).subscribe(() => {
+        window.location.reload()
+      })
+    }
+
     }
 
     tipos:String[] = ["Produto", "Preço", "Tamanho", "Quantidade", "Data", "Ações"];

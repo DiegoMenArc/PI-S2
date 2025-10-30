@@ -1,596 +1,415 @@
 {
-    "usuarios": [
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Ana",
+      "sobrenome": "Silva",
+      "user_name": "ana.silva",
+      "data_nasc": {
+        "dia": 12,
+        "mes_num": 5,
+        "ano": 1990,
+        "mes_stg": "maio"
+      },
+      "email": "ana.silva@example.com",
+      "telefone": 11987654321,
+      "endereco": {
+        "cidade": "São Paulo",
+        "bairro": "Pinheiros",
+        "logradouro": "Rua das Flores",
+        "numero": 123,
+        "cep": 10934545,
+        "complemento": []
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Bruno",
+      "sobrenome": "Almeida",
+      "user_name": "bruno.almeida",
+      "data_nasc": {
+        "dia": 3,
+        "mes_num": 8,
+        "ano": 1985
+      },
+      "email": "bruno.almeida@example.com",
+      "telefone": 21998765432,
+      "endereco": {
+        "cidade": "Rio de Janeiro",
+        "bairro": "Copacabana",
+        "logradouro": "Av. Atlântica",
+        "numero": 456,
+        "cep": 22012345
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Carla",
+      "sobrenome": "Pereira",
+      "user_name": "carla.pereira",
+      "data_nasc": {
+        "dia": 15,
+        "mes_num": 12,
+        "ano": 1992,
+        "mes_stg": "dezembro"
+      },
+      "email": "carla.pereira@example.com"
+    },
+    {
+      "id": 4,
+      "nome": "Daniel",
+      "sobrenome": "Souza",
+      "user_name": "daniel.souza",
+      "data_nasc": {
+        "dia": 29,
+        "mes_num": 1,
+        "ano": 1998,
+        "mes_stg": "janeiro"
+      },
+      "email": "daniel.souza@example.com",
+      "telefone": 31912345678
+    },
+    {
+      "id": 5,
+      "nome": "Elisa",
+      "sobrenome": "Costa",
+      "user_name": "elisa.costa",
+      "data_nasc": {
+        "dia": 7,
+        "mes_num": 4,
+        "ano": 1988
+      },
+      "email": "elisa.costa@example.com",
+      "endereco": {
+        "cidade": "Belo Horizonte",
+        "bairro": "Savassi",
+        "logradouro": "Rua do Ouro",
+        "numero": 789,
+        "cep": 30123456,
+        "complemento": [
+          "apto 101",
+          "bloco B"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "nome": "Felipe",
+      "sobrenome": "Mendes",
+      "user_name": "felipe.mendes",
+      "data_nasc": {
+        "dia": 22,
+        "mes_num": 9,
+        "ano": 1991,
+        "mes_stg": "setembro"
+      },
+      "email": "felipe.mendes@example.com",
+      "telefone": 41987654321
+    },
+    {
+      "id": 7,
+      "nome": "Gabriela",
+      "sobrenome": "Lima",
+      "user_name": "gabriela.lima",
+      "data_nasc": {
+        "dia": 10,
+        "mes_num": 7,
+        "ano": 1995
+      },
+      "email": "gabriela.lima@example.com",
+      "endereco": {
+        "cidade": "Curitiba",
+        "bairro": "Batel",
+        "logradouro": "Av. Batel",
+        "numero": 321,
+        "cep": 80420000
+      }
+    },
+    {
+      "id": 8,
+      "nome": "Hugo",
+      "sobrenome": "Fernandes",
+      "user_name": "hugo.fernandes",
+      "data_nasc": {
+        "dia": 5,
+        "mes_num": 3,
+        "ano": 1983,
+        "mes_stg": "março"
+      },
+      "email": "hugo.fernandes@example.com"
+    },
+    {
+      "id": 9,
+      "nome": "Isabela",
+      "sobrenome": "Ramos",
+      "user_name": "isabela.ramos",
+      "data_nasc": {
+        "dia": 18,
+        "mes_num": 11,
+        "ano": 1997
+      },
+      "email": "isabela.ramos@example.com",
+      "telefone": 51912345678
+    },
+    {
+      "id": 10,
+      "nome": "João",
+      "sobrenome": "Martins",
+      "user_name": "joao.martins",
+      "data_nasc": {
+        "dia": 1,
+        "mes_num": 2,
+        "ano": 1989,
+        "mes_stg": "fevereiro"
+      },
+      "email": "joao.martins@example.com",
+      "endereco": {
+        "cidade": "Porto Alegre",
+        "bairro": "Moinhos de Vento",
+        "logradouro": "Rua Padre Chagas",
+        "numero": 222,
+        "cep": 90570000
+      }
+    },
+    {
+      "id": 11,
+      "nome": "Karen",
+      "sobrenome": "Gomes",
+      "user_name": "karen.gomes",
+      "data_nasc": {
+        "dia": 11,
+        "mes_num": 6,
+        "ano": 1993,
+        "mes_stg": "junho"
+      },
+      "email": "karen.gomes@example.com",
+      "telefone": 61987654321
+    },
+    {
+      "id": 12,
+      "nome": "Lucas",
+      "sobrenome": "Barbosa",
+      "user_name": "lucas.barbosa",
+      "data_nasc": {
+        "dia": 27,
+        "mes_num": 10,
+        "ano": 1990
+      },
+      "email": "lucas.barbosa@example.com",
+      "endereco": {
+        "cidade": "Brasília",
+        "bairro": "Asa Sul",
+        "logradouro": "CLS 214",
+        "numero": 12,
+        "cep": 70340000,
+        "complemento": [
+          "bloco C"
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "nome": "Marina",
+      "sobrenome": "Rocha",
+      "user_name": "marina.rocha",
+      "data_nasc": {
+        "dia": 9,
+        "mes_num": 12,
+        "ano": 1987,
+        "mes_stg": "dezembro"
+      },
+      "email": "marina.rocha@example.com"
+    },
+    {
+      "id": 14,
+      "nome": "Nicolas",
+      "sobrenome": "Castro",
+      "user_name": "nicolas.castro",
+      "data_nasc": {
+        "dia": 4,
+        "mes_num": 1,
+        "ano": 1996
+      },
+      "email": "nicolas.castro@example.com",
+      "telefone": 21912345678
+    },
+    {
+      "id": 15,
+      "nome": "Olivia",
+      "sobrenome": "Dias",
+      "user_name": "olivia.dias",
+      "data_nasc": {
+        "dia": 20,
+        "mes_num": 8,
+        "ano": 1994,
+        "mes_stg": "agosto"
+      },
+      "email": "olivia.dias@example.com",
+      "endereco": {
+        "cidade": "Salvador",
+        "bairro": "Barra",
+        "logradouro": "Av. Sete de Setembro",
+        "numero": 999,
+        "cep": 40020000
+      }
+    }
+  ],
+  "produtos": [
+    {
+      "img": [
+        "https://example.com/banco-imobiliario.jpg"
+      ],
+      "id": 1,
+      "nome": "Banco Imobiliário",
+      "descricao": "Jogo clássico de tabuleiro brasileiro inspirado no Monopoly, onde os jogadores compram e administram propriedades.",
+      "anoLancamento": "1944",
+      "marca": "Estrela",
+      "preco": "R$ 199,90",
+      "tamanho": "Caixa 40x27cm",
+      "qtd": 1,
+      "data": "2025-10-30",
+      "categoria": "Jogos de Tabuleiro",
+      "especificacoes": [
         {
-            "id": 1,
-            "nome": "Ana",
-            "sobrenome": "Silva",
-            "user_name": "ana.silva",
-            "data_nasc": {
-                "dia": 12,
-                "mes_num": 5,
-                "ano": 1990,
-                "mes_stg": "maio"
-            },
-            "email": "ana.silva@example.com",
-            "telefone": 11987654321,
-            "endereco": {
-                "cidade": "São Paulo",
-                "bairro": "Pinheiros",
-                "logradouro": "Rua das Flores",
-                "numero": 123,
-                "cep": 10934545,
-                "complemento": []
-            }
+          "especificacao": "Componentes",
+          "valor": "Tabuleiro, cartas, notas, pinos"
         },
         {
-            "id": 2,
-            "nome": "Bruno",
-            "sobrenome": "Almeida",
-            "user_name": "bruno.almeida",
-            "data_nasc": {
-                "dia": 3,
-                "mes_num": 8,
-                "ano": 1985
-            },
-            "email": "bruno.almeida@example.com",
-            "telefone": 21998765432,
-            "endereco": {
-                "cidade": "Rio de Janeiro",
-                "bairro": "Copacabana",
-                "logradouro": "Av. Atlântica",
-                "numero": 456,
-                "cep": 22012345
-            }
-        },
-        {
-            "id": 3,
-            "nome": "Carla",
-            "sobrenome": "Pereira",
-            "user_name": "carla.pereira",
-            "data_nasc": {
-                "dia": 15,
-                "mes_num": 12,
-                "ano": 1992,
-                "mes_stg": "dezembro"
-            },
-            "email": "carla.pereira@example.com"
-        },
-        {
-            "id": 4,
-            "nome": "Daniel",
-            "sobrenome": "Souza",
-            "user_name": "daniel.souza",
-            "data_nasc": {
-                "dia": 29,
-                "mes_num": 1,
-                "ano": 1998,
-                "mes_stg": "janeiro"
-            },
-            "email": "daniel.souza@example.com",
-            "telefone": 31912345678
-        },
-        {
-            "id": 5,
-            "nome": "Elisa",
-            "sobrenome": "Costa",
-            "user_name": "elisa.costa",
-            "data_nasc": {
-                "dia": 7,
-                "mes_num": 4,
-                "ano": 1988
-            },
-            "email": "elisa.costa@example.com",
-            "endereco": {
-                "cidade": "Belo Horizonte",
-                "bairro": "Savassi",
-                "logradouro": "Rua do Ouro",
-                "numero": 789,
-                "cep": 30123456,
-                "complemento": [
-                    "apto 101",
-                    "bloco B"
-                ]
-            }
-        },
-        {
-            "id": 6,
-            "nome": "Felipe",
-            "sobrenome": "Mendes",
-            "user_name": "felipe.mendes",
-            "data_nasc": {
-                "dia": 22,
-                "mes_num": 9,
-                "ano": 1991,
-                "mes_stg": "setembro"
-            },
-            "email": "felipe.mendes@example.com",
-            "telefone": 41987654321
-        },
-        {
-            "id": 7,
-            "nome": "Gabriela",
-            "sobrenome": "Lima",
-            "user_name": "gabriela.lima",
-            "data_nasc": {
-                "dia": 10,
-                "mes_num": 7,
-                "ano": 1995
-            },
-            "email": "gabriela.lima@example.com",
-            "endereco": {
-                "cidade": "Curitiba",
-                "bairro": "Batel",
-                "logradouro": "Av. Batel",
-                "numero": 321,
-                "cep": 80420000
-            }
-        },
-        {
-            "id": 8,
-            "nome": "Hugo",
-            "sobrenome": "Fernandes",
-            "user_name": "hugo.fernandes",
-            "data_nasc": {
-                "dia": 5,
-                "mes_num": 3,
-                "ano": 1983,
-                "mes_stg": "março"
-            },
-            "email": "hugo.fernandes@example.com"
-        },
-        {
-            "id": 9,
-            "nome": "Isabela",
-            "sobrenome": "Ramos",
-            "user_name": "isabela.ramos",
-            "data_nasc": {
-                "dia": 18,
-                "mes_num": 11,
-                "ano": 1997
-            },
-            "email": "isabela.ramos@example.com",
-            "telefone": 51912345678
-        },
-        {
-            "id": 10,
-            "nome": "João",
-            "sobrenome": "Martins",
-            "user_name": "joao.martins",
-            "data_nasc": {
-                "dia": 1,
-                "mes_num": 2,
-                "ano": 1989,
-                "mes_stg": "fevereiro"
-            },
-            "email": "joao.martins@example.com",
-            "endereco": {
-                "cidade": "Porto Alegre",
-                "bairro": "Moinhos de Vento",
-                "logradouro": "Rua Padre Chagas",
-                "numero": 222,
-                "cep": 90570000
-            }
-        },
-        {
-            "id": 11,
-            "nome": "Karen",
-            "sobrenome": "Gomes",
-            "user_name": "karen.gomes",
-            "data_nasc": {
-                "dia": 11,
-                "mes_num": 6,
-                "ano": 1993,
-                "mes_stg": "junho"
-            },
-            "email": "karen.gomes@example.com",
-            "telefone": 61987654321
-        },
-        {
-            "id": 12,
-            "nome": "Lucas",
-            "sobrenome": "Barbosa",
-            "user_name": "lucas.barbosa",
-            "data_nasc": {
-                "dia": 27,
-                "mes_num": 10,
-                "ano": 1990
-            },
-            "email": "lucas.barbosa@example.com",
-            "endereco": {
-                "cidade": "Brasília",
-                "bairro": "Asa Sul",
-                "logradouro": "CLS 214",
-                "numero": 12,
-                "cep": 70340000,
-                "complemento": [
-                    "bloco C"
-                ]
-            }
-        },
-        {
-            "id": 13,
-            "nome": "Marina",
-            "sobrenome": "Rocha",
-            "user_name": "marina.rocha",
-            "data_nasc": {
-                "dia": 9,
-                "mes_num": 12,
-                "ano": 1987,
-                "mes_stg": "dezembro"
-            },
-            "email": "marina.rocha@example.com"
-        },
-        {
-            "id": 14,
-            "nome": "Nicolas",
-            "sobrenome": "Castro",
-            "user_name": "nicolas.castro",
-            "data_nasc": {
-                "dia": 4,
-                "mes_num": 1,
-                "ano": 1996
-            },
-            "email": "nicolas.castro@example.com",
-            "telefone": 21912345678
-        },
-        {
-            "id": 15,
-            "nome": "Olivia",
-            "sobrenome": "Dias",
-            "user_name": "olivia.dias",
-            "data_nasc": {
-                "dia": 20,
-                "mes_num": 8,
-                "ano": 1994,
-                "mes_stg": "agosto"
-            },
-            "email": "olivia.dias@example.com",
-            "endereco": {
-                "cidade": "Salvador",
-                "bairro": "Barra",
-                "logradouro": "Av. Sete de Setembro",
-                "numero": 999,
-                "cep": 40020000
-            }
+          "especificacao": "Jogadores",
+          "valor": "2 a 6"
         }
-    ],
-    "produtos": [
+      ],
+      "disponibilidade": true
+    },
+    {
+      "img": [
+        "https://example.com/gugu-gaita-magica.jpg"
+      ],
+      "id": 2,
+      "nome": "Gaita Mágica do Gugu",
+      "descricao": "Brinquedo musical popularizado pelo apresentador Gugu Liberato que emitia sons ao ser tocado.",
+      "anoLancamento": "1990",
+      "marca": "Estrela",
+      "preco": "R$ 59,90",
+      "tamanho": "20cm",
+      "qtd": 1,
+      "data": "2025-10-30",
+      "categoria": "Brinquedos Musicais",
+      "especificacoes": [
         {
-            "nome": "Carrinho Hot Wheels",
-            "marca": "Mattel",
-            "modelo": "HW Classic",
-            "forncedor": "Brinquedos Brasil",
-            "valor": 35.5,
-            "quantidade": "10",
-            "categoria": "Miniaturas",
-            "tamanho": {
-                "largura": 4,
-                "altura": 2,
-                "comprimento": 8
-            },
-            "anoL": {
-                "dia": 10,
-                "mes_num": 3,
-                "ano": 1998,
-                "mes_stg": "março"
-            },
-            "data_aqs": {
-                "dia": 15,
-                "mes_num": 5,
-                "ano": 2023
-            }
+          "especificacao": "Material",
+          "valor": "Plástico"
         },
         {
-            "nome": "Boneca Barbie",
-            "marca": "Mattel",
-            "modelo": "Fashionista",
-            "forncedor": "Loja ABC",
-            "valor": 79.9,
-            "quantidade": "5",
-            "categoria": "Bonecas",
-            "tamanho": {
-                "largura": 7,
-                "altura": 29
-            },
-            "anoL": {
-                "dia": 22,
-                "mes_num": 6,
-                "ano": 1995
-            },
-            "data_aqs": {
-                "dia": 3,
-                "mes_num": 7,
-                "ano": 2024,
-                "mes_stg": "julho"
-            }
-        },
-        {
-            "nome": "Jogo de Memória",
-            "marca": "Grow",
-            "forncedor": "Distribuidora XYZ",
-            "valor": 20.0,
-            "quantidade": "20",
-            "categoria": "Jogos",
-            "anoL": {
-                "dia": 1,
-                "mes_num": 1,
-                "ano": 2000,
-                "mes_stg": "janeiro"
-            },
-            "data_aqs": {
-                "dia": 10,
-                "mes_num": 9,
-                "ano": 2022
-            }
-        },
-        {
-            "nome": "Boneco He-Man",
-            "marca": "Mattel",
-            "modelo": "Clássico",
-            "forncedor": "Brinquedos Retrô",
-            "valor": 150,
-            "quantidade": "3",
-            "categoria": "Action Figures",
-            "tamanho": {
-                "largura": 7,
-                "altura": 28,
-                "comprimento": 5
-            },
-            "anoL": {
-                "dia": 5,
-                "mes_num": 5,
-                "ano": 1987,
-                "mes_stg": "maio"
-            },
-            "data_aqs": {
-                "dia": 20,
-                "mes_num": 6,
-                "ano": 2023
-            }
-        },
-        {
-            "nome": "Quebra-Cabeça",
-            "marca": "Estrela",
-            "forncedor": "Lojinha Infantil",
-            "valor": 45.99,
-            "quantidade": "12",
-            "categoria": "Quebra-Cabeças",
-            "anoL": {
-                "dia": 12,
-                "mes_num": 2,
-                "ano": 1990
-            },
-            "data_aqs": {
-                "dia": 18,
-                "mes_num": 3,
-                "ano": 2024
-            }
-        },
-        {
-            "nome": "Boneca Susi",
-            "marca": "Estrela",
-            "modelo": "Anos 80",
-            "forncedor": "Brinquedos Antigos",
-            "valor": 70,
-            "quantidade": "4",
-            "categoria": "Bonecas",
-            "tamanho": {
-                "largura": 6,
-                "altura": 30
-            },
-            "anoL": {
-                "dia": 14,
-                "mes_num": 8,
-                "ano": 1985
-            },
-            "data_aqs": {
-                "dia": 25,
-                "mes_num": 9,
-                "ano": 2023
-            }
-        },
-        {
-            "nome": "Cubo Mágico",
-            "marca": "Hasbro",
-            "forncedor": "Mega Brinquedos",
-            "valor": 25.5,
-            "quantidade": "15",
-            "categoria": "Quebra-Cabeças",
-            "tamanho": {
-                "largura": 6,
-                "altura": 6,
-                "comprimento": 6
-            },
-            "anoL": {
-                "dia": 9,
-                "mes_num": 11,
-                "ano": 1980,
-                "mes_stg": "novembro"
-            },
-            "data_aqs": {
-                "dia": 11,
-                "mes_num": 12,
-                "ano": 2024
-            }
-        },
-        {
-            "nome": "Boneco Transformers",
-            "marca": "Hasbro",
-            "modelo": "Geração 1",
-            "forncedor": "Colecionáveis Ltda",
-            "valor": 200,
-            "quantidade": "2",
-            "categoria": "Action Figures",
-            "tamanho": {
-                "largura": 8,
-                "altura": 27
-            },
-            "anoL": {
-                "dia": 3,
-                "mes_num": 7,
-                "ano": 1984,
-                "mes_stg": "julho"
-            },
-            "data_aqs": {
-                "dia": 5,
-                "mes_num": 8,
-                "ano": 2023
-            }
-        },
-        {
-            "nome": "Jogo da Vida",
-            "marca": "Estrela",
-            "forncedor": "Grandes Brinquedos",
-            "valor": 110.0,
-            "quantidade": "7",
-            "categoria": "Jogos",
-            "anoL": {
-                "dia": 16,
-                "mes_num": 10,
-                "ano": 1992
-            },
-            "data_aqs": {
-                "dia": 30,
-                "mes_num": 10,
-                "ano": 2024,
-                "mes_stg": "outubro"
-            }
-        },
-        {
-            "nome": "Boneca Polly Pocket",
-            "marca": "Mattel",
-            "modelo": "Compact",
-            "forncedor": "Loja Kids",
-            "valor": 55,
-            "quantidade": "6",
-            "categoria": "Bonecas",
-            "tamanho": {
-                "largura": 4,
-                "altura": 5,
-                "comprimento": 2
-            },
-            "anoL": {
-                "dia": 21,
-                "mes_num": 4,
-                "ano": 1994
-            },
-            "data_aqs": {
-                "dia": 8,
-                "mes_num": 6,
-                "ano": 2023
-            }
-        },
-        {
-            "nome": "Jogo de Dominó",
-            "marca": "Xalingo",
-            "forncedor": "Distribuidora Nacional",
-            "valor": 30,
-            "quantidade": "18",
-            "categoria": "Jogos",
-            "anoL": {
-                "dia": 28,
-                "mes_num": 12,
-                "ano": 1989,
-                "mes_stg": "dezembro"
-            },
-            "data_aqs": {
-                "dia": 1,
-                "mes_num": 1,
-                "ano": 2024
-            }
-        },
-        {
-            "nome": "Boneco He-Man",
-            "marca": "Mattel",
-            "modelo": "Edição Colecionador",
-            "forncedor": "Brinquedos Retrô",
-            "valor": 180,
-            "quantidade": "1",
-            "categoria": "Action Figures",
-            "tamanho": {
-                "largura": 7,
-                "altura": 29
-            },
-            "anoL": {
-                "dia": 7,
-                "mes_num": 5,
-                "ano": 1987
-            },
-            "data_aqs": {
-                "dia": 15,
-                "mes_num": 7,
-                "ano": 2025
-            }
-        },
-        {
-            "nome": "Boneca Blythe",
-            "marca": "Takara",
-            "modelo": "Vintage",
-            "forncedor": "Importados Ltda",
-            "valor": 250,
-            "quantidade": "2",
-            "categoria": "Bonecas",
-            "tamanho": {
-                "largura": 8,
-                "altura": 28
-            },
-            "anoL": {
-                "dia": 26,
-                "mes_num": 9,
-                "ano": 1972,
-                "mes_stg": "setembro"
-            },
-            "data_aqs": {
-                "dia": 22,
-                "mes_num": 10,
-                "ano": 2023
-            }
-        },
-        {
-            "nome": "Jogo de Xadrez",
-            "marca": "Rei Brinquedos",
-            "forncedor": "Loja de Jogos",
-            "valor": 90,
-            "quantidade": "9",
-            "categoria": "Jogos",
-            "tamanho": {
-                "largura": 40,
-                "altura": 5,
-                "comprimento": 40
-            },
-            "anoL": {
-                "dia": 13,
-                "mes_num": 3,
-                "ano": 1983
-            },
-            "data_aqs": {
-                "dia": 10,
-                "mes_num": 4,
-                "ano": 2024,
-                "mes_stg": "abril"
-            }
-        },
-        {
-            "nome": "Boneco Cebolinha",
-            "marca": "Turma da Mônica",
-            "forncedor": "Editora Abril",
-            "valor": 45.5,
-            "quantidade": "12",
-            "categoria": "Bonecos",
-            "tamanho": {
-                "largura": 6,
-                "altura": 25
-            },
-            "anoL": {
-                "dia": 18,
-                "mes_num": 11,
-                "ano": 1996
-            },
-            "data_aqs": {
-                "dia": 4,
-                "mes_num": 12,
-                "ano": 2022
-            }
+          "especificacao": "Indicação",
+          "valor": "3+"
         }
-    ]
+      ],
+      "disponibilidade": true
+    },
+    {
+      "img": [
+        "https://example.com/max-steel.jpg"
+      ],
+      "id": 3,
+      "nome": "Max Steel",
+      "descricao": "Boneco de ação popular dos anos 90 e 2000 com temática de super-heróis e agentes secretos.",
+      "anoLancamento": "1998",
+      "marca": "Mattel",
+      "preco": "R$ 129,90",
+      "tamanho": "30cm",
+      "qtd": 1,
+      "data": "2025-10-30",
+      "categoria": "Bonecos de Ação",
+      "especificacoes": [
+        {
+          "especificacao": "Movimentos",
+          "valor": "Articulações nos braços e pernas"
+        },
+        {
+          "especificacao": "Acessórios",
+          "valor": "Armas e itens especiais"
+        }
+      ],
+      "disponibilidade": true
+    },
+    {
+      "img": [
+        "https://example.com/ferrorama.jpg"
+      ],
+      "id": 4,
+      "nome": "Ferrorama",
+      "descricao": "Trenzinho icônico com trilhos, locomotiva e vagões, febre entre crianças brasileiras nos anos 80 e 90.",
+      "anoLancamento": "1979",
+      "marca": "Estrela",
+      "preco": "R$ 499,90",
+      "tamanho": "Pista variável",
+      "qtd": 1,
+      "data": "2025-10-30",
+      "categoria": "Brinquedos Tradicionais",
+      "especificacoes": [
+        {
+          "especificacao": "Sistema",
+          "valor": "Locomotiva elétrica"
+        },
+        {
+          "especificacao": "Trilhos",
+          "valor": "Montáveis"
+        }
+      ],
+      "disponibilidade": true
+    },
+    {
+      "img": [
+        "https://example.com/pogobol.jpg"
+      ],
+      "id": 5,
+      "nome": "Pogobol",
+      "descricao": "Brinquedo para pular, febre dos anos 80/90, composto por bola inflável presa a uma plataforma.",
+      "anoLancamento": "1987",
+      "marca": "Estrela",
+      "preco": "R$ 89,90",
+      "tamanho": "35cm de diâmetro",
+      "qtd": 1,
+      "data": "2025-10-30",
+      "categoria": "Brinquedos Esportivos",
+      "especificacoes": [
+        {
+          "especificacao": "Material",
+          "valor": "Borracha e plástico"
+        },
+        {
+          "especificacao": "Peso Suportado",
+          "valor": "Até 60kg"
+        }
+      ],
+      "disponibilidade": true
+    },
+    {
+      "id": 1,
+      "img": [
+        "https://example.com/banco-imobiliario.jpg"
+      ],
+      "nome": "Banco Imobiliário",
+      "descricao": "Jogo clássico de tabuleiro brasileiro inspirado no Monopoly, onde os jogadores compram e administram propriedades.",
+      "anoLancamento": "1944",
+      "marca": "Estrela",
+      "preco": "R$ 199,90",
+      "tamanho": "Caixa 40x27cm",
+      "qtd": 1,
+      "data": "2025-10-30",
+      "categoria": "Jogos de Tabuleiro",
+      "especificacoes": [
+        {
+          "especificacao": "Componentes",
+          "valor": "Tabuleiro, cartas, notas, pinos"
+        },
+        {
+          "especificacao": "Jogadores",
+          "valor": "2 a 6"
+        }
+      ],
+      "disponibilidade": true
+    }
+  ]
 }

@@ -5,8 +5,9 @@ import { ListaPrdComponent } from '../../../components/ADM/lista-prd/lista-prd.c
 import { BreadcumbsComponent } from '../../../components/principal/breadcumbs/breadcumbs.component';
 import { FormsModule } from '@angular/forms';
 import { ProdutosService } from '../../../core/services/produtos.service';
-import { RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { data } from 'jquery';
+import { Produto } from '../../../core/types/types';
 
 @Component({
   selector: 'app-adm-add',
@@ -15,35 +16,18 @@ import { data } from 'jquery';
   styleUrl: './adm-add.component.css'
 })
 export class AdmAddComponent {
+  produto: Produto= {} as Produto;
+
+  constructor(
+    private service: ProdutosService,
+    private router: Router,
+    private route: ActivatedRoute
+  ){}
+
+
   _produtosMain = inject(ProdutosService);
   paginas = ["Produtos", "adicionarProduto"];
   usuario = "";
-  produto=
-    {
-      img:[
-        "img/prod1.jpg",
-        "img/prod1.jpg",
-        "img/prod1.jpg",
-        "img/prod1.jpg",
-        "img/prod1.jpg",
-      ],
-      id:null,
-      nome:"",
-      descricao:"",
-      anoLancamento:"",
-      marca:"",
-      preco:"",
-      tamanho:"",
-      qtd:null,
-      data:"03/10/2025",
-      categoria:"",
-      especificacoes:[
-        {
-          especificacao:"",
-          valor:""
-        }
-      ]
-    }
   
 
   addProd(){
@@ -52,7 +36,7 @@ export class AdmAddComponent {
   }
 
   addEspecificacao(){
-    this.produto.especificacoes .push(
+    this.produto.especificacoes.push(
       {
         especificacao:"",
         valor:""

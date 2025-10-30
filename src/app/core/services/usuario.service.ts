@@ -53,5 +53,13 @@ export class UsuarioService {
       localStorage.setItem("User", "logado")
     }
 
+    usuario=""
 
+    fazerLogin(User: string){
+      this.usuario = User;
+    }
+
+    fazerLogout(){
+      this.usuario = "";
+    }
 }
