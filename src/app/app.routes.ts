@@ -26,5 +26,5 @@ export const routes: Routes = [
   { path: 'usuario/:id/informacoes', component: InfoUserComponent },
   { path: 'adm/produto', component: AdmComponent },
   { path: 'adm/produto/edit/:id', component: AdmEditComponent },
-  { path: 'adm/produto/add', component: AdmAddComponent }
+  { path: 'adm/produto/edit', component: AdmAddComponent },
 ];

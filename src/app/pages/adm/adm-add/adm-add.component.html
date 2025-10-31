@@ -75,23 +75,28 @@
                         <div class="imgs-prd">
                             <div class="molduras">
                                 <div class="moldura 1">
-                                    <img src="icons/adm/img-frame-icon.svg" alt="">
+                                    <img [src]="caminho" alt="">
+                                    <input #img1 type="file" accept="image/*" (change)="carregarArquivo(img1,0)">
                                     Img 1
                                 </div>
                                 <div class="moldura 2">
                                     <img src="icons/adm/img-frame-icon.svg" alt="">
+                                    <input #img1 type="file" accept="image/*" (change)="carregarArquivo(img1,1)">
                                     Img 2
                                 </div>
                                 <div class="moldura 3">
                                     <img src="icons/adm/img-frame-icon.svg" alt="">
+                                    <input #img1 type="file" accept="image/*" (change)="carregarArquivo(img1,2)">
                                     Img 3
                                 </div>
                                 <div class="moldura 4">
                                     <img src="icons/adm/img-frame-icon.svg" alt="">
+                                    <input #img1 type="file" accept="image/*" (change)="carregarArquivo(img1,3)">
                                     Img 4
                                 </div>
                                 <div class="moldura 4">
                                     <img src="icons/adm/img-frame-icon.svg" alt="">
+                                    <input #img1 type="file" accept="image/*" (change)="carregarArquivo(img1,4)">
                                     Img 5
                                 </div>
 

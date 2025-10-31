@@ -5,9 +5,13 @@ import { ListaPrdComponent } from '../../../components/ADM/lista-prd/lista-prd.c
 import { BreadcumbsComponent } from '../../../components/principal/breadcumbs/breadcumbs.component';
 import { FormsModule } from '@angular/forms';
 import { ProdutosService } from '../../../core/services/produtos.service';
-import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { data } from 'jquery';
-import { Produto } from '../../../core/types/types';
+import { Produto, Espeficacao } from '../../../core/types/types';
+
+class ImageSnippet{
+  constructor(public src:string, public file:File){}
+}
 
 @Component({
   selector: 'app-adm-add',
@@ -16,31 +20,41 @@ import { Produto } from '../../../core/types/types';
   styleUrl: './adm-add.component.css'
 })
 export class AdmAddComponent {
-  produto: Produto= {} as Produto;
+  produto:Produto = {} as Produto;
+  especificacao:Espeficacao = {} as Espeficacao; 
+  caminho:any = "icons/adm/img-frame-icon.svg";
 
   constructor(
     private service: ProdutosService,
-    private router: Router,
-    private route: ActivatedRoute
+    private router: Router
   ){}
 
+  imagemSelecionada: ImageSnippet[] = [];
 
-  _produtosMain = inject(ProdutosService);
+  carregarArquivo(img:any, posicao: number){
+    debugger
+    const file:File = img.files[posicao];
+    const reader = new FileReader;
+
+    reader.addEventListener('load', (event: any) => {
+      debugger
+      this.imagemSelecionada[posicao] = new ImageSnippet(event.target.result, file)
+    })
+    debugger
+    reader.readAsDataURL(file);
+    this.caminho = this.imagemSelecionada[posicao].src;
+  }
+
   paginas = ["Produtos", "adicionarProduto"];
-  usuario = "";
   
 
-  addProd(){
-      this._produtosMain.adiconarProduto(this.produto);      
+  addProd(){  
       alert("Produto adicionado com sucesso!")
   }
 
   addEspecificacao(){
     this.produto.especificacoes.push(
-      {
-        especificacao:"",
-        valor:""
-      }
+      this.especificacao
     )
   }
   
