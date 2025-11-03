@@ -24,7 +24,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--fontPadrao
-    );
+    font-family: var(--fontPadrao);
+}
+
+.inp_pd{
+    border-radius: 12px;
+    border: 1.6px solid var(--Neutral-200, #D1D1D1);
+
+    display: flex;
+    height: 52px;
+    padding: 16px;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
 }
 

@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';  
 import { FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { UsuarioService } from '../../core/services/usuario.service';
 import { MenuHeaderComponent } from "../../components/principal/menu-header/menu-header.component";
 import { FooterComponent } from "../../components/principal/footer/footer.component";
@@ -12,6 +12,10 @@ import { FooterComponent } from "../../components/principal/footer/footer.compon
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+  constructor(
+    private router: Router
+  ){}
+
   _usuarioAtual = inject(UsuarioService);
   usuario = "";
   senha = "";
@@ -25,14 +29,14 @@ export class LoginComponent {
     
     if(user === "admin" && pass === "1234" ){
       this._usuarioAtual.fazerLogin(user);
-      return "/adm/produto";
+      this.router.navigate(['/adm/produto']);
     }
     else if(user === "valdir" && pass === "1234"){
       this._usuarioAtual.fazerLogin(user);
-      return "/";
+      this.router.navigate(['/'])
     }
     else{
-      return null;
+      this.validar();
     }
   }
 

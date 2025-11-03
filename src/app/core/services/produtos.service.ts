@@ -25,7 +25,7 @@ export class ProdutosService {
     return this.http.post<Produto>(this.API, produto)
   }
 
-  removerProduto(id: number): Observable<Produto>{
+  removerProduto(id: string): Observable<Produto>{
     return this.http.delete<Produto>(`${this.API}/${id}`)
   }
 

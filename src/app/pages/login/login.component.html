@@ -22,12 +22,12 @@
 
       <div id="conta">
         <button class="btnLogin" [disabled]="!usuarioForm.form.valid" type="submit"
-          [routerLink]="verificarLink(usuarioForm)" (click)="validar()">
+          (click)="verificarLink(usuarioForm)">
           Entrar <img src="icons/loginEntrar.svg" alt="Icone de entrar">
         </button>
 
         <button class="btnCadastro" [disabled]="!usuarioForm.form.valid" type="submit"
-          [routerLink]="verificarLink(usuarioForm)" (click)="validar()">
+          (click)="verificarLink(usuarioForm)">
           Criar conta <img src="icons/user-add.svg" alt="Icone de criar conta">
         </button>
       </div>

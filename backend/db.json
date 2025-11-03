@@ -376,6 +376,28 @@
       "disponibilidade": true
     },
     {
+      "especificacoes": [
+        {
+          "especificacao": "Componentes",
+          "valor": "Tabuleiro, cartas, notas, pinos"
+        },
+        {
+          "especificacao": "Jogadores",
+          "valor": "2 a 6"
+        },
+        {
+          "especificacao": "bacana isso ai",
+          "valor": "teste"
+        },
+        {
+          "especificacao": "aaaaa",
+          "valor": "valoraaaa"
+        },
+        {
+          "especificacao": "especificação",
+          "valor": "valor"
+        }
+      ],
       "id": "1",
       "img": [
         "https://example.com/banco-imobiliario.jpg"
@@ -389,16 +411,6 @@
       "qtd": 1,
       "data": "2025-10-30",
       "categoria": "Jogos de Tabuleiro",
-      "especificacoes": [
-        {
-          "especificacao": "Componentes",
-          "valor": "Tabuleiro, cartas, notas, pinos"
-        },
-        {
-          "especificacao": "Jogadores",
-          "valor": "2 a 6"
-        }
-      ],
       "disponibilidade": true
     }
   ]
