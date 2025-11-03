@@ -27,6 +27,36 @@ input{
     font-style: normal;
     font-weight: 400;
 }
+
+.verdadeiro{
+    z-index: 1;
+    position: absolute;
+    top: 2px;
+    opacity: 0;
+}
+
+.verdadeiro::selection{
+    opacity: 100%;
+}
+
+.input div{
+    position: relative;
+}
+
+.falso{
+    border-radius: 12px;
+    border: 1px solid var(--cinza1);
+    display: flex;
+    padding: 13px;  
+    width: 100%;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    z-index: -1;
+}
+
 .input{
     width: 100%;
 }

@@ -75,9 +75,8 @@
                         <p class="datas">{{produto.data}}</p>
 
                         <div class="acoes-prd">
-                            <img class="acoes-icon olho" src="icons/adm/eye.svg" alt="">
-                            <img class="acoes-icon edit" src="icons/adm/edit.svg" alt="" [routerLink]="getEdit($index)">
-                            <img class="acoes-icon lixo" src="icons/adm/trash.svg" alt="" (click)="removerProd($index)">
+                            <img class="acoes-icon edit" src="icons/adm/edit.svg" alt="" (click)="getEdit(produto.id)">
+                            <img class="acoes-icon lixo" src="icons/adm/trash.svg" alt="" (click)="removerProd(produto.id)">
                         </div>
                     </div>
                 </div>

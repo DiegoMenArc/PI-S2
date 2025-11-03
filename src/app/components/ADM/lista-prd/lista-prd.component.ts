@@ -27,7 +27,7 @@ export class ListaPrdComponent implements OnInit {
     numPages=1;
 
     getEdit(n:number){
-      return `/adm/produto/edit/${n}`
+      this.router.navigate([`adm/produto/edit/${n}`])
     }
 
     getImg(prod:any){
@@ -35,10 +35,12 @@ export class ListaPrdComponent implements OnInit {
     }
 
     removerProd(posicao:number){
+      
       if(posicao){
         this.service.removerProduto(posicao).subscribe(() => {
-        window.location.reload()
-      })
+        window.location.reload();
+      });
+      alert('Produto removido')
     }
 
     }

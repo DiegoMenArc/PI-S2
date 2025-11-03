@@ -5,35 +5,115 @@ import { ListaPrdComponent } from '../../../components/ADM/lista-prd/lista-prd.c
 import { BreadcumbsComponent } from '../../../components/principal/breadcumbs/breadcumbs.component';
 import { FormsModule } from '@angular/forms';
 import { ProdutosService } from '../../../core/services/produtos.service';
-import { Router, RouterLink } from '@angular/router';
-import { data } from 'jquery';
-import { Produto, Espeficacao } from '../../../core/types/types';
+import { ActivatedRoute, Route, Router, RouterLink } from '@angular/router';
+import { Produto, Especificacao } from '../../../core/types/types';
 
-class ImageSnippet{
-  constructor(public src:string, public file:File){}
+class ImageSnippet {
+  constructor(public src: string, public file: File) { }
 }
 
 @Component({
   selector: 'app-adm-add',
-  imports: [ AdmHeaderComponent, NavComponent, ListaPrdComponent, BreadcumbsComponent, FormsModule, RouterLink],
+  imports: [AdmHeaderComponent, NavComponent, ListaPrdComponent, BreadcumbsComponent, FormsModule, RouterLink],
   templateUrl: './adm-add.component.html',
   styleUrl: './adm-add.component.css'
 })
 export class AdmAddComponent {
-  produto:Produto = {} as Produto;
-  especificacao:Espeficacao = {} as Espeficacao; 
-  caminho:any = "icons/adm/img-frame-icon.svg";
+  produtoId?: number; // Id que vai ser puxado da rota
+
+  produto: Produto = {} as Produto; // objeto do produto 
+
+  especificacao: Especificacao = {} as Especificacao; // objeto da classe Espefi
+
+  caminho: any = "icons/adm/img-frame-icon.svg";
 
   constructor(
     private service: ProdutosService,
-    private router: Router
-  ){}
+    private router: Router,
+    private route: ActivatedRoute
+  ) {
+    this.produtoId = Number(this.route.snapshot.params['id']);
+
+    if (this.produtoId) {
+      service.buscaId(this.produtoId).subscribe(produto => {
+        if (produto) {
+          this.produto.id = produto.id;
+          this.produto.img = produto.img;
+          this.produto.nome = produto.nome;
+          this.produto.descricao = produto.descricao;
+          this.produto.anoLancamento = produto.anoLancamento;
+          this.produto.marca = produto.marca;
+          this.produto.preco = produto.preco;
+          this.produto.tamanho = produto.tamanho;
+          this.produto.qtd = produto.qtd;
+          this.produto.data = produto.data;
+          this.produto.categoria = produto.categoria;
+          this.produto.especificacoes = produto.especificacoes;
+          this.produto.disponibilidade = produto.disponibilidade
+        }
+
+        console.log(produto.nome)
+      })
+    }
+
+    
+
+    if (this.produto.especificacoes == undefined) {
+      this.produto.especificacoes =
+        [
+          {
+            especificacao: "",
+            valor: ""
+          }
+        ]
+    }
+  }
+
+  paginas = ["Produtos", "adicionarProduto"];
+
+
+  addProd() {
+    if (this.produtoId) {
+      this.service.editarProduto(this.produto).subscribe(() => {
+        this.router.navigate(['adm/produto'])
+      })
+    } else {
+      if(this.produto.img == undefined){
+        this.produto.img = ['https://example.com/banco-imobiliario.jpg'];
+      }
+
+      const hoje = new Date();
+      const dia = String(hoje.getDate()).padStart(2, '0');
+      const mes = String(hoje.getMonth() + 1).padStart(2, '0'); // Adiciona 1 pois os meses começam em 0
+      const ano = hoje.getFullYear();
+
+      const dataFormatada = `${dia}/${mes}/${ano}`;
+
+      this.produto.data = dataFormatada;
+      this.service.adiconarProduto(this.produto).subscribe(() => {
+        this.router.navigate(['adm/produto'])
+      })
+    }
+  }
+
+  addEspecificacao() {
+    console.log(this.produto.especificacoes)
+
+    this.produto.especificacoes.push(
+      {
+        especificacao:"especificação",
+        valor:"valor"
+      })
+
+  }
+
+  // Feedback imagens =======================================================================
 
   imagemSelecionada: ImageSnippet[] = [];
 
-  carregarArquivo(img:any, posicao: number){
+  carregarArquivo(img: any, posicao: number) {
     debugger
-    const file:File = img.files[posicao];
+    const file: File = img.files[posicao];
     const reader = new FileReader;
 
     reader.addEventListener('load', (event: any) => {
@@ -44,18 +124,4 @@ export class AdmAddComponent {
     reader.readAsDataURL(file);
     this.caminho = this.imagemSelecionada[posicao].src;
   }
-
-  paginas = ["Produtos", "adicionarProduto"];
-  
-
-  addProd(){  
-      alert("Produto adicionado com sucesso!")
-  }
-
-  addEspecificacao(){
-    this.produto.especificacoes.push(
-      this.especificacao
-    )
-  }
-  
 }

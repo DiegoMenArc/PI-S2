@@ -25,7 +25,7 @@
                     <div class="inputsDiv">
                         <div class="input">
                             <p>Quantidade</p>
-                            <input type="text" name="quantidade" [(ngModel)]="produto.qtd" placeholder="Digite a quantidade">
+                            <input type="number" name="quantidade" [(ngModel)]="produto.qtd" placeholder="Digite a quantidade">
                         </div>
                         <div class="input">
                             <p>Preço</p>
@@ -44,9 +44,15 @@
                         </div>              
                     </div>
 
-                    <div class="input">
-                        <p>Categoria</p>
-                        <input type="text" name="categoria" [(ngModel)]="produto.categoria" placeholder="Digite o nome">
+                    <div class="inputsDiv">
+                        <div class="input">
+                            <p>Categoria</p>
+                            <input type="text" name="lancamento" [(ngModel)]="produto.categoria" placeholder="Digite o ano de lançamento">
+                        </div>
+                        <div class="input">
+                            <p>tamanho</p>
+                            <input type="text" name="marca" [(ngModel)]="produto.tamanho" placeholder="Digite a marca">
+                        </div>              
                     </div>
                 </form>
 
@@ -57,12 +63,18 @@
                         @for(especificacao of produto.especificacoes; track $index){
                             <div class="inputsDiv">
                                 <div class="input">
-                                    <p>Categoria</p>
-                                    <input type="text" name="especificao" [(ngModel)]="especificacao.especificacao" placeholder="Digite a categoria">
+                                    <p>Categoria </p>
+                                    <div>
+                                        <p class="falso">{{especificacao.especificacao}}</p>
+                                        <input type="text" class="verdadeiro" name="especificao" [(ngModel)]="produto.especificacoes[$index].especificacao" placeholder="Digite a categoria">
+                                    </div>
                                 </div>
                                 <div class="input">
                                     <p>Valor</p>
-                                    <input type="text" name="valor" [(ngModel)]="especificacao.valor" placeholder="Digite o valor">
+                                    <div>
+                                        <p class="falso">{{especificacao.valor}}</p>
+                                        <input type="text" class="verdadeiro" name="valor" [(ngModel)]="especificacao.valor" placeholder="Digite o valor">
+                                    </div>
                                 </div>              
                             </div>   
                         }

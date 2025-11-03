@@ -1,7 +1,7 @@
 {
   "usuarios": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Ana",
       "sobrenome": "Silva",
       "user_name": "ana.silva",
@@ -23,7 +23,7 @@
       }
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Bruno",
       "sobrenome": "Almeida",
       "user_name": "bruno.almeida",
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": 3,
+      "id": "3",
       "nome": "Carla",
       "sobrenome": "Pereira",
       "user_name": "carla.pereira",
@@ -56,7 +56,7 @@
       "email": "carla.pereira@example.com"
     },
     {
-      "id": 4,
+      "id": "4",
       "nome": "Daniel",
       "sobrenome": "Souza",
       "user_name": "daniel.souza",
@@ -70,7 +70,7 @@
       "telefone": 31912345678
     },
     {
-      "id": 5,
+      "id": "5",
       "nome": "Elisa",
       "sobrenome": "Costa",
       "user_name": "elisa.costa",
@@ -93,7 +93,7 @@
       }
     },
     {
-      "id": 6,
+      "id": "6",
       "nome": "Felipe",
       "sobrenome": "Mendes",
       "user_name": "felipe.mendes",
@@ -107,7 +107,7 @@
       "telefone": 41987654321
     },
     {
-      "id": 7,
+      "id": "7",
       "nome": "Gabriela",
       "sobrenome": "Lima",
       "user_name": "gabriela.lima",
@@ -126,7 +126,7 @@
       }
     },
     {
-      "id": 8,
+      "id": "8",
       "nome": "Hugo",
       "sobrenome": "Fernandes",
       "user_name": "hugo.fernandes",
@@ -139,7 +139,7 @@
       "email": "hugo.fernandes@example.com"
     },
     {
-      "id": 9,
+      "id": "9",
       "nome": "Isabela",
       "sobrenome": "Ramos",
       "user_name": "isabela.ramos",
@@ -152,7 +152,7 @@
       "telefone": 51912345678
     },
     {
-      "id": 10,
+      "id": "10",
       "nome": "João",
       "sobrenome": "Martins",
       "user_name": "joao.martins",
@@ -172,7 +172,7 @@
       }
     },
     {
-      "id": 11,
+      "id": "11",
       "nome": "Karen",
       "sobrenome": "Gomes",
       "user_name": "karen.gomes",
@@ -186,7 +186,7 @@
       "telefone": 61987654321
     },
     {
-      "id": 12,
+      "id": "12",
       "nome": "Lucas",
       "sobrenome": "Barbosa",
       "user_name": "lucas.barbosa",
@@ -208,7 +208,7 @@
       }
     },
     {
-      "id": 13,
+      "id": "13",
       "nome": "Marina",
       "sobrenome": "Rocha",
       "user_name": "marina.rocha",
@@ -221,7 +221,7 @@
       "email": "marina.rocha@example.com"
     },
     {
-      "id": 14,
+      "id": "14",
       "nome": "Nicolas",
       "sobrenome": "Castro",
       "user_name": "nicolas.castro",
@@ -234,7 +234,7 @@
       "telefone": 21912345678
     },
     {
-      "id": 15,
+      "id": "15",
       "nome": "Olivia",
       "sobrenome": "Dias",
       "user_name": "olivia.dias",
@@ -256,45 +256,6 @@
   ],
   "produtos": [
     {
-      "img": [
-        "https://example.com/banco-imobiliario.jpg"
-      ],
-      "id": 1,
-      "nome": "Banco Imobiliário",
-      "descricao": "Jogo clássico de tabuleiro brasileiro inspirado no Monopoly, onde os jogadores compram e administram propriedades.",
-      "anoLancamento": "1944",
-      "marca": "Estrela",
-      "preco": "R$ 199,90",
-      "tamanho": "Caixa 40x27cm",
-      "qtd": 1,
-      "data": "2025-10-30",
-      "categoria": "Jogos de Tabuleiro",
-      "especificacoes": [
-        {
-          "especificacao": "Componentes",
-          "valor": "Tabuleiro, cartas, notas, pinos"
-        },
-        {
-          "especificacao": "Jogadores",
-          "valor": "2 a 6"
-        }
-      ],
-      "disponibilidade": true
-    },
-    {
-      "img": [
-        "https://example.com/gugu-gaita-magica.jpg"
-      ],
-      "id": 2,
-      "nome": "Gaita Mágica do Gugu",
-      "descricao": "Brinquedo musical popularizado pelo apresentador Gugu Liberato que emitia sons ao ser tocado.",
-      "anoLancamento": "1990",
-      "marca": "Estrela",
-      "preco": "R$ 59,90",
-      "tamanho": "20cm",
-      "qtd": 1,
-      "data": "2025-10-30",
-      "categoria": "Brinquedos Musicais",
       "especificacoes": [
         {
           "especificacao": "Material",
@@ -303,15 +264,32 @@
         {
           "especificacao": "Indicação",
           "valor": "3+"
+        },
+        {
+          "especificacao": "Tamanho",
+          "valor": "10"
         }
       ],
+      "id": "2",
+      "img": [
+        "https://example.com/gugu-gaita-magica.jpg"
+      ],
+      "nome": "teste",
+      "descricao": "Brinquedo musical popularizado pelo apresentador Gugu Liberato que emitia sons ao ser tocado.",
+      "anoLancamento": "1990",
+      "marca": "Estrela",
+      "preco": "R$ 59,90",
+      "tamanho": "20cm",
+      "qtd": 1,
+      "data": "2025-10-30",
+      "categoria": "Brinquedos Musicais",
       "disponibilidade": true
     },
     {
       "img": [
         "https://example.com/max-steel.jpg"
       ],
-      "id": 3,
+      "id": "3",
       "nome": "Max Steel",
       "descricao": "Boneco de ação popular dos anos 90 e 2000 com temática de super-heróis e agentes secretos.",
       "anoLancamento": "1998",
@@ -334,10 +312,32 @@
       "disponibilidade": true
     },
     {
+      "especificacoes": [
+        {
+          "especificacao": "a",
+          "valor": "1"
+        },
+        {
+          "especificacao": "b",
+          "valor": "2"
+        },
+        {
+          "especificacao": "c",
+          "valor": "3"
+        },
+        {
+          "especificacao": "fsadfdsa",
+          "valor": ""
+        },
+        {
+          "especificacao": "fffffffff",
+          "valor": "fa"
+        }
+      ],
+      "id": "4",
       "img": [
         "https://example.com/ferrorama.jpg"
       ],
-      "id": 4,
       "nome": "Ferrorama",
       "descricao": "Trenzinho icônico com trilhos, locomotiva e vagões, febre entre crianças brasileiras nos anos 80 e 90.",
       "anoLancamento": "1979",
@@ -347,23 +347,13 @@
       "qtd": 1,
       "data": "2025-10-30",
       "categoria": "Brinquedos Tradicionais",
-      "especificacoes": [
-        {
-          "especificacao": "Sistema",
-          "valor": "Locomotiva elétrica"
-        },
-        {
-          "especificacao": "Trilhos",
-          "valor": "Montáveis"
-        }
-      ],
       "disponibilidade": true
     },
     {
       "img": [
         "https://example.com/pogobol.jpg"
       ],
-      "id": 5,
+      "id": "5",
       "nome": "Pogobol",
       "descricao": "Brinquedo para pular, febre dos anos 80/90, composto por bola inflável presa a uma plataforma.",
       "anoLancamento": "1987",
@@ -386,7 +376,7 @@
       "disponibilidade": true
     },
     {
-      "id": 1,
+      "id": "1",
       "img": [
         "https://example.com/banco-imobiliario.jpg"
       ],

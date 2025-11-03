@@ -29,23 +29,23 @@ export interface Usuario {
 
 
 export interface Produto {
-    img:string[],
-    id:number,
+    img?:string[],
+    id:string,
     nome:string,
     descricao:string,
     anoLancamento:string,
     marca:string,
     preco:string,
-    tamanho:string,
+    tamanho?:string,
     qtd:number,
-    data:string,
+    data?:string,
     categoria:string,
-    especificacoes:Espeficacao[]
+    especificacoes:Especificacao[]
 
     disponibilidade?: boolean,
 }
 
-export interface Espeficacao{
+export interface Especificacao{
     especificacao:string,
     valor:string
 }

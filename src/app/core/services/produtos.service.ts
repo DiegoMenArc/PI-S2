@@ -26,12 +26,12 @@ export class ProdutosService {
   }
 
   removerProduto(id: number): Observable<Produto>{
-    return this.http.delete<Produto>(`/${this.API}/${id}`)
+    return this.http.delete<Produto>(`${this.API}/${id}`)
   }
 
   editarProduto(produto: Produto){
     const url = `${this.API}/${produto.id}`
-    return this.http.put<Produto>(this.API, url)
+    return this.http.put<Produto>(url, produto)
   }
 
   buscaId(id: number){
