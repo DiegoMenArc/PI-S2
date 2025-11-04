@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { AdmHeaderComponent } from '../../../components/ADM/adm-header/adm-header.component';
 import { NavComponent } from '../../../components/ADM/nav/nav.component';
-import { ListaPrdComponent } from '../../../components/ADM/lista-prd/lista-prd.component';
+// import { ListaPrdComponent } from '../../../components/ADM/lista-prd/lista-prd.component';
 import { BreadcumbsComponent } from '../../../components/principal/breadcumbs/breadcumbs.component';
 import { FormsModule } from '@angular/forms';
 import { ProdutosService } from '../../../core/services/produtos.service';
@@ -14,7 +14,7 @@ class ImageSnippet {
 
 @Component({
   selector: 'app-adm-add',
-  imports: [AdmHeaderComponent, NavComponent, ListaPrdComponent, BreadcumbsComponent, FormsModule, RouterLink],
+  imports: [AdmHeaderComponent, NavComponent, /*ListaPrdComponent,*/ BreadcumbsComponent, FormsModule, RouterLink],
   templateUrl: './adm-add.component.html',
   styleUrl: './adm-add.component.css'
 })
@@ -24,8 +24,6 @@ export class AdmAddComponent {
   produto: Produto = {} as Produto; // objeto do produto 
 
   especificacao: Especificacao = {} as Especificacao; // objeto da classe Espefi
-
-  caminho: any = "icons/adm/img-frame-icon.svg";
 
   constructor(
     private service: ProdutosService,
@@ -49,10 +47,9 @@ export class AdmAddComponent {
           this.produto.data = produto.data;
           this.produto.categoria = produto.categoria;
           this.produto.especificacoes = produto.especificacoes;
-          this.produto.disponibilidade = produto.disponibilidade
+          this.produto.disponibilidade = produto.disponibilidade;
+          this.produto.avaliacoes = produto.avaliacoes;
         }
-
-        console.log(produto.nome)
       })
     }
 
@@ -78,8 +75,15 @@ export class AdmAddComponent {
         this.router.navigate(['adm/produto'])
       })
     } else {
+
       if(this.produto.img == undefined){
-        this.produto.img = ['https://example.com/banco-imobiliario.jpg'];
+        this.produto.img = ['/img/prod1.jpg'];
+      }
+      if(this.produto.avaliacoes==undefined){
+        this.produto.avaliacoes = {
+          totalAvaliacoes:0,
+          media:0
+        }
       }
 
       const hoje = new Date();
@@ -97,8 +101,6 @@ export class AdmAddComponent {
   }
 
   addEspecificacao() {
-    console.log(this.produto.especificacoes)
-
     this.produto.especificacoes.push(
       {
         especificacao:"especificação",
@@ -111,17 +113,17 @@ export class AdmAddComponent {
 
   imagemSelecionada: ImageSnippet[] = [];
 
+  caminho: any = "icons/adm/img-frame-icon.svg";
+
   carregarArquivo(img: any, posicao: number) {
-    debugger
-    const file: File = img.files[posicao];
+    const file: File = img.files[0];
     const reader = new FileReader;
 
     reader.addEventListener('load', (event: any) => {
-      debugger
       this.imagemSelecionada[posicao] = new ImageSnippet(event.target.result, file)
+      this.caminho = this.imagemSelecionada[posicao].src;
     })
-    debugger
+
     reader.readAsDataURL(file);
-    this.caminho = this.imagemSelecionada[posicao].src;
   }
 }

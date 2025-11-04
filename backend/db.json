@@ -272,7 +272,7 @@
       ],
       "id": "2",
       "img": [
-        "https://example.com/gugu-gaita-magica.jpg"
+        "/img/prod1.jpg"
       ],
       "nome": "teste",
       "descricao": "Brinquedo musical popularizado pelo apresentador Gugu Liberato que emitia sons ao ser tocado.",
@@ -287,7 +287,7 @@
     },
     {
       "img": [
-        "https://example.com/max-steel.jpg"
+        "/img/prod1.jpg"
       ],
       "id": "3",
       "nome": "Max Steel",
@@ -336,7 +336,7 @@
       ],
       "id": "4",
       "img": [
-        "https://example.com/ferrorama.jpg"
+        "/img/prod1.jpg"
       ],
       "nome": "Ferrorama",
       "descricao": "Trenzinho icônico com trilhos, locomotiva e vagões, febre entre crianças brasileiras nos anos 80 e 90.",
@@ -351,7 +351,7 @@
     },
     {
       "img": [
-        "https://example.com/pogobol.jpg"
+        "/img/prod1.jpg"
       ],
       "id": "5",
       "nome": "Pogobol",
@@ -400,7 +400,7 @@
       ],
       "id": "1",
       "img": [
-        "https://example.com/banco-imobiliario.jpg"
+        "/img/prod1.jpg"
       ],
       "nome": "Banco Imobiliário",
       "descricao": "Jogo clássico de tabuleiro brasileiro inspirado no Monopoly, onde os jogadores compram e administram propriedades.",

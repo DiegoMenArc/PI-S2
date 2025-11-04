@@ -40,7 +40,13 @@ export interface Produto {
     qtd:number,
     data?:string,
     categoria:string,
+
     especificacoes:Especificacao[]
+    
+    avaliacoes?: {
+        media:number,
+        totalAvaliacoes:number
+    }
 
     disponibilidade?: boolean,
 }

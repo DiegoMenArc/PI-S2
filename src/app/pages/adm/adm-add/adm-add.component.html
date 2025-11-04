@@ -63,7 +63,7 @@
                         @for(especificacao of produto.especificacoes; track $index){
                             <div class="inputsDiv">
                                 <div class="input">
-                                    <p>Categoria </p>
+                                    <p>Especificação </p>
                                     <div>
                                         <p class="falso">{{especificacao.especificacao}}</p>
                                         <input type="text" class="verdadeiro" name="especificao" [(ngModel)]="produto.especificacoes[$index].especificacao" placeholder="Digite a categoria">

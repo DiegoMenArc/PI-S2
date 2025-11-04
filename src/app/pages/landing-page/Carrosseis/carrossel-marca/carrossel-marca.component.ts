@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { CarrosselComponent } from '../../../../components/carrossel/carrossel.component';
-import { CardPadraoComponent } from '../../../../components/card-padrao/card-padrao.component';
-import { AdmComponent } from "../../../adm/adm.component";
+// import { CarrosselComponent } from '../../../../components/carrossel/carrossel.component';
+// import { CardPadraoComponent } from '../../../../components/card-padrao/card-padrao.component';
+// import { AdmComponent } from "../../../adm/adm.component";
 
 @Component({
   selector: 'app-carrossel-marca',
-  imports: [CarrosselComponent, CardPadraoComponent, AdmComponent],  
+  imports: [/*CarrosselComponent, CardPadraoComponent, AdmComponent*/],  
   templateUrl: './carrossel-marca.component.html',
   styleUrl: './carrossel-marca.component.css'
   

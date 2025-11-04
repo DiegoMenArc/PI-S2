@@ -8,7 +8,6 @@ import { ProdutoComponent } from './pages/produto/produto.component';
 import { LoginComponent } from './pages/login/login.component';
 import { BuscaComponent } from './pages/busca/busca.component';
 import { InfoUserComponent } from './pages/userAdm/info-user/info-user.component';
-import { AdmEditComponent } from './pages/adm/adm-edit/adm-edit.component';
 import { AdmAddComponent } from './pages/adm/adm-add/adm-add.component';
 import { AdmComponent } from './pages/adm/adm.component';
 
