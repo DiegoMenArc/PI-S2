@@ -1,20 +1,9 @@
 .conteiner{
     display: flex;
-    height: 100vh;
+    height: 100%;
 }
 
 .main{
     height: 100%;
     width: 90vw;    
-}
-
-.nav{
-    height: 100vh;    
-}
-
-.secao-head{
-    display: flex;
-    flex-direction: column;
-    margin: 0 1vw;
-    margin: 1rem 1vw;
 }

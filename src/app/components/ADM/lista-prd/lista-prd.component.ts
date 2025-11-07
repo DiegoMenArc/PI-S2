@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { ProdutosService } from '../../../core/services/produtos.service';
 import { Produto } from '../../../core/types/types';
+import { BreadcumbsComponent } from '../../principal/breadcumbs/breadcumbs.component';
 
 
 @Component({
   selector: 'app-lista-prd',
-  imports: [ RouterLink ],
+  imports: [ RouterLink, BreadcumbsComponent ],
   templateUrl: './lista-prd.component.html',
   styleUrl: './lista-prd.component.css'
 })

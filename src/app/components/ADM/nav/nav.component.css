@@ -9,7 +9,7 @@
 
 .nav-head {
     display: flex;
-    height: 10vh;
+    height: 87px;
     justify-items: center;
     justify-content: space-between;
     align-items: center;
@@ -68,8 +68,8 @@
     color: #FFF;
     
     text-align: center;
-    font-family: "Montserrat", "Sans-serif";
-    font-size: 1rem;
+    font-family: var(--logo);
+    font-size: 22px;
     font-weight: 400;
 }
 
