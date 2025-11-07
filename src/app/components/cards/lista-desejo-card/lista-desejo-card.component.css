@@ -1,0 +1,12 @@
+.cont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.cl{
+    width: 20%;
+    align-self: flex-end;
+    background-color: var(--azul1);
+}

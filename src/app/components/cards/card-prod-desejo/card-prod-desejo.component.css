@@ -1,0 +1,21 @@
+.cont {
+    display: flex;
+    width: 100%;
+    height: 123px;
+    padding: 6px 17px;
+    align-items: center;
+    gap: 27px;
+
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.30);
+    background: #FEFEFE;
+}
+
+.cont-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+}

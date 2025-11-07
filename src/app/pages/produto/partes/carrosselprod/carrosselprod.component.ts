@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { CarrosselComponent } from '../../../../components/carrossel/carrossel.component';
+import { CarrosselComponent } from '../../../../components/principal/carrossel/carrossel.component';
+
 
 @Component({
   selector: 'app-carrosselprod',

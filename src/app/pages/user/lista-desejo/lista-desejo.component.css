@@ -1,0 +1,14 @@
+.content{
+    min-height: 1050px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    align-self: stretch;
+    justify-content: center;
+}

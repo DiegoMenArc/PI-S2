@@ -7,9 +7,10 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { ProdutoComponent } from './pages/produto/produto.component';
 import { LoginComponent } from './pages/login/login.component';
 import { BuscaComponent } from './pages/busca/busca.component';
-import { InfoUserComponent } from './pages/userAdm/info-user/info-user.component';
+import { InfoUserComponent } from './pages/adm/info-user/info-user.component';
 import { AdmAddComponent } from './pages/adm/adm-add/adm-add.component';
 import { AdmComponent } from './pages/adm/adm.component';
+import { ListaDesejoComponent } from './pages/user/lista-desejo/lista-desejo.component';
 
 export const routes: Routes = [
   {
@@ -26,4 +27,5 @@ export const routes: Routes = [
   { path: 'adm/produto', component: AdmComponent },
   { path: 'adm/produto/edit/:id', component: AdmAddComponent },
   { path: 'adm/produto/edit', component: AdmAddComponent },
+  { path: 'perfil/lista-de-desejos', component: ListaDesejoComponent, title: 'Lista de Desejos'}
 ];

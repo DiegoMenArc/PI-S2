@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CardPadraoComponent } from '../../../../components/card-padrao/card-padrao.component';
+import { CardPadraoComponent } from '../../../../components/cards/card-padrao/card-padrao.component';
 
 @Component({
   selector: 'cards-busca',

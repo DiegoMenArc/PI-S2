@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { BreadcumbsComponent } from '../../components/principal/breadcumbs/breadcumbs.component';
 // import { FiltrosComponent } from './partes/filtros/filtros.component';
 import { BuscaService } from '../../core/services/busca.service';
-import { CardPadraoComponent } from '../../components/card-padrao/card-padrao.component';
+import { CardPadraoComponent } from '../../components/cards/card-padrao/card-padrao.component';
 import { CarrosselprodComponent } from '../produto/partes/carrosselprod/carrosselprod.component';
 import { FooterComponent } from '../../components/principal/footer/footer.component';
 // import { MenuHeaderComponent } from "../../components/principal/menu-header/menu-header.component";

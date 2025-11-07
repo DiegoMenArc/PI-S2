@@ -7,9 +7,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 
-
 //todos o processo ta explicado no usuario.service
-
 
 export class ProdutosService {
 
