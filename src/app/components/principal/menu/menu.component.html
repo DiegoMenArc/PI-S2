@@ -20,7 +20,7 @@
     <div id="menu-login">
   <ng-container *ngIf="!usuarioLogado; else logado">
     <button id="btnEntrar" routerLink="/login" (click)="fechar()">Entrar</button>
-    <button id="btnCadastrar" routerLink="/login" (click)="fechar()">Cadastrar</button>
+    <button id="btnCadastrar" routerLink="/cadastro" (click)="fechar()">Cadastrar</button>
   </ng-container>
 
   <ng-template #logado>

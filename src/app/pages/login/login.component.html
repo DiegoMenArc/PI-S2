@@ -26,8 +26,7 @@
           Entrar <img src="icons/loginEntrar.svg" alt="Icone de entrar">
         </button>
 
-        <button class="btnCadastro" [disabled]="!usuarioForm.form.valid" type="submit"
-          (click)="verificarLink(usuarioForm)">
+        <button class="btnCadastro" (click)="clicarCadastro()">
           Criar conta <img src="icons/user-add.svg" alt="Icone de criar conta">
         </button>
       </div>

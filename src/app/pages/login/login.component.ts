@@ -44,5 +44,7 @@ export class LoginComponent {
     this.verificar = true;
     this.credenciais="Credenciais invalidas";
   }
-
+  clicarCadastro(){
+    this.router.navigate(['/cadastro']);
+  }  
 }

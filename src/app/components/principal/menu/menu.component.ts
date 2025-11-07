@@ -10,12 +10,15 @@ import { UsuarioService } from '../../../core/services/usuario.service';
     templateUrl: './menu.component.html',
     styleUrls: ['./menu.component.css']
 })
+
+
 export class MenuComponent {
     @Input() visivel: boolean = false;
     @Output() fecharMenu = new EventEmitter<void>();
 
     submenuAberto = false;
     _usuarioAtual = inject(UsuarioService);
+    router: any;
 
     toggleSubmenu() {
         this.submenuAberto = !this.submenuAberto;
@@ -33,4 +36,8 @@ export class MenuComponent {
         this._usuarioAtual.fazerLogout();
         this.fechar(); 
     }
+
+    clicarCadastro(){
+    this.router.navigate(['/cadastro']);
+  }
 }
