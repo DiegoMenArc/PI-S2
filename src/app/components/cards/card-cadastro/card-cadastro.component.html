@@ -1,20 +1,33 @@
-<p>card-cadastro works!</p>
-<div class="cont">
-    <h2>{{titulo}}</h2>
-    <div class="box-inputs">
-        <div class="input-frame">
-            <label for="email">Insira seu e-mail</label>
-            <input type="text" name="email" id="email">
+<div class="card">
+      <h1>{{this.titulo}}</h1>
+
+      <form id="form-email">
+        <div class="input-group">
+          <label for="email">{{this.acao}}</label>
+          <input type="email" id="email" placeholder={{this.placeH1}} required>
         </div>
 
-        <div class="input-frame">
-            <label for="email1">Confirme o e-mail</label>
-            <input type="text" name="email" id="email">
+        <div class="input-group">
+          <label for="confirmar">{{this.subAcao}}</label>
+          <input type="email" id="confirmar-email" placeholder={{this.placeH2}} required>
         </div>
 
-        <button>
+        <form action="" method="get">
+        <button type="submit" class="btn-continuar" routerLink={{this.link}}>
             Continuar
-            <img src="" alt="">
+            <i class="fa-solid fa-arrow-right"></i>
         </button>
+        </form>
+
+        <p class="ou">ou</p>
+
+        <div class="social-login">
+          <button class="google">
+            <i class="fa-brands fa-google"></i>
+          </button>
+          <button class="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </button>
+        </div>
+      </form>
     </div>
-</div> 

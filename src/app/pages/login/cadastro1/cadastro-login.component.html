@@ -1,56 +1,32 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Barra superior -->
+<header>
+  <h1 class="logo">MUNDO NOSTÁLGICO</h1>
+</header>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Barra superior -->
-  <header>
-    <h1 class="logo">MUNDO NOSTÁLGICO</h1>
-  </header>
+<!-- Container central -->
+<main>
 
-  <!-- Container central -->
-  <main>
-    <div class="card">
-      <h1>Cadastro</h1>
+  <app-card-cadastro 
 
-      <form id="form-email">
-        <div class="input-group">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" placeholder="Digite seu e-mail" required>
-        </div>
+    titulo={{this.titulo}} 
+    acao={{this.acao}} 
+    subAcao={{this.subAcao}}
+    placeH1={{this.placeH1}}
+    placeH2={{this.placeH2}}
+    link={{this.link}}>
+    
+  </app-card-cadastro>
 
-        <div class="input-group">
-          <label for="confirmar">Confirmar E-mail</label>
-          <input type="email" id="confirmar-email" placeholder="Confirme seu e-mail" required>
-        </div>
+</main>
+<!-- Rodape -->
+<footer>
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</footer>
 
-        <form action="" method="get">
-        <button type="submit" class="btn-continuar">
-            Continuar
-        <i class="fa-solid fa-arrow-right"></i>
-        </button>
-        </form>
-
-        <p class="ou">ou</p>
-
-        <div class="social-login">
-          <button class="google">
-            <i class="fa-brands fa-google"></i>
-          </button>
-          <button class="facebook">
-            <i class="fa-brands fa-facebook-f"></i>
-          </button>
-        </div>
-      </form>
-    </div>
-  </main>
-
-  <!-- Rodape -->
-  <footer>
-    <div class="dots">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-  </footer>
-
-  <script src="validacao1.js"></script>
-
+<script src="validacao1.js"></script>

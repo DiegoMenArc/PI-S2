@@ -11,6 +11,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
   styleUrl: './carrossel.component.css'
 })
 export class CarrosselComponent {
+  
   slides = [
     {img: "http://placehold.it/350x150/000000"},
     {img: "http://placehold.it/350x150/111111"},

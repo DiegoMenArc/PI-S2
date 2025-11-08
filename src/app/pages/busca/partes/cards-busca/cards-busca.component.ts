@@ -8,4 +8,6 @@ import { CardPadraoComponent } from '../../../../components/cards/card-padrao/ca
   styleUrl: './cards-busca.component.css'
 })
 export class CardsBuscaComponent {
+cards: any;
+
 }
