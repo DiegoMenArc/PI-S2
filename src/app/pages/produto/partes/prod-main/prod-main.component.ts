@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { BreadcumbsComponent } from '../../../../components/principal/breadcumbs/breadcumbs.component'
 
 
@@ -25,7 +25,7 @@ export class ProdMainComponent {
     }
   }
 
-  nome_prod = "Casinha de Brinquedo"
-  preco = 50.00
-  desc = "Uma casa de brinquedo bacana para as suas crianças entrarem no mundo da imaginação"
+  @Input() nome_prod ?:string;
+  @Input() preco ?:string;
+  @Input() desc ?:string;
 }

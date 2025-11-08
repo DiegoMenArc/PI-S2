@@ -3,13 +3,20 @@
     <app-card-promocao></app-card-promocao>
 
     <div class="conteiner">
-        <app-carrossel></app-carrossel>
+        
+        @for (prod of listarP; track $index) {
+            {{prod.nome}} <br>  
+            {{prod.preco}} <br>
+            {{prod.descricao}} <br>
+            {{prod.categoria}} <br>
+            <hr>   
+        }
     </div>
 
     <app-categorias></app-categorias>
 
     <div class="conteiner">
-        <app-carrossel></app-carrossel>
+        <app-carrossel ></app-carrossel>
     </div>
 
 </div>

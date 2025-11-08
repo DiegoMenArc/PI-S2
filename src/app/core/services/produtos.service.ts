@@ -32,7 +32,7 @@ export class ProdutosService {
     return this.http.put<Produto>(url, produto)
   }
 
-  buscaId(id: number){
+  buscaId(id: string){
     return this.http.get<Produto>(this.API+`/${id}`)
   }
 }

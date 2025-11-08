@@ -19,7 +19,7 @@ export const routes: Routes = [
     component: MenuHeaderComponent,
     children: [
       { path: '', component: LandingPageComponent },
-      { path: 'produto', component: ProdutoComponent },
+      { path: 'produto/:id', component: ProdutoComponent },
       { path: 'busca/:busca', component: BuscaComponent }
     ]
   },

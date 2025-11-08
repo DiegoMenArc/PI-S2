@@ -6,7 +6,7 @@ import { BreadcumbsComponent } from "../../components/principal/breadcumbs/bread
 
 @Component({
   selector: 'app-adm',
-  imports: [AdmHeaderComponent, NavComponent, ListaPrdComponent, BreadcumbsComponent],
+  imports: [AdmHeaderComponent, NavComponent, ListaPrdComponent],
   templateUrl: './adm.component.html',
   styleUrl: './adm.component.css'
 })

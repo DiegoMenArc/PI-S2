@@ -1,4 +1,4 @@
-<main routerLink="/produto">
+<main [routerLink]="['/produto', id]">
     <div class="image">
         <img src="img/prod1.jpg" alt="produto">
     </div>
@@ -13,8 +13,8 @@
             </div>
         </div>
         <div class="valores">
-            <p class="valorCD">R${{valorCD}}</p>
-            <p class="valor">R${{valor}}</p>
+            <p class="valorCD">R${{valor}}</p>
+            <p class="valor">R${{valorCD}}</p>
             <p class="prest">{{prest}}</p>
         </div>
         <p class="frete">Frete Gratis</p>

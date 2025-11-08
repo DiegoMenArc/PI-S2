@@ -19,7 +19,7 @@ class ImageSnippet {
   styleUrl: './adm-add.component.css'
 })
 export class AdmAddComponent {
-  produtoId?: number; // Id que vai ser puxado da rota
+  produtoId?: string; // Id que vai ser puxado da rota
 
   produto: Produto = {} as Produto; // objeto do produto 
 
@@ -30,7 +30,7 @@ export class AdmAddComponent {
     private router: Router,
     private route: ActivatedRoute
   ) {
-    this.produtoId = Number(this.route.snapshot.params['id']);
+    this.produtoId = this.route.snapshot.params['id'];
 
     if (this.produtoId) {
       service.buscaId(this.produtoId).subscribe(produto => {

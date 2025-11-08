@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-cadastro-login',
-  imports: [RouterLink, FormsModule],
+  imports: [ FormsModule],
   templateUrl: './cadastro-login.component.html',
   styleUrl: './cadastro-login.component.css'
 })

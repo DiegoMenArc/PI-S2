@@ -2,8 +2,8 @@
     <ngx-slick-carousel class="carousel"
                         #slickModal="slick-carousel"
                         [config]="slideConfig">
-        @for (slide of slides; track $index) {
-            <app-cardPadrao ngxSlickItem> </app-cardPadrao>
+        @for (produtos of listarProduto; track $index) {
+            <app-cardPadrao ngxSlickItem [nome]="produtos.nome" [valor]="produtos.preco" [id]="produtos.id"> </app-cardPadrao>
         }
     </ngx-slick-carousel>
 </div>

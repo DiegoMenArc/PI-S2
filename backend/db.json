@@ -271,15 +271,15 @@
       "categoria": "Brinquedo Clássico",
       "especificacoes": [
         {
-          "tipo": "Material",
+          "especificacao": "Material",
           "valor": "Plástico ABS e metal"
         },
         {
-          "tipo": "Alimentação",
+          "especificacao": "Alimentação",
           "valor": "2 pilhas grandes"
         },
         {
-          "tipo": "Indicado para",
+          "especificacao": "Indicado para",
           "valor": "Crianças acima de 5 anos"
         }
       ],
@@ -290,11 +290,25 @@
       "disponibilidade": true
     },
     {
+      "especificacoes": [
+        {
+          "especificacao": "Material",
+          "valor": "Vinil e tecido"
+        },
+        {
+          "especificacao": "Acessórios",
+          "valor": "Roupas e sapatos inclusos"
+        },
+        {
+          "especificacao": "Movimentos",
+          "valor": "Braços e pernas articulados"
+        }
+      ],
+      "id": "2",
       "img": [
         "/img/prod1.jpg"
       ],
-      "id": "2",
-      "nome": "Boneca Susi Fashion",
+      "nome": "Boneca Bacana",
       "descricao": "A famosa boneca brasileira que marcou gerações com seus looks variados e acessórios.",
       "anoLancamento": "1982",
       "marca": "Estrela",
@@ -303,25 +317,11 @@
       "qtd": 25,
       "data": "07/11/2025",
       "categoria": "Boneca",
-      "especificacoes": [
-        {
-          "tipo": "Material",
-          "valor": "Vinil e tecido"
-        },
-        {
-          "tipo": "Acessórios",
-          "valor": "Roupas e sapatos inclusos"
-        },
-        {
-          "tipo": "Movimentos",
-          "valor": "Braços e pernas articulados"
-        }
-      ],
+      "disponibilidade": true,
       "avaliacoes": {
         "media": 4.6,
         "totalAvaliacoes": 187
-      },
-      "disponibilidade": true
+      }
     },
     {
       "img": [
@@ -339,15 +339,15 @@
       "categoria": "Brinquedo de Equilíbrio",
       "especificacoes": [
         {
-          "tipo": "Material",
+          "especificacao": "Material",
           "valor": "Borracha e plástico resistente"
         },
         {
-          "tipo": "Peso máximo",
+          "especificacao": "Peso máximo",
           "valor": "60 kg"
         },
         {
-          "tipo": "Cor",
+          "especificacao": "Cor",
           "valor": "Azul e amarelo"
         }
       ],
@@ -373,15 +373,15 @@
       "categoria": "Miniaturas",
       "especificacoes": [
         {
-          "tipo": "Material",
+          "especificacao": "Material",
           "valor": "Plástico rígido"
         },
         {
-          "tipo": "Peças inclusas",
+          "especificacao": "Peças inclusas",
           "valor": "45 peças"
         },
         {
-          "tipo": "Faixa etária",
+          "especificacao": "Faixa etária",
           "valor": "A partir de 6 anos"
         }
       ],
@@ -407,15 +407,15 @@
       "categoria": "Eletrônico Nostálgico",
       "especificacoes": [
         {
-          "tipo": "Tela",
+          "especificacao": "Tela",
           "valor": "LCD monocromático"
         },
         {
-          "tipo": "Funções",
+          "especificacao": "Funções",
           "valor": "Alimentar, brincar e limpar"
         },
         {
-          "tipo": "Alimentação",
+          "especificacao": "Alimentação",
           "valor": "1 pilha CR2032"
         }
       ],
