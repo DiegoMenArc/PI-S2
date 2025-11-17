@@ -26,8 +26,11 @@ export const routes: Routes = [
   },
   { path: 'login', component: LoginComponent },
   { path: 'cadastro', component: CadastroLoginComponent, children: [
+    {path: 'cadastro/email', component: CadastroLoginComponent},
     {path: 'cadastro/nome', component: CadastroLoginComponent},
-    {path: 'cadastro/telefone', component: CadastroLoginComponent}
+    {path: 'cadastro/telefone', component: CadastroLoginComponent},
+    {path: 'cadastro/senha', component: CadastroLoginComponent},
+    {path: 'cadastro/username', component: CadastroLoginComponent}
   ] },
   { path: 'usuario/:id/informacoes', component: InfoUserComponent },
   { path: 'adm/produto', component: AdmComponent },

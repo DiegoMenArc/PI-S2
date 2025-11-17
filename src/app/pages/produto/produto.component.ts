@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { FooterComponent } from '../../components/principal/footer/footer.component'
 import { ProdMainComponent } from './partes/prod-main/prod-main.component'
@@ -16,11 +16,11 @@ import { ActivatedRoute, Router } from '@angular/router';
   templateUrl: './produto.component.html',
   styleUrl: './produto.component.css'
 })
-export class ProdutoComponent {
+export class ProdutoComponent implements OnInit {
   produtoId?: string; // Id que vai ser puxado da rota
 
   produto: Produto = {} as Produto; // objeto do produto 
-
+  produtos: Produto[] = []; // array de produtos
 
   constructor(
     private service: ProdutosService,
@@ -49,6 +49,14 @@ export class ProdutoComponent {
         }
       })
     }
+  }
+
+  ngOnInit(): void {
+    //puxa os produtos para o carrossel de produtos relacionados
+      this.service.listarProdutos().subscribe(produtos => {
+        this.produtos = produtos;
+        //depois tem que ver como filtrar os produtos relacionados
+      });
   }
 }
 

@@ -45,6 +45,6 @@ export class LoginComponent {
     this.credenciais="Credenciais invalidas";
   }
   clicarCadastro(){
-    this.router.navigate(['/cadastro']);
+    this.router.navigate(['cadastro/email']);
   }  
 }

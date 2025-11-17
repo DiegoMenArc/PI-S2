@@ -3,7 +3,8 @@ export interface Usuario {
     nome: string,
     sobrenome: string,
     user_name: string,
-    data_nasc: {
+    senha: string,
+    data_nasc?: {
         dia: number,
         mes_num: number,
         ano: number,
