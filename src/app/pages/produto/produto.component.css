@@ -1,3 +1,18 @@
 main{
     background-color: var(--fundo);
 }
+
+.main{
+    padding: 30px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    width: 100%;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 500;
+
+}

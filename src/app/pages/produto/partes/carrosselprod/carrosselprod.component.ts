@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { CarrosselComponent } from '../../../../components/principal/carrossel/carrossel.component';
 
 
@@ -9,5 +9,14 @@ import { CarrosselComponent } from '../../../../components/principal/carrossel/c
   styleUrl: './carrosselprod.component.css'
 })
 export class CarrosselprodComponent {
+    id:string ='';
+    @Output() enviar = new EventEmitter<string>();
 
+    enviarRota(){
+      this.enviar.emit(this.id);
+    }
+
+    pegarId(id:string){
+      this.id = id;
+    }
 }

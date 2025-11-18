@@ -8,15 +8,16 @@ import { ComentariosComponent } from './partes/comentarios/comentarios.component
 import { Produto } from '../../core/types/types';
 import { ProdutosService } from '../../core/services/produtos.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { CarrosselComponent } from '../../components/principal/carrossel/carrossel.component';
 
 
 @Component({
   selector: 'app-produto',
-  imports: [ FooterComponent,ProdMainComponent,CarrosselprodComponent, EspecificacoesProdComponent, ComentariosComponent],
+  imports: [ FooterComponent, CarrosselComponent ,ProdMainComponent,CarrosselprodComponent, EspecificacoesProdComponent, ComentariosComponent],
   templateUrl: './produto.component.html',
   styleUrl: './produto.component.css'
 })
-export class ProdutoComponent implements OnInit {
+export class ProdutoComponent{
   produtoId?: string; // Id que vai ser puxado da rota
 
   produto: Produto = {} as Produto; // objeto do produto 
@@ -49,15 +50,79 @@ export class ProdutoComponent implements OnInit {
         }
       })
     }
+    window.scrollTo(0, 0);
   }
 
-  ngOnInit(): void {
-    //puxa os produtos para o carrossel de produtos relacionados
-      this.service.listarProdutos().subscribe(produtos => {
-        this.produtos = produtos;
-        //depois tem que ver como filtrar os produtos relacionados
-      });
+  pegarId(id: string){
+    this.produtoId = id;
+
+    this.service.buscaId(this.produtoId).subscribe(produto => {
+        if (produto) {
+          this.produto.id = produto.id;
+          this.produto.img = produto.img;
+          this.produto.nome = produto.nome;
+          this.produto.descricao = produto.descricao;
+          this.produto.anoLancamento = produto.anoLancamento;
+          this.produto.marca = produto.marca;
+          this.produto.preco = produto.preco;
+          this.produto.tamanho = produto.tamanho;
+          this.produto.qtd = produto.qtd;
+          this.produto.data = produto.data;
+          this.produto.categoria = produto.categoria;
+          this.produto.especificacoes = produto.especificacoes;
+          this.produto.disponibilidade = produto.disponibilidade;
+          this.produto.avaliacoes = produto.avaliacoes;
+        }
+      })
+      window.scrollTo(0, 0);
   }
+
+  slideConfig = {
+    "slidesToShow": 6,
+    "slidesToScroll": 6,
+    "arrows": true,
+    "autoplay":true,
+    "autoplaySpeed": 5000,
+    "pauseOnHover": true,
+    "infinite": true,
+
+    "responsive" : [{
+      "breakpoint" : 1730,
+      "settings": {
+        "arrows": true,
+        "infinite": true,
+        "slidesToShow": 5,
+        "slidesToScroll": 5
+      }
+    },
+    {
+      "breakpoint" : 1500,
+      "settings": {
+        "arrows": true,
+        "infinite": true,
+        "slidesToShow": 4,
+        "slidesToScroll": 4
+      }
+    },
+    {
+      "breakpoint" : 992,
+      "settings": {
+        "arrows": true,
+        "infinite": true,
+        "slidesToShow": 3,
+        "slidesToScroll": 3
+      }
+    },
+    {
+      "breakpoint" : 768,
+      "settings": {
+        "arrows": true,
+        "infinite": true,
+        "slidesToShow": 1,
+        "slidesToScroll": 1
+      }
+    }]
+  };
 }
 
 

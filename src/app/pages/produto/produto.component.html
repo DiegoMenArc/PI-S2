@@ -2,13 +2,21 @@
     <!-- informacoes do produto parte inicial -->
     <app-prodMain [nome_prod]="produto.nome" [preco]="produto.preco" [desc]="produto.descricao"></app-prodMain>
 
-    <app-carrosselprod></app-carrosselprod>
+    <div class="main">
+        <h2>Semelhantes</h2>
+
+        <app-carrossel (enviar)="pegarId($event)"></app-carrossel>
+    </div>
 
     <app-especificacoes-prod></app-especificacoes-prod>
 
     <app-comentarios></app-comentarios>
 
-    <app-carrosselprod></app-carrosselprod>
+    <div class="main">
+        <h2>Semelhantes</h2>
+
+        <app-carrossel (enviar)="pegarId($event)"></app-carrossel>
+    </div>
 
     <app-footer></app-footer>
 </main>

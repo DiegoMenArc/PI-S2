@@ -1,4 +1,4 @@
-import { Component, input, Input } from '@angular/core';
+ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 
 @Component({
@@ -15,14 +15,19 @@ export class CardPadraoComponent {
 
   @Input() nome?: String;
   @Input() valor?: any;
-  valorCD= this.valor! * 0.9;
-  prest = `2x de R$${(this.valorCD! / 2).toFixed(2)} Sem juros`;
+  valorCD= "";//this.valor! * 0.9;
+  prest = ""; //`2x de R$${(this.valorCD! / 2).toFixed(2)} Sem juros`;
 
   @Input() id?: string;
+  @Output() novaRota = new EventEmitter<string>();
+
+  getRota(){
+    this.novaRota.emit(this.id);
+  }
 
   getProduto(){
-      this.router.navigate([`/produto/${this.id}`]);
-    }
+    this.router.navigate([`/produto/${this.id}`]);
+  }
 
   //  @Input() nome: String = "Casinha de brinquedo"
   // @Input() valorCD: number = 99.00

@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { CardPadraoComponent } from '../../cards/card-padrao/card-padrao.component';
 import { CommonModule } from '@angular/common';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ProdutosService } from '../../../core/services/produtos.service';
 import { Produto } from '../../../core/types/types';
-import { Router, RouterLink } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-carrossel',
@@ -26,6 +26,13 @@ listarProduto:Produto[] = [];
         this.listarProduto = produto;
       });
     }
+
+    @Output() enviar = new EventEmitter<string>();
+
+    enviarRota(id:string){
+      this.enviar.emit(id);
+    }
+
   slideConfig = {
     "slidesToShow": 6,
     "slidesToScroll": 6,
