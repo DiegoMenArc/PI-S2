@@ -7,6 +7,9 @@
                 ngxSlickItem 
                 [nome]="produtos.nome" 
                 [valor]="produtos.preco" 
+                [valorCD]="produtos.precoDesconto"
+                [prest]="produtos.parcelas"
+                [frete]="produtos.frete"
                 [id]="produtos.id" 
                 (click)="enviarRota(produtos.id)"
                 > 

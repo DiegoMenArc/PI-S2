@@ -1,7 +1,6 @@
 import { Component, EventEmitter, inject, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
-import { BuscaService } from '../../core/services/busca.service';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-busca',
@@ -10,16 +9,13 @@ import { BuscaService } from '../../core/services/busca.service';
   styleUrl: './busca.component.css'
 })
 export class BuscaComponent {
-  _buscaService = inject(BuscaService) ;
+  constructor(
+    private rota:Router
+  ){}
   buscar = "";
   link = "";
 
-  getInformacao(texto:string) :void{
-    this._buscaService. atualizarBusca(texto);
-  }
-
-
-  pesquisar(busca:any){
-    return `/busca/${busca.form.value.buscar}`;
+  pesquisar(busca:string){
+    this.rota.navigate(["busca",busca]);  
   }
 }

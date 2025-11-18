@@ -8,7 +8,7 @@
         <app-carrossel (enviar)="pegarId($event)"></app-carrossel>
     </div>
 
-    <app-especificacoes-prod></app-especificacoes-prod>
+    <app-especificacoes-prod [especificacoes]="produto.especificacoes" [adicionais]="adicionais"></app-especificacoes-prod>
 
     <app-comentarios></app-comentarios>
 

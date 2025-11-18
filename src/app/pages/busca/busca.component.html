@@ -47,8 +47,15 @@
         <div class="principal_cards">
             <h2>Resultados</h2>
             <div class="spc_card">
-                 @for(card of cards; track $index){
-                    <app-cardPadrao></app-cardPadrao>
+                 @for(produtos of listaProdutos; track $index){
+                    <app-cardPadrao
+                        [nome]="produtos.nome" 
+                        [valor]="produtos.preco" 
+                        [valorCD]="produtos.precoDesconto"
+                        [prest]="produtos.parcelas"
+                        [frete]="produtos.frete"
+                        [id]="produtos.id"
+                    ></app-cardPadrao>
                 }
             </div>
             <div>Restante</div>

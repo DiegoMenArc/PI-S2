@@ -15,8 +15,9 @@ export class CardPadraoComponent {
 
   @Input() nome?: String;
   @Input() valor?: any;
-  valorCD= "";//this.valor! * 0.9;
-  prest = ""; //`2x de R$${(this.valorCD! / 2).toFixed(2)} Sem juros`;
+  @Input() valorCD?: string;
+  @Input() prest?: string;
+  @Input() frete?: string;
 
   @Input() id?: string;
   @Output() novaRota = new EventEmitter<string>();

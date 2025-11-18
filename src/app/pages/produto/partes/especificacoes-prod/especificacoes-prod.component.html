@@ -6,10 +6,10 @@
             <h3>Detalhes Tecnicos</h3>
 
             <div class="cards">
-                @for (item of especificacoes; track $index) {
+                @for (especificao of especificacoes; track $index) {
                     <div>
-                        <p>{{item.especificao}}</p>
-                        <p>{{item.valor}}</p>
+                        <p>{{especificao.especificacao}}</p>
+                        <p>{{especificao.valor}}</p>
                     </div>
                 }
             </div>
@@ -19,9 +19,9 @@
             <h3>Informações Adicionais</h3>
 
             <div class="cards">
-                @for (item of Adicionais; track $index) {
+                @for (item of adicionais; track $index) {
                     <div>
-                        <p class="p1">{{item.especificao}}</p>
+                        <p class="p1">{{item.especificacao}}</p>
                         <p class="p2">{{item.valor}}</p>
                     </div>
                 }

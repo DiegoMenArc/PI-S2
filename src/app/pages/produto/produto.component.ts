@@ -5,7 +5,7 @@ import { ProdMainComponent } from './partes/prod-main/prod-main.component'
 import { CarrosselprodComponent } from './partes/carrosselprod/carrosselprod.component';
 import { EspecificacoesProdComponent } from './partes/especificacoes-prod/especificacoes-prod.component';
 import { ComentariosComponent } from './partes/comentarios/comentarios.component';
-import { Produto } from '../../core/types/types';
+import { Especificacao, Produto } from '../../core/types/types';
 import { ProdutosService } from '../../core/services/produtos.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CarrosselComponent } from '../../components/principal/carrossel/carrossel.component';
@@ -22,6 +22,7 @@ export class ProdutoComponent{
 
   produto: Produto = {} as Produto; // objeto do produto 
   produtos: Produto[] = []; // array de produtos
+  adicionais?: Especificacao[];
 
   constructor(
     private service: ProdutosService,
@@ -47,6 +48,25 @@ export class ProdutoComponent{
           this.produto.especificacoes = produto.especificacoes;
           this.produto.disponibilidade = produto.disponibilidade;
           this.produto.avaliacoes = produto.avaliacoes;
+
+          this.adicionais = [
+            {
+              especificacao:"Avaliações",
+              valor:`${produto.avaliacoes?.media}/5 de ${produto.avaliacoes?.totalAvaliacoes} Avaliaçoes`
+            },
+            {
+              especificacao:"Tamanho",
+              valor:produto.tamanho||""
+            },
+            {
+              especificacao:"Ano de lançamento",
+              valor:produto.anoLancamento
+            },
+            {
+              especificacao:"Disponivel desde",
+              valor:produto.data||""
+            }
+          ]
         }
       })
     }
@@ -72,6 +92,25 @@ export class ProdutoComponent{
           this.produto.especificacoes = produto.especificacoes;
           this.produto.disponibilidade = produto.disponibilidade;
           this.produto.avaliacoes = produto.avaliacoes;
+
+          this.adicionais = [
+            {
+              especificacao:"Avaliações",
+              valor:`${produto.avaliacoes?.media}/5 de ${produto.avaliacoes?.totalAvaliacoes} Avaliaçoes`
+            },
+            {
+              especificacao:"Tamanho",
+              valor:produto.tamanho||""
+            },
+            {
+              especificacao:"Ano de lançamento",
+              valor:produto.anoLancamento
+            },
+            {
+              especificacao:"Disponivel desde",
+              valor:produto.data||""
+            }
+          ]
         }
       })
       window.scrollTo(0, 0);
