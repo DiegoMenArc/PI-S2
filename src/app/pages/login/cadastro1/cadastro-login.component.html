@@ -1,25 +1,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<!-- Barra superior -->
 <header>
   <h1 class="logo">MUNDO NOSTÁLGICO</h1>
 </header>
 
-<!-- Container central -->
 <main>
-
-  <app-card-cadastro 
-
-    titulo={{this.titulo}} 
-    acao={{this.acao}} 
-    subAcao={{this.subAcao}}
-    placeH1={{this.placeH1}}
-    placeH2={{this.placeH2}}
-    link={{this.link}}>
-    
-  </app-card-cadastro>
-
+  <router-outlet></router-outlet>
 </main>
-<!-- Rodape -->
 <footer>
   <div class="dots">
     <span class="dot active"></span>
@@ -28,5 +14,3 @@
     <span class="dot"></span>
   </div>
 </footer>
-
-<script src="validacao1.js"></script>

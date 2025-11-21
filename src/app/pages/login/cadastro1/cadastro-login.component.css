@@ -53,13 +53,14 @@ footer {
 }
 
 .dot {
-    /* Correção 7: Pontos ligeiramente menores */
-    width: 8px;
-    height: 8px;
-    background: #ccc;
-    border-radius: 50%;
+ /* Pontos ligeiramente menores */
+ width: 8px;
+ height: 8px;
+ background: #ccc;
+ border-radius: 50%;
 }
 
 .dot.active {
-    background: #ffeb3b;
+ /* Ajuste para usar a cor do tema (azul ou amarelo, o azul seria mais sóbrio) */
+ background: #0072b5; 
 }

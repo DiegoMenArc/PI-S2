@@ -25,13 +25,20 @@ export const routes: Routes = [
     ]
   },
   { path: 'login', component: LoginComponent },
-  { path: 'cadastro', component: CadastroLoginComponent, children: [
-    {path: 'cadastro/email', component: CadastroLoginComponent},
-    {path: 'cadastro/nome', component: CadastroLoginComponent},
-    {path: 'cadastro/telefone', component: CadastroLoginComponent},
-    {path: 'cadastro/senha', component: CadastroLoginComponent},
-    {path: 'cadastro/username', component: CadastroLoginComponent}
-  ] },
+  { 
+    path: 'cadastro', 
+    component: CadastroLoginComponent, 
+    children: [
+        // Rotas Filhas: O path aqui se junta ao path pai ('cadastro')
+        { path: 'email', component: CadastroLoginComponent },   // Rota final: /cadastro/email
+        { path: 'nome', component: CadastroLoginComponent },    // Rota final: /cadastro/nome
+        { path: 'telefone', component: CadastroLoginComponent }, // Rota final: /cadastro/telefone
+        { path: 'senha', component: CadastroLoginComponent },   // Rota final: /cadastro/senha
+        { path: 'username', component: CadastroLoginComponent },// Rota final: /cadastro/username
+        // REDIRECIONAMENTO: Se alguém acessar /cadastro, vai para /cadastro/email
+            { path: '', redirectTo: 'email', pathMatch: 'full' }
+    ] 
+  },
   { path: 'usuario/:id/informacoes', component: InfoUserComponent },
   { path: 'adm/produto', component: AdmComponent },
   { path: 'adm/produto/edit/:id', component: AdmAddComponent },
