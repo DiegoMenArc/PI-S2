@@ -1,9 +1,23 @@
 #lading {
     display: flex;
     flex-direction: column;
+    
 }
 
 .conteiner {
-    width: 80%;
+    width: 100%;
     align-self: center;
+    flex-direction: column;
+    display: flex;
+    gap: 6em;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+
+
+h2{
+    margin: 0 ;
+    text-align: left;
+    padding-left: 80px;
 }

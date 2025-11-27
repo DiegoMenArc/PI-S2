@@ -256,6 +256,22 @@
   ],
   "produtos": [
     {
+      "img": [
+        "/img/prod1.jpg"
+      ],
+      "id": "1",
+      "nome": "Ferrorama XP-300",
+      "descricao": "Um dos trens elétricos mais icônicos dos anos 80, com trilhos modulares e locomotiva a pilha.",
+      "anoLancamento": "1984",
+      "marca": "Estrela",
+      "preco": "399,90",
+      "precoDesconto": "359,91",
+      "parcelas": "5x de 71,99",
+      "frete": "Frete Gratis",
+      "tamanho": "Médio",
+      "qtd": 12,
+      "data": "07/11/2025",
+      "categoria": "Brinquedo Clássico",
       "especificacoes": [
         {
           "especificacao": "Material",
@@ -364,6 +380,22 @@
       "disponibilidade": false
     },
     {
+      "img": [
+        "/img/prod1.jpg"
+      ],
+      "id": "4",
+      "nome": "Forte Apache",
+      "descricao": "Um clássico do velho oeste em miniatura — com índios, cowboys e cavalos para batalhas lendárias.",
+      "anoLancamento": "1985",
+      "marca": "Gulliver",
+      "preco": "329,90",
+      "precoDesconto": "296,91",
+      "parcelas": "2x de 148,46",
+      "frete": "Frete Gratis",
+      "tamanho": "Grande",
+      "qtd": 5,
+      "data": "07/11/2025",
+      "categoria": "Miniaturas",
       "especificacoes": [
         {
           "especificacao": "Material",
@@ -433,6 +465,50 @@
         "totalAvaliacoes": 210
       },
       "disponibilidade": true
+    },
+    {
+      "id": "df74",
+      "especificacoes": [
+        {
+          "especificacao": "",
+          "valor": ""
+        }
+      ],
+      "nome": "Diego",
+      "descricao": "Urso de Pelucia",
+      "img": [
+        "/img/prod1.jpg"
+      ],
+      "avaliacoes": {
+        "totalAvaliacoes": 0,
+        "media": 0
+      },
+      "data": "07/11/2025"
+    },
+    {
+      "especificacoes": [
+        {
+          "especificacao": "",
+          "valor": ""
+        }
+      ],
+      "id": "bd1e",
+      "img": [
+        "/img/prod1.jpg"
+      ],
+      "nome": "Raphael ",
+      "descricao": ":0",
+      "anoLancamento": "-1000",
+      "marca": "senac",
+      "preco": "7900",
+      "tamanho": "grande",
+      "qtd": 35,
+      "data": "27/11/2025",
+      "categoria": "lendaria",
+      "avaliacoes": {
+        "totalAvaliacoes": 0,
+        "media": 0
+      }
     }
   ]
 }
