@@ -15,6 +15,11 @@ section{
     flex-grow: 1;    
 }
 
+.erro{
+    color: red;
+    font-size: 12px;
+}
+
 input{
     border-radius: 12px;
     border: 1px solid var(--cinza1);

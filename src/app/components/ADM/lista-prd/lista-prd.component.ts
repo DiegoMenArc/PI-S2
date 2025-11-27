@@ -13,6 +13,7 @@ import { BreadcumbsComponent } from '../../principal/breadcumbs/breadcumbs.compo
 })
 export class ListaPrdComponent implements OnInit {
     listarProduto:Produto[] = [];
+    produtos:Produto[] = [];
 
     constructor(
       private service: ProdutosService,
@@ -21,8 +22,15 @@ export class ListaPrdComponent implements OnInit {
 
     ngOnInit(): void {
       this.service.listarProdutos().subscribe((produto)=>{
-        this.listarProduto = produto;
+        this.produtos = produto;
+        this.listarProduto = this.produtos
       });
+    }
+
+    buscar(busca:any){
+      this.listarProduto = this.produtos.filter(produto =>
+        produto.nome.toLowerCase().includes(busca.target.value)
+      );
     }
 
     numPages=1;

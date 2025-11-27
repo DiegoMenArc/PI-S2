@@ -1,6 +1,5 @@
-
 <main>
-    <app-nav class="teste"></app-nav>   
+    <app-nav class="teste"></app-nav>
     <div class="groupPrincipal">
         <app-adm-header></app-adm-header>
         <section>
@@ -8,116 +7,230 @@
                 <h1>Produtos</h1>
                 <app-breadcumbs [pages]="paginas"></app-breadcumbs>
             </div>
+
             <div class="groupCards">
-                <form #produtoForm="ngForm" class="formCard">
-                    <h2>informações do Produto</h2>
+
+                <!-- FORM 1 -->
+                <form #produtoForm1="ngForm" class="formCard">
+                    <h2>Informações do Produto</h2>
 
                     <div class="input">
                         <p>Nome do produto</p>
-                        <input type="text" name="nome" [(ngModel)]="produto.nome" placeholder="Digite o nome">
-                         <!-- //input em componente -->
+                        <input type="text" 
+                               name="nome" 
+                               [(ngModel)]="produto.nome" 
+                               placeholder="Digite o nome"
+                               required
+                               #nome="ngModel">
+                        @if (nome.invalid && nome.touched) {
+                            <span class="erro">Preencha o nome do produto.</span>
+                        }
                     </div>
+
                     <div class="input">
                         <p>Descrição do produto</p>
-                        <input type="text" name="descricao" [(ngModel)]="produto.descricao" placeholder="Digite a descrição">
+                        <input type="text" 
+                               name="descricao" 
+                               [(ngModel)]="produto.descricao"
+                               placeholder="Digite a descrição"
+                               required
+                               #descricao="ngModel">
+                        @if (descricao.invalid && descricao.touched) {
+                            <span class="erro">Preencha a descrição.</span>
+                        }
                     </div>
-                    
+
                     <div class="inputsDiv">
                         <div class="input">
                             <p>Quantidade</p>
-                            <input type="number" name="quantidade" [(ngModel)]="produto.qtd" placeholder="Digite a quantidade">
+                            <input type="number" 
+                                   name="quantidade" 
+                                   [(ngModel)]="produto.qtd"
+                                   placeholder="Digite a quantidade"
+                                   required
+                                   min="1"
+                                   #qtd="ngModel">
+                            @if (qtd.invalid && qtd.touched) {
+                                <span class="erro">Informe uma quantidade válida.</span>
+                            }
                         </div>
+
                         <div class="input">
                             <p>Preço</p>
-                            <input type="text" name="preco" [(ngModel)]="produto.preco" placeholder="Digite o preço">
-                        </div>              
+                            <input type="text" 
+                                   name="preco" 
+                                   [(ngModel)]="produto.preco" 
+                                   placeholder="Digite o preço"
+                                   required
+                                   #preco="ngModel">
+                            @if (preco.invalid && preco.touched) {
+                                <span class="erro">Informe o preço.</span>
+                            }
+                        </div>
                     </div>
-                
+
                     <div class="inputsDiv">
                         <div class="input">
                             <p>Ano de lançamento</p>
-                            <input type="text" name="lancamento" [(ngModel)]="produto.anoLancamento" placeholder="Digite o ano de lançamento">
+                            <input type="text" 
+                                   name="anoLancamento" 
+                                   [(ngModel)]="produto.anoLancamento"
+                                   placeholder="Digite o ano de lançamento"
+                                   required
+                                   minlength="4"
+                                   maxlength="4"
+                                   #ano="ngModel">
+                            @if (ano.invalid && ano.touched) {
+                                <span class="erro">Ano inválido.</span>
+                            }
                         </div>
+
                         <div class="input">
                             <p>Marca</p>
-                            <input type="text" name="marca" [(ngModel)]="produto.marca" placeholder="Digite a marca">
-                        </div>              
+                            <input type="text" 
+                                   name="marca" 
+                                   [(ngModel)]="produto.marca" 
+                                   placeholder="Digite a marca"
+                                   required
+                                   #marca="ngModel">
+                            @if (marca.invalid && marca.touched) {
+                                <span class="erro">Informe a marca.</span>
+                            }
+                        </div>
                     </div>
 
                     <div class="inputsDiv">
                         <div class="input">
                             <p>Categoria</p>
-                            <input type="text" name="lancamento" [(ngModel)]="produto.categoria" placeholder="Digite o ano de lançamento">
+                            <input type="text" 
+                                   name="categoria" 
+                                   [(ngModel)]="produto.categoria"
+                                   placeholder="Digite a categoria"
+                                   required
+                                   #categoria="ngModel">
+                            @if (categoria.invalid && categoria.touched) {
+                                <span class="erro">Informe a categoria.</span>
+                            }
                         </div>
+
                         <div class="input">
-                            <p>tamanho</p>
-                            <input type="text" name="marca" [(ngModel)]="produto.tamanho" placeholder="Digite a marca">
-                        </div>              
+                            <p>Tamanho</p>
+                            <input type="text" 
+                                   name="tamanho" 
+                                   [(ngModel)]="produto.tamanho"
+                                   placeholder="Digite o tamanho"
+                                   required
+                                   #tamanho="ngModel">
+                            @if (tamanho.invalid && tamanho.touched) {
+                                <span class="erro">Informe o tamanho.</span>
+                            }
+                        </div>
                     </div>
                 </form>
 
                 <div class="groupDireita">
-                    <form #produtoForm="ngForm" class="formCard">
+
+                    <!-- FORM 2 -->
+                    <form #produtoForm2="ngForm" class="formCard">
                         <h2>Especificações do produto</h2>
 
-                        @for(especificacao of produto.especificacoes; track $index){
-                            <div class="inputsDiv">
-                                <div class="input">
-                                    <p>Especificação </p>
-                                    <div>
-                                        <p class="falso">{{especificacao.especificacao}}</p>
-                                        <input type="text" class="verdadeiro" name="especificao" [(ngModel)]="produto.especificacoes[$index].especificacao" placeholder="Digite a categoria">
-                                    </div>
-                                </div>
-                                <div class="input">
-                                    <p>Valor</p>
-                                    <div>
-                                        <p class="falso">{{especificacao.valor}}</p>
-                                        <input type="text" class="verdadeiro" name="valor" [(ngModel)]="especificacao.valor" placeholder="Digite o valor">
-                                    </div>
-                                </div>              
-                            </div>   
+                        @for (especificacao of produto.especificacoes; track $index) {
+                        <div class="inputsDiv">
+                            <div class="input">
+                                <p>Especificação</p>
+                                <input type="text"
+                                       [name]="'especificacao' + $index"
+                                       [(ngModel)]="produto.especificacoes[$index].especificacao"
+                                       placeholder="Digite a especificação"
+                                       required
+                                       #esp="ngModel">
+
+                                @if (esp.invalid && esp.touched) {
+                                    <span class="erro">Campo obrigatório.</span>
+                                }
+                            </div>
+
+                            <div class="input">
+                                <p>Valor</p>
+                                <input type="text"
+                                       [name]="'valor' + $index"
+                                       [(ngModel)]="produto.especificacoes[$index].valor"
+                                       placeholder="Digite o valor"
+                                       required
+                                       #valor="ngModel">
+                                @if (valor.invalid && valor.touched) {
+                                    <span class="erro">Campo obrigatório.</span>
+                                }
+                            </div>
+                        </div>
                         }
 
-                        <button class="add-button" (click)="addEspecificacao()"><p>Adicionar Especificação </p><img src="icons/adm/add-white-icon.svg" alt=""></button>
+                        <button type="button" class="add-button" (click)="addEspecificacao()">
+                            <p>Adicionar Especificação</p>
+                            <img src="icons/adm/add-white-icon.svg" alt="">
+                        </button>
                     </form>
-                    <form #produtoForm="ngForm" class="formCard">
+
+                    <!-- FORM 3 -->
+                    <form #produtoForm3="ngForm" class="formCard">
                         <h2>Imagens do produto</h2>
 
                         <div class="imgs-prd">
                             <div class="molduras">
-                                <div class="moldura 1">
+
+                                <div class="moldura moldura-1">
                                     <img [src]="caminho" alt="">
-                                    <input #img1 type="file" accept="image/*" (change)="carregarArquivo(img1,0)">
+                                    <input #img0 type="file" accept="image/*" (change)="carregarArquivo(img0,0)" required>
                                     Img 1
                                 </div>
-                                <div class="moldura 2">
+
+                                <div class="moldura moldura-2">
                                     <img src="icons/adm/img-frame-icon.svg" alt="">
-                                    <input #img1 type="file" accept="image/*" (change)="carregarArquivo(img1,1)">
+                                    <input #img1 type="file" accept="image/*" (change)="carregarArquivo(img1,1)" required>
                                     Img 2
                                 </div>
-                                <div class="moldura 3">
+
+                                <div class="moldura moldura-3">
                                     <img src="icons/adm/img-frame-icon.svg" alt="">
-                                    <input #img1 type="file" accept="image/*" (change)="carregarArquivo(img1,2)">
+                                    <input #img2 type="file" accept="image/*" (change)="carregarArquivo(img2,2)" required>
                                     Img 3
                                 </div>
-                                <div class="moldura 4">
+
+                                <div class="moldura moldura-4">
                                     <img src="icons/adm/img-frame-icon.svg" alt="">
-                                    <input #img1 type="file" accept="image/*" (change)="carregarArquivo(img1,3)">
+                                    <input #img3 type="file" accept="image/*" (change)="carregarArquivo(img3,3)" required>
                                     Img 4
                                 </div>
-                                <div class="moldura 4">
+
+                                <div class="moldura moldura-5">
                                     <img src="icons/adm/img-frame-icon.svg" alt="">
-                                    <input #img1 type="file" accept="image/*" (change)="carregarArquivo(img1,4)">
+                                    <input #img4 type="file" accept="image/*" (change)="carregarArquivo(img4,4)" required>
                                     Img 5
                                 </div>
 
                             </div>
                         </div>
                     </form>
-                    <button class="add-button" routerLink="/adm/produto" (click)="addProd()">Adicionar <img src="icons/adm/add-white-icon.svg" alt=""></button>
+
+                    @if(!temProduto){
+                    <button class="add-button" 
+                            routerLink="/adm/produto" 
+                            (click)="addProd()"
+                            [disabled]="produtoForm1.invalid || produtoForm2.invalid || produtoForm3.invalid">
+                        Adicionar <img src="icons/adm/add-white-icon.svg" alt="">
+                    </button>
+                    }
+                    @else{
+                    <button class="add-button" 
+                            routerLink="/adm/produto" 
+                            (click)="addProd()"
+                            [disabled]="produtoForm1.invalid || produtoForm2.invalid || produtoForm3.invalid">
+                        Salvar
+                    </button>
+                    }
                 </div>
             </div>
         </section>
     </div>
 </main>
+    

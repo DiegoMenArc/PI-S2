@@ -256,22 +256,6 @@
   ],
   "produtos": [
     {
-      "img": [
-        "/img/prod1.jpg"
-      ],
-      "id": "1",
-      "nome": "Ferrorama XP-300",
-      "descricao": "Um dos trens elétricos mais icônicos dos anos 80, com trilhos modulares e locomotiva a pilha.",
-      "anoLancamento": "1984",
-      "marca": "Estrela",
-      "preco": "399,90",
-      "precoDesconto":"359,91",
-      "parcelas":"5x de 71,99",
-      "frete":"Frete Gratis",
-      "tamanho": "Médio",
-      "qtd": 12,
-      "data": "07/11/2025",
-      "categoria": "Brinquedo Clássico",
       "especificacoes": [
         {
           "especificacao": "Material",
@@ -286,11 +270,24 @@
           "valor": "Crianças acima de 5 anos"
         }
       ],
+      "id": "1",
+      "img": [
+        "/img/prod1.jpg"
+      ],
+      "nome": "Ferrorama XP-300",
+      "descricao": "Um dos trens elétricos mais icônicos dos anos 80, com trilhos modulares e locomotiva a pilha.",
+      "anoLancamento": "1984",
+      "marca": "Estrela",
+      "preco": "399,90",
+      "tamanho": "Médio",
+      "qtd": 12,
+      "data": "07/11/2025",
+      "categoria": "Brinquedo Clássico",
+      "disponibilidade": true,
       "avaliacoes": {
         "media": 4.8,
         "totalAvaliacoes": 352
-      },
-      "disponibilidade": true
+      }
     },
     {
       "especificacoes": [
@@ -316,9 +313,9 @@
       "anoLancamento": "1982",
       "marca": "Estrela",
       "preco": "149,90",
-      "precoDesconto":"134,91",
-      "parcelas":"5x de 26,99",
-      "frete":"Frete Gratis",
+      "precoDesconto": "134,91",
+      "parcelas": "5x de 26,99",
+      "frete": "Frete Gratis",
       "tamanho": "30 cm",
       "qtd": 25,
       "data": "07/11/2025",
@@ -339,9 +336,9 @@
       "anoLancamento": "1992",
       "marca": "Estrela",
       "preco": "119,90",
-      "precoDesconto":"107,91",
-      "parcelas":"5x de 21,59",
-      "frete":"Frete Gratis",
+      "precoDesconto": "107,91",
+      "parcelas": "5x de 21,59",
+      "frete": "Frete Gratis",
       "tamanho": "Grande",
       "qtd": 8,
       "data": "07/11/2025",
@@ -367,22 +364,6 @@
       "disponibilidade": false
     },
     {
-      "img": [
-        "/img/prod1.jpg"
-      ],
-      "id": "4",
-      "nome": "Forte Apache",
-      "descricao": "Um clássico do velho oeste em miniatura — com índios, cowboys e cavalos para batalhas lendárias.",
-      "anoLancamento": "1985",
-      "marca": "Gulliver",
-      "preco": "329,90",
-      "precoDesconto":"296,91",
-      "parcelas":"2x de 148,46",
-      "frete":"Frete Gratis",
-      "tamanho": "Grande",
-      "qtd": 5,
-      "data": "07/11/2025",
-      "categoria": "Miniaturas",
       "especificacoes": [
         {
           "especificacao": "Material",
@@ -397,11 +378,24 @@
           "valor": "A partir de 6 anos"
         }
       ],
+      "id": "4",
+      "img": [
+        "/img/prod1.jpg"
+      ],
+      "nome": "Forte Apache",
+      "descricao": "Um clássico do velho oeste em miniatura — com índios, cowboys e cavalos para batalhas lendárias.",
+      "anoLancamento": "1985",
+      "marca": "Gulliver",
+      "preco": "329,90",
+      "tamanho": "Grande",
+      "qtd": 5,
+      "data": "07/11/2025",
+      "categoria": "Miniaturas",
+      "disponibilidade": true,
       "avaliacoes": {
         "media": 4.9,
         "totalAvaliacoes": 421
-      },
-      "disponibilidade": true
+      }
     },
     {
       "img": [
@@ -413,9 +407,9 @@
       "anoLancamento": "1997",
       "marca": "TecToy",
       "preco": "99,90",
-      "precoDesconto":"89,91",
-      "parcelas":"2x de 44,96",
-      "frete":"Frete Gratis",
+      "precoDesconto": "89,91",
+      "parcelas": "2x de 44,96",
+      "frete": "Frete Gratis",
       "tamanho": "Pequeno",
       "qtd": 30,
       "data": "07/11/2025",
@@ -439,25 +433,6 @@
         "totalAvaliacoes": 210
       },
       "disponibilidade": true
-    },
-    {
-      "id": "df74",
-      "especificacoes": [
-        {
-          "especificacao": "",
-          "valor": ""
-        }
-      ],
-      "nome": "Diego",
-      "descricao": "Urso de Pelucia",
-      "img": [
-        "/img/prod1.jpg"
-      ],
-      "avaliacoes": {
-        "totalAvaliacoes": 0,
-        "media": 0
-      },
-      "data": "07/11/2025"
     }
   ]
 }

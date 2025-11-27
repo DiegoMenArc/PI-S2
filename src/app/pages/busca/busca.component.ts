@@ -37,7 +37,7 @@ export class BuscaComponent implements OnInit{
      this.rotaAtual = this._caminho.snapshot.paramMap.get('busca')||"";
 
     this.service.listarProdutos().subscribe((produtos) => {
-      this.listaProdutos = produtos.filter(produto =>
+      this.listaProdutos = produtos.filter(produto => 
         produto.nome.toLowerCase().includes(this.rotaAtual.toLowerCase())
       );
     }); 

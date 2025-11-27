@@ -1,11 +1,10 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { AdmHeaderComponent } from '../../../components/ADM/adm-header/adm-header.component';
 import { NavComponent } from '../../../components/ADM/nav/nav.component';
-// import { ListaPrdComponent } from '../../../components/ADM/lista-prd/lista-prd.component';
 import { BreadcumbsComponent } from '../../../components/principal/breadcumbs/breadcumbs.component';
 import { FormsModule } from '@angular/forms';
 import { ProdutosService } from '../../../core/services/produtos.service';
-import { ActivatedRoute, Route, Router, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { Produto, Especificacao } from '../../../core/types/types';
 
 class ImageSnippet {
@@ -14,16 +13,24 @@ class ImageSnippet {
 
 @Component({
   selector: 'app-adm-add',
-  imports: [AdmHeaderComponent, NavComponent, /*ListaPrdComponent,*/ BreadcumbsComponent, FormsModule, RouterLink],
+  imports: [
+    AdmHeaderComponent,
+    NavComponent,
+    BreadcumbsComponent,
+    FormsModule,
+    RouterLink
+  ],
   templateUrl: './adm-add.component.html',
   styleUrl: './adm-add.component.css'
 })
+
 export class AdmAddComponent {
   produtoId?: string; // Id que vai ser puxado da rota
+  temProduto: boolean = false;
 
   produto: Produto = {} as Produto; // objeto do produto 
-
-  especificacao: Especificacao = {} as Especificacao; // objeto da classe Espefi
+  especificacao: Especificacao = {} as Especificacao; // objeto da classe Espeficação
+  paginas = ["Produtos", "adicionarProduto"];
 
   constructor(
     private service: ProdutosService,
@@ -33,8 +40,9 @@ export class AdmAddComponent {
     this.produtoId = this.route.snapshot.params['id'];
 
     if (this.produtoId) {
-      service.buscaId(this.produtoId).subscribe(produto => {
+      this.service.buscaId(this.produtoId).subscribe(produto => {
         if (produto) {
+          this.temProduto = true;
           this.produto.id = produto.id;
           this.produto.img = produto.img;
           this.produto.nome = produto.nome;
@@ -53,60 +61,57 @@ export class AdmAddComponent {
       })
     }
 
-    
+
 
     if (this.produto.especificacoes == undefined) {
       this.produto.especificacoes =
         [
-          {
-            especificacao: "",
-            valor: ""
-          }
-        ]
+          { especificacao: "", valor: "" }
+        ];
     }
   }
 
-  paginas = ["Produtos", "adicionarProduto"];
-
-
+  // ====================================== SALVAR PRODUTO ======================================
   addProd() {
-    if (this.produtoId) {
-      this.service.editarProduto(this.produto).subscribe(() => {
-        this.router.navigate(['adm/produto'])
-      })
-    } else {
-
-      if(this.produto.img == undefined){
-        this.produto.img = ['/img/prod1.jpg'];
-      }
-      if(this.produto.avaliacoes==undefined){
-        this.produto.avaliacoes = {
-          totalAvaliacoes:0,
-          media:0
-        }
-      }
-
-      const hoje = new Date();
-      const dia = String(hoje.getDate()).padStart(2, '0');
-      const mes = String(hoje.getMonth() + 1).padStart(2, '0'); // Adiciona 1 pois os meses começam em 0
-      const ano = hoje.getFullYear();
-
-      const dataFormatada = `${dia}/${mes}/${ano}`;
-
-      this.produto.data = dataFormatada;
-      this.service.adiconarProduto(this.produto).subscribe(() => {
-        this.router.navigate(['adm/produto'])
-      })
+    if (!this.validarCampos()) {
+      alert("Preencha todos os campos obrigatórios!");
+      return;
     }
+
+    if (this.produtoId) {
+      // editar
+      this.service.editarProduto(this.produto).subscribe(() => {
+        this.router.navigate(['adm/produto']);
+      });
+      return;
+    }
+
+    // criar novo
+    if (!this.produto.img || this.produto.img.length === 0) {
+      this.produto.img = ['/img/prod1.jpg'];
+    }
+
+    if (!this.produto.avaliacoes) {
+      this.produto.avaliacoes = { totalAvaliacoes: 0, media: 0 };
+    }
+
+    const hoje = new Date();
+    const dia = String(hoje.getDate()).padStart(2, '0');
+    const mes = String(hoje.getMonth() + 1).padStart(2, '0');
+    const ano = hoje.getFullYear();
+    this.produto.data = `${dia}/${mes}/${ano}`;
+
+    this.service.adiconarProduto(this.produto).subscribe(() => {
+      this.router.navigate(['adm/produto']);
+    });
   }
 
+  // =================================== ADICIONAR ESPECIFICAÇÃO ===================================
   addEspecificacao() {
-    this.produto.especificacoes.push(
-      {
-        especificacao:"especificação",
-        valor:"valor"
-      })
-
+    this.produto.especificacoes.push({
+      especificacao: "",
+      valor: ""
+    });
   }
 
   // Feedback imagens =======================================================================
@@ -125,5 +130,26 @@ export class AdmAddComponent {
     })
 
     reader.readAsDataURL(file);
+  }
+
+  // ====================== VALIDAÇÃO DE CAMPOS ======================
+  validarCampos(): boolean {
+    const p = this.produto;
+
+    if (!p.nome || p.nome.trim() === "") return false;
+    if (!p.descricao || p.descricao.trim() === "") return false;
+    if (!p.marca || p.marca.trim() === "") return false;
+    if (!p.preco || p.preco.toString().trim() === "") return false;
+    if (!p.tamanho || p.tamanho.trim() === "") return false;
+    if (!p.qtd || p.qtd <= 0) return false;
+    if (!p.categoria || p.categoria.trim() === "") return false;
+    if (!p.anoLancamento || p.anoLancamento.toString().trim() === "") return false;
+
+    // valida especificações
+    for (let e of p.especificacoes) {
+      if (!e.especificacao || !e.valor) return false;
+    }
+
+    return true;
   }
 }

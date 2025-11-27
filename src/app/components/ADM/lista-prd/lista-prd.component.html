@@ -6,7 +6,7 @@
 
         <div class="painel">
             <div class="painel-head">
-                <input type="text" name="" class="buscador-prd" id="busca-prd" placeholder="Buscar produtos">
+                <input type="text" name="" #valor class="buscador-prd" id="busca-prd" placeholder="Buscar produtos" (change)="buscar($event)">
                 <button [routerLink]="['edit']" type="submit" class="add-btn">Adicionar <img src="icons/adm/plus-icon.svg" alt=""></button>
             </div>
             <div class="painel-content">
