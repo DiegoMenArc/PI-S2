@@ -23,10 +23,9 @@ main {
 }
 
 .titulo {
-  font-family: var(--Logo, Bangers);
-  font-size: 16px;
-  font-weight: 800;
-  margin-top: 10px;
+  font-family: var(--logo);
+  font-size: 32px;
+  letter-spacing: 0.8px;
 }
 
 .descricao {
