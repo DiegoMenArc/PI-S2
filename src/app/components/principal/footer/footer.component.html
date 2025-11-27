@@ -1,32 +1,54 @@
 <main>
   <div class="superior">
-    <div class="group1">
-      <img src="img/logo.png" alt="" width="100px">
-      <div class="group2">
-        <p>Pagamentos disponiveis</p>
-        <div class="meiosP">
-          @for (item of pagamentos; track $index) {
-            <img [src]="item.caminho" [alt]="item.desc">
-          }
-        </div>
+
+    <div class="col logo-col">
+      <p class="titulo">MUNDO NOSTÁLGICO</p>
+      <p class="descricao">
+        Nós temos diversos brinquedos que vão fazer você voltar para a sua infância
+      </p>
+
+      <div class="redeSociais">
+        <img src="icons/IconTwitter.svg" alt="Twitter">
+        <img src="icons/IconFacebook.svg" alt="Facebook">
+        <img src="icons/IconInstagram.svg" alt="Instagram">
+        <img src="icons/IconGithub.svg" alt="Github">
       </div>
     </div>
 
-    <div class="links">
-      @for (link of links; track $index) {
-        <p>{{link}}</p>
-      }
+    <div class="col">
+      <p class="tituloCol">EMPRESA</p>
+      <p>Sobre</p>
+      <p>Características</p>
+      <p>Trabalhos</p>
+      <p>Carreiras</p>
+    </div>
+
+    <div class="col">
+      <p class="tituloCol">AJUDA</p>
+      <p>Suporte ao cliente</p>
+      <p>Detalhes da entrega</p>
+      <p>Termos e condições</p>
+      <p>Política de privacidade</p>
+    </div>
+
+    <div class="col">
+      <p class="tituloCol">FAQ</p>
+      <p>Conta</p>
+      <p>Gerenciar entregas</p>
+      <p>Pedidos</p>
+      <p>Pagamentos</p>
     </div>
   </div>
 
-
-
   <div class="inferior">
-    <p> Mundo nostalgico {{arroba}} Todos Os direitos Reservados</p>
-    <div class="icones">
-      @for (icone of icones; track $index) {
-        <img [src]="icone.caminho" [alt]="icone.desc"/>
-      }
+    <p>© Todos os direitos reservados ao Mundo Nostálgico</p>
+
+    <div class="pagamentos">
+      <img src="icons/PVisa.svg" alt="Visa">
+      <img src="icons/PMastercard.svg" alt="Mastercard">
+      <img src="icons/PPaypal.svg" alt="Paypal">
+      <img src="icons/PApplepay.svg" alt="Apple Pay">
+      <img src="icons/PGooglepay.svg" alt="Google Pay">
     </div>
   </div>
 </main>

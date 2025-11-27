@@ -1,83 +1,93 @@
-main{
-  background-color: var(--azul4);
-  color: #FFF;
-}
-
-p{
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.inferior{
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 60px;
-  display: flex;
-  align-items: center;
-  border-top: 1px solid var(--Amarelo, #F5F50C);
-}
-
-.superior{
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 60px;
-}
-
-.inferior P{
-  color: rgba(255, 255, 255, 0.70);
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.inferior .icones{
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.inferior .icones img{
-  width: 20px;
-  height: 20px;
-}
-
-
-.meiosP{
-  display: flex;
-  justify-content: space-between;
-}
-
-.meiosP img{
-  width: 40px;
-
-}
-
-.group1{
-  display: flex;
-  justify-content: space-between;
-  width: 30%;
-}
-
-.group2{
+main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 50%;
+  width: 100%;
+  background: #fff;
 }
 
-.links{
+.superior {
   display: flex;
-
   justify-content: space-between;
-  align-items: end;
-  width: 40%;
+  padding: 40px 60px;
+  width: 100%;
 }
 
-.links p {
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.logo-col {
+  width: 260px;
+}
+
+.titulo {
+  font-family: var(--Logo, Bangers);
+  font-size: 16px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.descricao {
+  font-size: 13px;
+  color: #555;
+  max-width: 200px;
+}
+
+.redeSociais {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.redeSociais img {
+  width: 20px;
+  transition: .2s;
+}
+
+.redeSociais img:hover {
+  transform: scale(1.15);
+}
+
+.tituloCol {
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.col p {
+  font-size: 14px;
   cursor: pointer;
 }
 
-.links p:hover, img:hover{
-  transform: scale(1.06);
-  cursor: pointer;
+.col p:hover:not(.tituloCol) {
+  transform: scale(1.05);
+  transition: .2s;
+}
+
+.inferior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background: #f7f7f7;
+}
+
+.inferior p {
+  font-size: 12px;
+  color: #666;
+}
+
+.pagamentos {
+  display: flex;
+  gap: 14px;
+}
+
+.pagamentos img {
+  width: 35px;
+  transition: .2s;
+}
+
+.pagamentos img:hover {
+  transform: scale(1.1);
 }
