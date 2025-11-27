@@ -2,23 +2,37 @@
 
     <app-card-promocao></app-card-promocao>
 
-    <div class="conteiner">
-        
-        @for (prod of listarP; track $index) {
-            {{prod.nome}} <br>  
-            {{prod.preco}} <br>
-            {{prod.descricao}} <br>
-            {{prod.categoria}} <br>
-            <hr>   
-        }
-    </div>
-
     <app-categorias></app-categorias>
 
+<div>
     <div class="conteiner">
+        <div>
+        <h2>Produtos em Destaque</h2>
         <app-carrossel ></app-carrossel>
+        </div>
+
+        <div>
+        <h2>Ofertas Especiais</h2>
+        <app-carrossel ></app-carrossel>
+        </div>
+
+        <div>
+        <h2>Mais Vendidos</h2>
+        <app-carrossel ></app-carrossel>
+        </div>
+
+        <div>
+        <h2>Novidades</h2>
+        <app-carrossel ></app-carrossel>
+        </div>
+
+        
+
     </div>
 
+    
+
+    
+
 </div>
-    <button routerLink="perfil/lista-de-desejos">perfil lista de desejos</button>
 <app-footer></app-footer>

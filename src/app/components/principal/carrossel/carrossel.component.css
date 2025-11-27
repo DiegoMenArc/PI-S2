@@ -11,3 +11,9 @@
     width: 90%;
 }
 
+::ng-deep .slick-prev:before,
+::ng-deep .slick-next:before {
+    color: #2499c7 !important;
+}
+
+
