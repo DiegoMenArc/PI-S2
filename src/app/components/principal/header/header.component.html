@@ -1,11 +1,7 @@
 <div class="header">
     <div class="superior">
         <div class="group">
-            <img src="img/logo.png" alt="Logo mundo nostalgico" class="logo" routerLink="/">
-            <div class="cep">
-                <img src="icons/localizacao.svg" alt="">
-                <p>Informe seu CEP</p>
-            </div>
+            <h1 class="logo">Mundo nostalgico</h1>
         </div>
         <app-busca />
         <nav class="icons">
@@ -17,14 +13,18 @@
     </div>
 
     <div class="inferior">
-        <button type="button" class="menu-btn" (click)="abrirMenuEvent.emit()">
-            <img src="icons/menu.svg" alt="Menu">
-        </button>
+        <div class="cep">
+            <img src="icons/localizacao.svg" alt="">
+            <p>Informe seu CEP</p>
+        </div>
         <nav>
             @for (elemento of elementos; track elemento.nome){
-                <app-botao-header [nome]="elemento.nome"></app-botao-header>
+            <app-botao-header [nome]="elemento.nome"></app-botao-header>
             }
         </nav>
-        <div></div>
+        
+        <button type="button" class="menu-btn tamanho" (click)="abrirMenuEvent.emit()">
+            <img src="icons/menu.svg" alt="Menu">
+        </button>
     </div>
 </div>

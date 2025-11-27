@@ -2,7 +2,9 @@
 
 
 .logo {
-    width: 72px;
+    font-family: var(--logo);
+    font-size: 32px;
+    letter-spacing: 1px;
     cursor: pointer;
 }
 
@@ -17,9 +19,13 @@
     height: 50%;
 }
 
+.tamanho{
+    width: 10%;
+}
+
 .superior {
     background-color: var(--azul3);
-    padding: 10px 60px;
+    padding: 15px 60px;
 
     display: flex;
     justify-content: space-between;
@@ -53,6 +59,7 @@
     width: 20%;
     height: fit-content;
     display: flex;
+    align-items: center;
 }
 
 .icons a {
@@ -72,12 +79,14 @@
 
 .menu-btn {
     background: none;
-    border: none;
+    border: 0;
     cursor: pointer;
     padding: 0;
+    display: flex;
+    justify-content: end;
 }
 
 .menu-btn img {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
 }

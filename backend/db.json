@@ -409,20 +409,7 @@
           "especificacao": "Faixa etária",
           "valor": "A partir de 6 anos"
         }
-      ],
-      "id": "4",
-      "img": [
-        "/img/prod1.jpg"
-      ],
-      "nome": "Forte Apache",
-      "descricao": "Um clássico do velho oeste em miniatura — com índios, cowboys e cavalos para batalhas lendárias.",
-      "anoLancamento": "1985",
-      "marca": "Gulliver",
-      "preco": "329,90",
-      "tamanho": "Grande",
-      "qtd": 5,
-      "data": "07/11/2025",
-      "categoria": "Miniaturas",
+      ],  
       "disponibilidade": true,
       "avaliacoes": {
         "media": 4.9,
