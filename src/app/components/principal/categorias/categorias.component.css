@@ -42,7 +42,7 @@
 /* Faixa que desliza */
 .carrossel-faixa {
   display: flex;
-  width: 200%; /* duas páginas */
+  width: 300%; /* duas páginas */
   transition: transform 0.6s ease-in-out;
 }
 
@@ -64,7 +64,9 @@
 
 /* Botões de categoria */
 .categoria {
-  /* Remove as propriedades de largura fixa */
+  width: 150px;        /* Largura fixa */
+  height: 80px;        /* Altura fixa (pode ajustar) */
+
   padding: 12px 20px;
   border: 1px solid #2499c7;
   border-radius: 8px;
@@ -73,11 +75,14 @@
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s;
-  /* Remova as linhas que limitavam o texto */
-  /* white-space: nowrap; */
-  /* overflow: hidden; */
-  /* text-overflow: ellipsis; */
-  box-sizing: border-box;
+
+  text-align: center;
+  white-space: normal;     /* Permite quebrar linha */
+  word-wrap: break-word;   /* Quebra palavras grandes */
+
+  display: flex;           /* Centraliza conteúdo */
+  justify-content: center;
+  align-items: center;
 }
 
 .categoria:hover {
