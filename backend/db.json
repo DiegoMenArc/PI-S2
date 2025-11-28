@@ -235,23 +235,26 @@
     },
     {
       "id": "15",
-      "nome": "Olivia",
-      "sobrenome": "Dias",
-      "user_name": "olivia.dias",
-      "data_nasc": {
-        "dia": 20,
-        "mes_num": 8,
-        "ano": 1994,
-        "mes_stg": "agosto"
-      },
-      "email": "olivia.dias@example.com",
+      "nome": "Administrador",
+      "sobrenome": "1",
+      "email": "admin@gmail",
+      "user_name": "admin",
+      "senha": "1234567890",
+      "user_role": "admin",
       "endereco": {
-        "cidade": "Salvador",
-        "bairro": "Barra",
-        "logradouro": "Av. Sete de Setembro",
-        "numero": 999,
-        "cep": 40020000
-      }
+        "logradouro": "",
+        "numero": 0,
+        "cidade": "",
+        "bairro": "",
+        "cep": 0
+      },
+      "telefone": 0,
+      "data_nasc": {
+        "dia": null,
+        "mes_num": null,
+        "ano": null
+      },
+      "Cpf": ""
     },
     {
       "id": 15,
@@ -270,6 +273,28 @@
       "email": "fernando@gmail",
       "senha": "12345678",
       "endereco": {
+        "logradouro": "rua da pindaiba",
+        "numero": 28,
+        "cidade": "",
+        "bairro": "",
+        "cep": 0
+      },
+      "telefone": 0,
+      "data_nasc": {
+        "dia": 0,
+        "mes_num": 0,
+        "ano": 0
+      },
+      "Cpf": "55555555555"
+    },
+    {
+      "id": "85b7",
+      "nome": "Ada",
+      "sobrenome": "Ylson",
+      "user_name": "",
+      "email": "adaylson@gmail",
+      "senha": "12345678",
+      "endereco": {
         "logradouro": "",
         "numero": 0,
         "cidade": "",
@@ -285,12 +310,34 @@
       "Cpf": ""
     },
     {
-      "id": "85b7",
-      "nome": "Ada",
-      "sobrenome": "Ylson",
+      "id": "2221",
+      "nome": "Diego",
+      "sobrenome": "Mendes",
       "user_name": "",
-      "email": "adaylson@gmail",
+      "email": "diego@email.com",
       "senha": "12345678",
+      "endereco": {
+        "logradouro": "",
+        "numero": 0,
+        "cidade": "",
+        "bairro": "",
+        "cep": 0
+      },
+      "telefone": 0,
+      "data_nasc": {
+        "dia": null,
+        "mes_num": null,
+        "ano": null
+      },
+      "Cpf": ""
+    },
+    {
+      "id": "d2fe",
+      "nome": "arlindo",
+      "sobrenome": "cruz",
+      "user_name": "",
+      "email": "eu@gmail.com",
+      "senha": "1234567890",
       "endereco": {
         "logradouro": "",
         "numero": 0,
