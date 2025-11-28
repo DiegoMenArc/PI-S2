@@ -12,7 +12,7 @@
         <form class="loginForm" [formGroup]="form">
 
           <div class="input-group">
-            <label for="email">Email</label>
+            <label for="email">Email ou User</label>
             <input id="email" type="email" name="usuario" placeholder="E-mail" [formControlName]="'email'">
           </div>
 
@@ -24,8 +24,6 @@
        
         <p class="fgt-senha">Esqueci minha senha</p>
       </div>
-         <p>condição: {{this.form.valid}}</p>
-
 
       <div id="conta">
         <button class="btnLogin" type="submit" (click)="verificar()">

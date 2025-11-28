@@ -1,0 +1,156 @@
+.conteiner {}
+
+.titulo {
+    margin: 1em 2em;
+}
+
+.painel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em 1em;
+    border: 1px solid var(--cinza1);
+    border-radius: 4vh;
+    padding: 1em 5em;
+
+    border: 1px solid var(--cinza1);
+}
+
+.painel-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.painel-head {
+    display: flex;
+    background-color: rgb(241, 241, 241);
+    border-radius: 1vh;
+
+    font-weight: 700;
+}
+
+.user-line {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    gap: 2em;
+
+    width: 100%;
+    height: 2em;
+    padding: 0 0;
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.cont-cabecalho,
+.check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5em;
+    padding: 2px 2em;
+}
+
+.cont-cabecalho-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info {
+    width: 10%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.2em 0;
+}
+
+.info4{
+    width: 150px;
+    margin-right: 80px;
+}
+
+.checku {
+    margin: 0 1em 0 2em;
+    padding: 0.2em 0;
+}
+
+.acoes{
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 12px;
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.acoes img{
+    transform: scale(1.2);
+}
+
+.acoes img:hover{
+    cursor: pointer;
+    transform: scale(1.4, 1.4);
+}
+
+.email, .ac{
+    margin-left: 10px;
+}
+
+.endereco{
+    margin-left: 5em;
+}
+
+.head{
+    display: flex;
+    padding: 1em 0;
+    justify-content: space-between;
+}
+
+.info3{
+    margin-right: 12em;
+}
+
+.id{
+    padding: 0 0;
+}
+
+.busca {
+    display: flex;
+    width: 433px;
+    padding: 1em 2em;
+    align-items: center;
+    gap: 43px;
+    align-self: stretch;
+
+    border-radius: 10px;
+    border: 1.65px solid #C7C7C7;
+}
+
+.busca::placeholder {
+    background-image: url(/img/lupa-Icon.svg);
+    background-repeat: no-repeat;
+    background-position: 96%;
+}
+
+.add-btn {
+    display: flex;
+    width: 192px;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+
+    border: none;
+    border-radius: 15px;
+    background: var(--azul2);
+
+    font-size: 16px;
+    color: #F7F7F7;
+}
+
+.add-btn:hover{
+    background: var(--azul3);
+    cursor:pointer;
+    transition: 500ms;
+}

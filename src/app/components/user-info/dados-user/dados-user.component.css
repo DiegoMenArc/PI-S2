@@ -58,7 +58,7 @@ input{
 .button-box{
     padding: 0.2rem 0.8rem;
 }
-.button-box button{
+.salvar-btn{
     background-color: var(--azul1);
     color: var(--branco);
     border: 0.8px solid var(--azul2);
@@ -71,18 +71,14 @@ input{
     padding: 1rem 2rem;
 }
 
-.button-box :hover{
-    background-color: var(--azul2);
-    transition: 700ms;
-}
-
-.button-box :active{
-    background-color: var(--azul3);
-    transition: 400ms;
-}
-
-.salver-btn:hover{
+.salvar-btn:hover{
     cursor: pointer;
     background-color: var(--azul2);
     transition: 700ms;
+}
+
+.salvar-btn:active{
+    cursor: pointer;
+    background-color: var(--azul3);
+    transition: 400ms;
 }

@@ -1,0 +1,87 @@
+<div class="conteiner">
+    <div class="titulo">
+        <h1>Painel de usuarios</h1>
+        <app-breadcumbs [pages]="['Users']"></app-breadcumbs>
+    </div>
+
+    <p>{{this.aviso}}</p>
+
+    <table class="painel">
+        <div class="head">
+            <input class="busca" type="text" placeholder="Buscar Usuarios">
+            <button [routerLink]="['edit']" type="submit" class="add-btn">Adicionar <img src="icons/adm/plus-icon.svg"
+                    alt=""></button>
+        </div>
+
+        <thead class="painel-head">
+            <div class="check">
+                <input type="checkbox" name="" id="check-prd-head" (checked)="setAll()">
+                <div class="cont-cabecalho id">
+                    <p>{{tipos[0]}}</p>
+                    <div class="cont-cabecalho-nav">
+                        <img src="icons/adm/Vector-up.svg" alt="">
+                        <img src="icons/adm/Vector-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="cont-cabecalho nome">
+                <p>{{tipos[1]}}</p>
+                <div class="cont-cabecalho-nav">
+                    <img src="icons/adm/Vector-up.svg" alt="">
+                    <img src="icons/adm/Vector-down.svg" alt="">
+                </div>
+
+            </div>
+            <div class="cont-cabecalho sobrenome">
+                <p>{{tipos[2]}}</p>
+                <div class="cont-cabecalho-nav">
+                    <img src="icons/adm/Vector-up.svg" alt="">
+                    <img src="icons/adm/Vector-down.svg" alt="">
+                </div>
+
+            </div>
+            <div class="cont-cabecalho email">
+                <p>{{tipos[3]}}</p>
+                <div class="cont-cabecalho-nav">
+                    <img src="icons/adm/Vector-up.svg" alt="">
+                    <img src="icons/adm/Vector-down.svg" alt="">
+                </div>
+            </div>
+            <div class="cont-cabecalho endereco">
+                <p>{{tipos[4]}}</p>
+                <div class="cont-cabecalho-nav">
+                    <img src="icons/adm/Vector-up.svg" alt="">
+                    <img src="icons/adm/Vector-down.svg" alt="">
+                </div>
+            </div>
+            <div class="cont-cabecalho ac">
+                <p>{{tipos[5]}}</p>
+                <div class="cont-cabecalho-nav">
+                    <img src="icons/adm/Vector-up.svg" alt="">
+                    <img src="icons/adm/Vector-down.svg" alt="">
+                </div>
+            </div>
+        </thead>
+        <tbody class="painel-content">
+            @for(user of this.users ; track $index){
+            <tr class="user-line">
+                <td class="checku"><input type="checkbox" name="" id="check-user"></td>
+                <td class="user-info 0">{{user.id}}</td>
+                <td class="user-info 1">{{user.nome}}</td>
+                <td class="user-info 2">{{user.sobrenome}}</td>
+                <td class="user-info info3">{{user.email}}</td>
+                <td class="user-info info4">{{user.endereco?.logradouro}}</td>
+
+                <div class="acoes-user card-lista acoes">
+                    <img class="acoes-icon edit" src="icons/adm/edit.svg" alt="" (click)="getEdit(user.id!)">
+                    <img class="acoes-icon lixo" src="icons/adm/trash.svg" alt="" (click)="removerUser(user.id!)">
+                </div>
+            </tr>
+            }
+        </tbody>
+
+
+
+    </table>
+</div>

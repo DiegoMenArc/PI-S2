@@ -3,13 +3,14 @@ import { Usuario } from '../types/types';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/internal/Observable';
 import { map } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AutenticadorService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   private readonly API = 'http://localhost:3000/usuarios';
 
@@ -40,6 +41,8 @@ export class AutenticadorService {
 
   logout() {
     localStorage.removeItem(this.storageKey);
+    sessionStorage.clear() // limpa tudo em relação a sessão do cliente
+    this.router.navigate([''])
   }
 
   taLogado(): boolean {

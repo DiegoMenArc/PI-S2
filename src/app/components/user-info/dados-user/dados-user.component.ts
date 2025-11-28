@@ -50,7 +50,17 @@ export class DadosUserComponent implements OnInit {
 
   user!: Usuario;
   ngOnInit(): void {
-    this.user = this.auth.getUser();
+    this.user = this.auth.getUser() ?? {} as Usuario;
+    if(!this.user){
+      this.router.navigate(['/login'])
+    }
+    this.user.endereco = this.user.endereco ?? {
+      logradouro: '',
+      numero: 0,
+      cidade: '',
+      bairro: '',
+      cep: 0
+    };
 
     this.nome = this.user.nome ?? '';
     this.sobrenome = this.user.sobrenome ?? '';
@@ -62,15 +72,30 @@ export class DadosUserComponent implements OnInit {
         dia: this.user.data_nasc.dia ?? 0,
         mes_num: this.user.data_nasc.mes_num ?? 0,
         ano: this.user.data_nasc.ano ?? 0,
-      }
-      : undefined;
+      } : undefined;
 
     this.CPF = this.user.Cpf ?? '';
     this.endereco = this.user.endereco?.logradouro ?? '';
     this.numero = this.user.endereco?.numero ?? 0;
+
+    this.form.patchValue({
+    nome: this.user.nome ?? '',
+    sobrenome: this.user.sobrenome ?? '',
+    email: this.user.email ?? '',
+    telefone: this.user.telefone ?? 0,
+    dia: String(this.user.data_nasc?.dia) ?? 0,
+    mes: String(this.user.data_nasc?.mes_num) ?? 0,
+    ano: String(this.user.data_nasc?.ano) ?? 0,
+    CPF: this.user.Cpf ?? '',
+    endereco: this.user.endereco?.logradouro ?? '',
+    numero: this.user.endereco?.numero ?? 0
+  });
   }
 
   alterar() {
+    if(!this.user){
+      return
+    }
 
     const { nome, sobrenome, email, telefone, dia, mes, ano, CPF, endereco, numero } = this.form.value
 
@@ -104,8 +129,8 @@ export class DadosUserComponent implements OnInit {
     this.user.endereco.logradouro = endereco ?? this.endereco;
     this.user.endereco.numero = numero ? Number(numero) : this.numero;
 
-    this.serv.editarUser(this.user).subscribe((usuario)=>{
-      if(usuario){
+    this.serv.editarUser(this.user).subscribe((usuario) => {
+      if (usuario) {
         this.router.navigate(['perfil'])
       }
     });

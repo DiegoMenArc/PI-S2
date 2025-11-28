@@ -11,10 +11,10 @@ import { AutenticadorService } from '../../../core/services/autenticador.service
   templateUrl: './cadastro-login.component.html',
   styleUrl: './cadastro-login.component.css'
 })
-export class CadastroLoginComponent implements OnInit {
+export class CadastroLoginComponent {
 
-  titulo: String = "CADASTRO";
-  aviso: String = ''
+  titulo = "cadastro"
+  aviso = ""
 
   user: Usuario = {
     nome: '',
@@ -38,7 +38,7 @@ export class CadastroLoginComponent implements OnInit {
   cadastrarUser() {
     if (this.formulario.invalid) {
       this.formulario.markAllAsTouched;
-      this.aviso = "Preencha as Informações"
+      this.aviso = "preencha as informações"
       return;
     } else if (this.formulario.valid) {
       const { nome, sobrenome, email, senha } = this.formulario.value;
@@ -54,10 +54,5 @@ export class CadastroLoginComponent implements OnInit {
         this.router.navigate(['perfil']);
       })
     }
-  }
-
-
-  ngOnInit(): void {
-    this.user = this.auth.getUser()
   }
 }

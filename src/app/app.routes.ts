@@ -14,6 +14,8 @@ import { ListaDesejoComponent } from './pages/user/lista-desejo/lista-desejo.com
 import { CadastroLoginComponent } from './pages/login/cadastro1/cadastro-login.component';
 import { Component } from '@angular/core';
 import { PerfilUserComponent } from './pages/user/perfil-user/perfil-user.component';
+import { ListaUsersComponent } from './pages/adm/lista-users/lista-users.component';
+import { UserComponent } from './pages/adm/lista-users/user/user.component';
 
 export const routes: Routes = [
   {
@@ -28,6 +30,8 @@ export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'cadastro', component: CadastroLoginComponent, title: 'Cadastro'},
   { path: 'usuario/:id/informacoes', component: InfoUserComponent },
+  { path: 'adm/users', component: ListaUsersComponent, title: 'Users'}, 
+  { path: 'user:id', component: UserComponent},
   { path: 'adm/produto', component: AdmComponent },
   { path: 'adm/produto/edit/:id', component: AdmAddComponent },
   { path: 'adm/produto/edit', component: AdmAddComponent },

@@ -31,4 +31,8 @@ export class EditPComponent implements OnInit{
     categorias:String[] = ["Brinquedos", "Revistas", "Carrinhos", "Fofos"];
     acoes:String[] = ["Nome do Produto", "Descrição do Produto", "Quantidade", "Preço", "Ano de Lançamento", "Marca"];
     espec:String[ ] = ["Especificação", "Valor"];
+
+    editar(){
+      
+    }
 }

@@ -15,19 +15,21 @@ import { Usuario } from '../../../core/types/types';
 })
 export class HeaderComponent {
   private rota: String = ''
-  private user!: Usuario
+  user!: Usuario;
+  CEP: number | string = ''
 
-  constructor(private active: ActivatedRoute, private auth: AutenticadorService, private serv: UsuarioService) {
+  constructor(private auth: AutenticadorService, private serv: UsuarioService) {
     this.user = this.auth.getUser();
 
     if (this.user != null) {
       if (this.user.user_role === "/adm/produto") {
         this.rota = '/adm/produto';
+        this.CEP = this.user?.endereco?.cep ?? "Infrome Seu Cep"
       } else {
         this.rota = '/perfil';
       }
     } else {
-      this.rota = '/cadastro';
+      this.rota = '/login';
     }
   }
 

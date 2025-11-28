@@ -30,7 +30,11 @@ export class LoginComponent {
       if(user){
         this.user = user;
         this.aviso = 'logado';
-        this.router.navigate(['perfil']);
+        if(this.user.user_role == "admin"){
+          this.router.navigate(['adm/produto'])
+        }else{
+          this.router.navigate(['perfil']);
+        }
       }else{
         if(this.form.valid){
           this.aviso = 'user ou senha invalidos'

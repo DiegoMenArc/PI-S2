@@ -1,7 +1,11 @@
 <app-header></app-header>
 
 <div class="content">
-    <app-menu-conta [username]="username"></app-menu-conta>
+    <div class="menu">
+        <app-menu-conta [username]="username"></app-menu-conta>
+        <button class="logout" (click)="logout()">Sair</button>
+    </div> 
+
     <app-dados-user></app-dados-user>
 </div>
 

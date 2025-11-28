@@ -2,3 +2,30 @@
     display: flex;
     justify-content: center;
 }
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logout{
+    width: 70%;
+
+    background-color: var(--cinza1);
+    align-self: center;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 2vh;
+}
+
+.logout:hover{
+    cursor: pointer;
+    background-color: rgb(175, 108, 108);
+    transition: 700ms;
+}
+
+.logout:active{
+    background-color: rgb(131, 59, 59);
+    transition: 400ms;
+}

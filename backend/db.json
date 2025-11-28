@@ -254,36 +254,57 @@
       }
     },
     {
-      "id": "6619",
-      "nome": "Fernando",
-      "sobrenome": "Fernandes",
-      "user_name": "",
-      "email": "fernando@gmail",
-      "senha": "12345678"
+      "id": 15,
+      "nome": "Administrador",
+      "sobrenome": "1",
+      "email": "admin@gmail",
+      "user_name": "admin",
+      "senha": "1234567890",
+      "user_role": "admin"
     },
     {
-      "id": "a73c",
+      "id": "9f7a",
       "nome": "Fernando",
       "sobrenome": "Fernandes",
       "user_name": "",
       "email": "fernando@gmail",
-      "senha": "12345678"
+      "senha": "12345678",
+      "endereco": {
+        "logradouro": "",
+        "numero": 0,
+        "cidade": "",
+        "bairro": "",
+        "cep": 0
+      },
+      "telefone": 0,
+      "data_nasc": {
+        "dia": null,
+        "mes_num": null,
+        "ano": null
+      },
+      "Cpf": ""
     },
     {
-      "id": "6e20",
-      "nome": "Fernando",
-      "sobrenome": "Fernandes",
+      "id": "85b7",
+      "nome": "Ada",
+      "sobrenome": "Ylson",
       "user_name": "",
-      "email": "fernando@gmail",
-      "senha": "12345678"
-    },
-    {
-      "id": "3c72",
-      "nome": "Fernando",
-      "sobrenome": "Fernandes",
-      "user_name": "",
-      "email": "fernando@gmail",
-      "senha": "12345678"
+      "email": "adaylson@gmail",
+      "senha": "12345678",
+      "endereco": {
+        "logradouro": "",
+        "numero": 0,
+        "cidade": "",
+        "bairro": "",
+        "cep": 0
+      },
+      "telefone": 0,
+      "data_nasc": {
+        "dia": null,
+        "mes_num": null,
+        "ano": null
+      },
+      "Cpf": ""
     }
   ],
   "produtos": [
@@ -318,19 +339,6 @@
           "valor": "Crianças acima de 5 anos"
         }
       ],
-      "id": "1",
-      "img": [
-        "/img/prod1.jpg"
-      ],
-      "nome": "Ferrorama XP-300",
-      "descricao": "Um dos trens elétricos mais icônicos dos anos 80, com trilhos modulares e locomotiva a pilha.",
-      "anoLancamento": "1984",
-      "marca": "Estrela",
-      "preco": "399,90",
-      "tamanho": "Médio",
-      "qtd": 12,
-      "data": "07/11/2025",
-      "categoria": "Brinquedo Clássico",
       "disponibilidade": true,
       "avaliacoes": {
         "media": 4.8,
@@ -441,7 +449,7 @@
           "especificacao": "Faixa etária",
           "valor": "A partir de 6 anos"
         }
-      ],  
+      ],
       "disponibilidade": true,
       "avaliacoes": {
         "media": 4.9,

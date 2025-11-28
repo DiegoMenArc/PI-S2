@@ -9,12 +9,12 @@
 
             <div class="input-box user-nome">
                 <label for="ins-nome">Nome</label>
-                <input type="text" name="user-sobrenome" id="ins-sbnome" placeholder={{this.user.nome}}>
+                <input type="text" name="nome" id="ins-nome" placeholder={{this.user.nome}}>
             </div>
 
             <div class="input-box user-sobn">
                 <label for="ins-sbnome">Sobreome</label>
-                <input type="text" name="user-sobrenome" id="ins-sbnome" placeholder={{this.user.sobrenome}}>
+                <input type="text" name="sobn" id="ins-sbnome" placeholder={{this.user.sobrenome}}>
             </div>
 
         </div>
@@ -23,12 +23,12 @@
 
             <div class="input-box email">
                 <label for="ins-email">Email</label>
-                <input type="email" name="email e-mail" id="ins-email" placeholder={{this.user.email}}>
+                <input type="email" name="email" id="ins-email" placeholder={{this.user.email}}>
             </div>
 
             <div class="input-box cpf">
                 <label for="ins-cel">Celular</label>
-                <input type="text" name="celular cel" id="ins-cel" placeholder={{this.user.telefone}}>
+                <input type="text" name="cel" id="ins-cel" placeholder={{this.user.telefone}}>
             </div>
 
         </div>
@@ -36,7 +36,7 @@
         <DIV class="double-input">
             <div class="input-box dn">
                 <label for="ins-dn">Data de Nascimento</label>
-                <input type="date" name="data-nascimento" id="ins-dn" placeholder={{this.user.data_nasc}}>
+                <input type="date" name="nasc" id="ins-dn" placeholder={{this.user.data_nasc}}>
             </div>
 
             <div class="input-box cpf">
@@ -47,13 +47,13 @@
 
         <div class="double-input">
             <div class="input-box">
-                <label for="endereco">Endereco</label>
-                <input type="text" name="endereco" id="endereco" placeholder={{this.user.endereco?.logradouro}}>
+                <label for="end">Endereco</label>
+                <input type="text" name="endereco" id="end" placeholder={{this.user.endereco?.logradouro}}>
             </div>
 
             <div class="input-box">
-                <label for="numero">Número</label>
-                <input type="number" name="numero" id="endereco" placeholder={{this.user.endereco?.numero}}>
+                <label for="num">Número</label>
+                <input type="number" name="numero" id="num" innerHTML={{this.user.endereco?.numero}}>
             </div>
         </div>
 

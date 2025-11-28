@@ -1,7 +1,9 @@
-import { Component, Input, Output, EventEmitter, inject } from '@angular/core';
+import { Component, Input, Output, EventEmitter, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { UsuarioService } from '../../../core/services/usuario.service';
+import { AutenticadorService } from '../../../core/services/autenticador.service';
+import { Usuario } from '../../../core/types/types';
 
 @Component({
     selector: 'app-menu',
@@ -12,13 +14,17 @@ import { UsuarioService } from '../../../core/services/usuario.service';
 })
 
 
-export class MenuComponent {
+export class MenuComponent implements OnInit {
+
+    constructor(private auth: AutenticadorService, private serv: UsuarioService) { }
+
     @Input() visivel: boolean = false;
     @Output() fecharMenu = new EventEmitter<void>();
 
     submenuAberto = false;
-    _usuarioAtual = inject(UsuarioService);
     router: any;
+    user!: Usuario
+    usuarioLogado: String = ''
 
     toggleSubmenu() {
         this.submenuAberto = !this.submenuAberto;
@@ -28,16 +34,22 @@ export class MenuComponent {
         this.fecharMenu.emit();
     }
 
-    get usuarioLogado() {
-        return this._usuarioAtual.usuario;
-    }
-
     logout() {
-        this._usuarioAtual.fazerLogout();
-        this.fechar(); 
+        this.auth.logout();
+        this.fechar();
     }
 
-    clicarCadastro(){
-    this.router.navigate(['/cadastro']);
-  }
+    clicarCadastro() {
+        this.router.navigate(['/cadastro']);
+    }
+
+    ngOnInit():void{
+        this.user = this.auth.getUser()
+
+        if(!this.user){
+            this.usuarioLogado = 'Seja bem-vindo'
+        }else{
+            this.usuarioLogado = this.user.nome
+        }
+    }
 }

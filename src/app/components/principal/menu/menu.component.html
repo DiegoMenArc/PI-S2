@@ -18,7 +18,7 @@
     </div>
 
     <div id="menu-login">
-  <ng-container *ngIf="!usuarioLogado; else logado">
+  <ng-container *ngIf="usuarioLogado=='Seja bem-vindo'; else logado">
     <button id="btnEntrar" routerLink="/login" (click)="fechar()">Entrar</button>
     <button id="btnCadastrar" routerLink="/cadastro" (click)="fechar()">Cadastrar</button>
   </ng-container>

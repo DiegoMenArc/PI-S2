@@ -23,4 +23,9 @@ export class PerfilUserComponent {
     this.user = this.auth.getUser();
     this.username = this.user?.nome ?? '';
   }
+  
+  logout(){
+    this.auth.logout()
+    this.router.navigate([''])
+  }
 }
