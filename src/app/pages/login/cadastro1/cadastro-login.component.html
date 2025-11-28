@@ -1,16 +1,54 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<header>
-  <h1 class="logo">MUNDO NOSTÁLGICO</h1>
-</header>
 
-<main>
-  <router-outlet></router-outlet>
-</main>
-<footer>
-  <div class="dots">
-    <span class="dot active"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
+<header class="logo"><button routerLink="">Mundo Nostálgico</button></header>
+
+<div class="conteiner">
+
+  <div class="card">
+    <h1>{{this.titulo}}</h1>
+
+    <p class="aviso">{{this.aviso}}
+
+    <div class="form-geral" id="form-geral" [formGroup]="formulario">
+      <div class="input-group">
+        <label for="getEmail">Informe o seu email</label>
+        <input type="email" name="email" id="getEmail" formControlName="email">
+      </div>
+
+
+      <div class="input-group">
+        <label for="getNome">Nome</label>
+        <input type="text" name="nome" id="getNome" formControlName="nome">
+      </div>
+
+      <div class="input-group">
+        <label for="getSobn">Sobrenome</label>
+        <input type="text" name="sobrenome" id="getSobn" formControlName="sobrenome">
+      </div>
+
+      <div class="input-group">
+        <label for="getSenha">Crie uma senha</label>
+        <input type="password" name="senha" id="getSenha" formControlName="senha">
+        <p class="aviso">É necessário ter pelo menos 8 digitos</p>
+      </div>
+
+      <button type="button" id="btn" class="btn-continuar" (click)="cadastrarUser()">
+          Continuar
+          <i class="fa-solid fa-arrow-right"></i>
+      </button>
+
+      <p class="ou">ou</p>
+
+      <div class="social-login">
+        <button class="google">
+          <i class="fa-brands fa-google"></i>
+        </button>
+        <button class="facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </button>
+      </div>
+
+    </div>
   </div>
-</footer>
+
+</div>

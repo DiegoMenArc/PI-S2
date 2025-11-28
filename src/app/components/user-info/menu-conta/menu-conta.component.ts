@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Usuario } from '../../../core/types/types';
+import { AutenticadorService } from '../../../core/services/autenticador.service';
+import { Router } from '@angular/router';
+import { UsuarioService } from '../../../core/services/usuario.service';
 
 @Component({
   selector: 'app-menu-conta',
@@ -6,8 +10,12 @@ import { Component } from '@angular/core';
   templateUrl: './menu-conta.component.html',
   styleUrl: './menu-conta.component.css'
 })
-export class MenuContaComponent {
+export class MenuContaComponent{
+  @Input() username: String = "";
+
   opcoes:String[] = ["Sua Área", "Meus Pedidos", "Seus dados", "Configurações", "Sair"];
+
+  
 
   opcoesIcon:String[] = [
     '', 
@@ -16,5 +24,4 @@ export class MenuContaComponent {
     '/public/icons/config-branco-icon.svg'
   ];
 
-  username:String = "Glauber";
 }

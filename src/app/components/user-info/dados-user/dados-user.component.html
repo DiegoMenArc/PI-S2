@@ -3,48 +3,65 @@
     <h2 class="dados-ttl">Meus Dados</h2>
 
     <div class="input-conteiner">
+        <form formControlName=""></form>
 
         <div class="double-input nome-sobrenome">
 
-            <div class="input-box  user-nome">
+            <div class="input-box user-nome">
                 <label for="ins-nome">Nome</label>
-                <input class="inp_pd" type="text" name="user-nome" id="ins-nome" placeholder="digite o seu nome">
+                <input type="text" name="user-sobrenome" id="ins-sbnome" placeholder={{this.user.nome}}>
             </div>
 
             <div class="input-box user-sobn">
                 <label for="ins-sbnome">Sobreome</label>
-                <input type="text" name="user-sobrenome" id="ins-sbnome">
+                <input type="text" name="user-sobrenome" id="ins-sbnome" placeholder={{this.user.sobrenome}}>
             </div>
 
         </div>
 
-        <div class="input-box email">
-            <label for="ins-email">Email</label>
-            <input type="email" name="email e-mail" id="ins-email">   
-        </div>
+        <div class="double-input email-cel">
 
-        <div class="double-input cpf-cel">
-
-            <div class="input-box cpf">
-                <label for="ins-cpf">CPF</label>
-                <input type="text" name="cpf" id="ins-cpf">
+            <div class="input-box email">
+                <label for="ins-email">Email</label>
+                <input type="email" name="email e-mail" id="ins-email" placeholder={{this.user.email}}>
             </div>
 
             <div class="input-box cpf">
                 <label for="ins-cel">Celular</label>
-                <input type="text" name="celular cel" id="ins-cel">
+                <input type="text" name="celular cel" id="ins-cel" placeholder={{this.user.telefone}}>
             </div>
 
         </div>
 
-        <div class="input-box dn">
-            <label for="ins-dn">Data de Nascimento</label>
-            <input type="date" name="data-nascimento" id="ins-dn">
+        <DIV class="double-input">
+            <div class="input-box dn">
+                <label for="ins-dn">Data de Nascimento</label>
+                <input type="date" name="data-nascimento" id="ins-dn" placeholder={{this.user.data_nasc}}>
+            </div>
+
+            <div class="input-box cpf">
+                <label for="ins-cpf">CPF</label>
+                <input type="text" name="cpf" id="ins-cpf" placeholder={{this.user.Cpf}}>
+            </div>
+        </DIV>
+
+        <div class="double-input">
+            <div class="input-box">
+                <label for="endereco">Endereco</label>
+                <input type="text" name="endereco" id="endereco" placeholder={{this.user.endereco?.logradouro}}>
+            </div>
+
+            <div class="input-box">
+                <label for="numero">Número</label>
+                <input type="number" name="numero" id="endereco" placeholder={{this.user.endereco?.numero}}>
+            </div>
         </div>
 
     </div>
 
     <div class="button-box">
-        <button class="salvar-btn" type="submit">Salvar Alterações</button>
+        <button class="salvar-btn" type="submit" (click)="alterar()">
+            <p>Salvar Alterações</p>
+        </button>
     </div>
 </div>

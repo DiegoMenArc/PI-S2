@@ -65,6 +65,10 @@
   font-size: 14px;
 }
 
+.aviso{
+  font-family: var(--fontPadrao);
+}
+
 .loginForm input:focus {
   border-color: var(--azul3);
   box-shadow: 0 0 4px rgba(0, 102, 145, 0.3);

@@ -2,14 +2,15 @@
     display: flex;
     flex-direction: column;
 
+    margin: 1rem 1rem;
+    padding: 2rem 1vw;
     align-items: flex-start;
-    gap: 5rem;
-    flex: 1 0 0;
-    align-self: stretch;
+    gap: 3rem;
 
     background-color: var(--fundo);
     font-family: "Montserrat", "Sans-serif";
-    padding: 1vh 1vw;
+    border: 1px solid var(--cinza2);
+    border-radius: 5vh;
 }
 
 .cont-ttl{

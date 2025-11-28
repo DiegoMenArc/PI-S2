@@ -5,29 +5,33 @@ import { ProdMainComponent } from './partes/prod-main/prod-main.component'
 import { CarrosselprodComponent } from './partes/carrosselprod/carrosselprod.component';
 import { EspecificacoesProdComponent } from './partes/especificacoes-prod/especificacoes-prod.component';
 import { ComentariosComponent } from './partes/comentarios/comentarios.component';
-import { Especificacao, Produto } from '../../core/types/types';
+import { Especificacao, Produto, Usuario } from '../../core/types/types';
 import { ProdutosService } from '../../core/services/produtos.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CarrosselComponent } from '../../components/principal/carrossel/carrossel.component';
+import { AutenticadorService } from '../../core/services/autenticador.service';
 
 
 @Component({
   selector: 'app-produto',
-  imports: [ FooterComponent, CarrosselComponent ,ProdMainComponent,CarrosselprodComponent, EspecificacoesProdComponent, ComentariosComponent],
+  imports: [ FooterComponent, CarrosselComponent , ProdMainComponent, EspecificacoesProdComponent, ComentariosComponent],
   templateUrl: './produto.component.html',
   styleUrl: './produto.component.css'
 })
-export class ProdutoComponent{
+export class ProdutoComponent implements OnInit{
   produtoId?: string; // Id que vai ser puxado da rota
 
   produto: Produto = {} as Produto; // objeto do produto 
   produtos: Produto[] = []; // array de produtos
   adicionais?: Especificacao[];
 
+  user!: Usuario
+
   constructor(
     private service: ProdutosService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private auth: AutenticadorService
   ) {
     this.produtoId = this.route.snapshot.params['id'];
 
@@ -162,6 +166,10 @@ export class ProdutoComponent{
       }
     }]
   };
+
+  ngOnInit(): void {
+    this.user = this.auth.getUser()
+  }
 }
 
 
