@@ -352,6 +352,28 @@
         "ano": null
       },
       "Cpf": ""
+    },
+    {
+      "id": "b426",
+      "nome": "Pedro",
+      "sobrenome": "Pedrosa",
+      "user_name": "",
+      "email": "pedro@gmail",
+      "senha": "12345678",
+      "endereco": {
+        "logradouro": "rua da pindaiba",
+        "numero": 9,
+        "cidade": "",
+        "bairro": "",
+        "cep": 0
+      },
+      "telefone": 0,
+      "data_nasc": {
+        "dia": 28,
+        "mes_num": 2,
+        "ano": 2010
+      },
+      "Cpf": ""
     }
   ],
   "produtos": [

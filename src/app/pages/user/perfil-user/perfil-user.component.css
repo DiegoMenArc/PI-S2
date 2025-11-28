@@ -1,6 +1,9 @@
 .content{
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 70px;
+    border-bottom: 1px solid var(--cinza1);
 }
 
 .menu{
@@ -29,3 +32,4 @@
     background-color: rgb(131, 59, 59);
     transition: 400ms;
 }
+
