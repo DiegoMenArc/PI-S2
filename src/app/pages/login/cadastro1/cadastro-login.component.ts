@@ -13,7 +13,7 @@ import { AutenticadorService } from '../../../core/services/autenticador.service
 })
 export class CadastroLoginComponent {
 
-  titulo = "cadastro"
+  titulo = "Cadastro"
   aviso = ""
 
   user: Usuario = {

@@ -1,8 +1,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<header class="logo"><button routerLink="">Mundo Nostálgico</button></header>
-
 <div class="conteiner">
+  <header class="logo"><button routerLink="">Mundo Nostálgico</button></header>
 
   <div class="card">
     <h1>{{this.titulo}}</h1>
@@ -29,7 +28,7 @@
       <div class="input-group">
         <label for="getSenha">Crie uma senha</label>
         <input type="password" name="senha" id="getSenha" formControlName="senha">
-        <p class="aviso">É necessário ter pelo menos 8 digitos</p>
+        <p class="aviso2">É necessário ter pelo menos 8 digitos</p>
       </div>
 
       <button type="button" id="btn" class="btn-continuar" (click)="cadastrarUser()">
