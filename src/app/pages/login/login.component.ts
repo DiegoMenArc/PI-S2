@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';  
-import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Router, RouterLink } from '@angular/router';
 import { UsuarioService } from '../../core/services/usuario.service';
 import { MenuHeaderComponent } from "../../components/principal/menu-header/menu-header.component";
 import { FooterComponent } from "../../components/principal/footer/footer.component";
@@ -10,22 +10,33 @@ import { Usuario } from '../../core/types/types';
 
 @Component({
   selector: 'login',
-  imports: [FormsModule, ReactiveFormsModule, MenuHeaderComponent, FooterComponent],
+  imports: [FormsModule, ReactiveFormsModule, MenuHeaderComponent, FooterComponent, RouterLink],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  constructor(private router: Router, private auth: AutenticadorService, private serv: UsuarioService){}
-  
-  aviso = '';
-  user!: Usuario;
+  constructor(private router: Router, private auth: AutenticadorService, private serv: UsuarioService, private fb: FormBuilder){}
 
   form = new FormGroup({
     email: new FormControl('', [Validators.required]),
     senha: new FormControl('', [Validators.required])
   })
+  aviso: string = '';
+  user!: Usuario;
+
+  ngOnInit() {
+    this.form = this.fb.group({
+      email: ['', [Validators.required, Validators.email]],
+      senha: ['', [Validators.required, Validators.minLength(6)]]
+    });
+  }
 
   verificar(){
+    if (this.form.invalid) {
+      this.aviso = "Preencha todos os campos corretamente!";
+      this.form.markAllAsTouched();
+      return;
+    }
     this.logar().subscribe(user => {
       if(user){
         this.user = user;

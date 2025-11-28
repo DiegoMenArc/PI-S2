@@ -1,37 +1,58 @@
 .conteiner{
   font-family: "Montserrat", "Sans-serif";
+  
+}
+
+main{
+  background: linear-gradient(180deg, #19759A 0%, #2CBFFF 100%);
+  height: 100vh;
+}
+
+.centro{
+  height: 90%;
+  display: flex;
+}
+
+.input-group{
+  text-align: center;
 }
 
 #fundo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 30em;
+  padding: 50px;
+  height: 38em;
+  margin: auto;
+  border-radius: 40px;
+  background: #FFF;
+  box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.25);
+}
 
-  width: 55%;
-  height: auto;
-  padding: 50px 120px;
-  margin: 0 auto;
-
-  align-items: center;
-  gap: 24px;
-  flex-shrink: 0;
-  
-  border-right: 2px solid var(--azul3, #006691);
-  border-left: 2px solid var(--azul3, #006691);
-  background: rgba(44, 191, 255, 0.54);
+.aviso {
+  color: #ff5c5c ;
+  font-size: 12px;
+  margin-top: 3px;
+  display: block;
 }
 
 .content-box{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   width: 100%;
-  gap: 2vh;
 }
 
 .fgt-senha{
+  font-size: 12px;
   width: fit-content;
   align-self: center;
   margin: 0 auto;
+}
+
+label{
+  text-align: center;
+  font-size: 14px !important;
+  font-weight: 700;
 }
 
 .fgt-senha:hover{
@@ -41,7 +62,7 @@
 }
 
 .loginTitulo {
-  font-size: 3.5rem;
+  font-size: 42px;
   font-weight: bold;
   color: black;
   text-align: center;
@@ -57,16 +78,12 @@
 
 .loginForm input {
   width: 100%;
-  padding: 12px 16px;
+  padding: 7px 16px;
   border-radius: 20px;
   border: 1px solid rgba(175, 175, 175, 0.58);
   background: #f5f5f5;
   outline: none;
   font-size: 14px;
-}
-
-.aviso{
-  font-family: var(--fontPadrao);
 }
 
 .loginForm input:focus {
@@ -156,14 +173,14 @@
   display: flex;
   justify-content: center;
   gap: 15px;
-  height: 50px;
+  height: 40px;
 }
 
 .socialLogin button {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
   background: #f5f5f5;
@@ -174,4 +191,29 @@
 
 .socialLogin button:hover {
   background: #eaeaea;
+}
+
+.socialLogin img{
+  width: 2em;
+}
+
+
+.logo{
+    
+    padding-left: 3rem;
+    padding: 1rem;
+    
+    background-color: white;
+}
+
+.logo button{
+    border: none;
+    font-size: 24px;
+    color: var(--azul1);
+    font-style: italic;
+    background-color: white
+}
+
+.logo button:hover{
+    cursor: pointer;
 }

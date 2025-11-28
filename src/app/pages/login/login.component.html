@@ -1,53 +1,71 @@
-<app-menu-header></app-menu-header>
-
 <main class="container">
-  <div id="fundo">
+  <header class="logo"><button routerLink="">Mundo Nostálgico</button></header>
+  <div class="centro">
+    <div id="fundo">
+      <div class="content-box">
+        <span class="loginTitulo">Login</span>
 
-    <div class="content-box">
-      <span class="loginTitulo">Login</span>
+        <div class="aviso">{{this.aviso}}</div>
 
-      <div class="aviso">{{this.aviso}}</div>
+        <div id="ngEmail">
+          <form class="loginForm" [formGroup]="form">
 
-      <div id="ngEmail">
-        <form class="loginForm" [formGroup]="form">
+            <div class="input-group">
+              <label for="email">Email ou User</label>
+              <input id="email" type="email" name="usuario" placeholder="E-mail" [formControlName]="'email'">
 
-          <div class="input-group">
-            <label for="email">Email ou User</label>
-            <input id="email" type="email" name="usuario" placeholder="E-mail" [formControlName]="'email'">
+              <!-- Erros -->
+              <small class="erro" *ngIf="form.get('email')?.touched && form.get('email')?.hasError('required')">
+                O email é obrigatório.
+              </small>
+
+              <small class="erro" *ngIf="form.get('email')?.touched && form.get('email')?.hasError('email')">
+                Digite um email válido.
+              </small>
+            </div>
+
+            <div class="input-group">
+              <label for="senha">Senha</label>
+              <input id="senha" type="password" name="senha" placeholder="Senha" [formControlName]="'senha'">
+
+              <small class="erro" *ngIf="form.get('senha')?.touched && form.get('senha')?.hasError('required')">
+                A senha é obrigatória.
+              </small>
+
+              <small class="erro" *ngIf="form.get('senha')?.touched && form.get('senha')?.hasError('minlength')">
+                A senha deve conter no mínimo 6 caracteres.
+              </small>
+            </div>
+
+          </form>
+
+
+          <p class="fgt-senha">Esqueci minha senha</p>
+        </div>
+
+        <div id="conta">
+          <button class="btnLogin" type="submit" (click)="verificar()">
+            Entrar
+            <img src="icons/loginEntrar.svg" alt="Icone de entrar">
+          </button>
+
+          <button class="btnCadastro" (click)="clicarCadastro()">
+            Criar conta <img src="icons/user-add.svg" alt="Icone de criar conta">
+          </button>
+        </div>
+
+        <div>
+          <div class="divider">
+            <span>ou</span>
           </div>
 
-          <div class="input-group">
-            <label for="senha">Senha</label>
-            <input id="senha" type="password" name="senha" placeholder="Senha" [formControlName]="'senha'">
+          <div class="socialLogin">
+            <button><img src="icons/Icon-google.svg" alt="Google"> Google</button>
+            <button><img src="icons/facebook-icon.svg" alt="Facebook"> Facebook</button>
           </div>
-        </form>
-       
-        <p class="fgt-senha">Esqueci minha senha</p>
-      </div>
-
-      <div id="conta">
-        <button class="btnLogin" type="submit" (click)="verificar()">
-          Entrar
-          <img src="icons/loginEntrar.svg" alt="Icone de entrar">
-        </button>
-
-        <button class="btnCadastro" (click)="clicarCadastro()">
-          Criar conta <img src="icons/user-add.svg" alt="Icone de criar conta">
-        </button>
-      </div>
-
-      <div class="divider">
-        <span>ou</span>
-      </div>
-
-      <div class="socialLogin">
-        <button><img src="icons/Icon-google.svg" alt="Google"> Google</button>
-        <button><img src="icons/facebook-icon.svg" alt="Facebook"> Facebook</button>
+        </div>
       </div>
 
     </div>
-
   </div>
 </main>
-
-<app-footer></app-footer>
