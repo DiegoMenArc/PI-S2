@@ -6,24 +6,31 @@
     <div class="content-box">
       <span class="loginTitulo">Login</span>
 
+      <div class="aviso">{{this.aviso}}</div>
+
       <div id="ngEmail">
-        <form class="loginForm" #usuarioForm="ngForm">
+        <form class="loginForm" [formGroup]="form">
 
-          <span id="tituloEmail">E-mail</span>
-          <input id="btnEmail" name="usuario" placeholder="E-mail" [(ngModel)]="usuario" required>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="usuario" placeholder="E-mail" [formControlName]="'email'">
+          </div>
 
-          <span id="tituloSenha">Senha</span>
-          <input id="btnSenha" type="password" name="senha" placeholder="Senha" [(ngModel)]="senha" required>
+          <div class="input-group">
+            <label for="senha">Senha</label>
+            <input id="senha" type="password" name="senha" placeholder="Senha" [formControlName]="'senha'">
+          </div>
         </form>
+       
         <p class="fgt-senha">Esqueci minha senha</p>
       </div>
-
+         <p>condição: {{this.form.valid}}</p>
 
 
       <div id="conta">
-        <button class="btnLogin" [disabled]="!usuarioForm.form.valid" type="submit"
-          (click)="verificarLink(usuarioForm)">
-          Entrar <img src="icons/loginEntrar.svg" alt="Icone de entrar">
+        <button class="btnLogin" type="submit" (click)="verificar()">
+          Entrar
+          <img src="icons/loginEntrar.svg" alt="Icone de entrar">
         </button>
 
         <button class="btnCadastro" (click)="clicarCadastro()">
@@ -40,11 +47,6 @@
         <button><img src="icons/facebook-icon.svg" alt="Facebook"> Facebook</button>
       </div>
 
-      <div class="mensagemErro">
-        @if(verificar) {
-        <p>{{credenciais}}</p>
-        }
-      </div>
     </div>
 
   </div>

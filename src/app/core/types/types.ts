@@ -12,6 +12,7 @@ export interface Usuario {
     }
     email: string,
     telefone?: number,
+    Cpf?: string
 
     endereco?: {
         cidade: string,
