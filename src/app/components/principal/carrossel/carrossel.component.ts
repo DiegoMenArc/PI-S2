@@ -9,7 +9,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-carrossel',
   standalone: true,
-  imports: [CardPadraoComponent, CommonModule, SlickCarouselModule, RouterLink],
+  imports: [CardPadraoComponent, CommonModule, SlickCarouselModule],
   templateUrl: './carrossel.component.html',
   styleUrl: './carrossel.component.css'
 })

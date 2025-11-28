@@ -17,24 +17,24 @@ export class UsuarioService {
     //pra inicializar o db.json, vai na pasta backend e dá o comando -> npx json-server db.json
     //sempre que a gente vai mexer com o banco de dados a gente chama o this.http
 
-    listarProdutos(): Observable<Usuario[]>{
+    listarUser(): Observable<Usuario[]>{
       return this.http.get<Usuario[]>(this.API)
       //pega um array de objetos dentro da Api
     }
   
-    adiconarProduto(produto: Usuario): Observable<Usuario>{
-      return this.http.post<Usuario>(this.API, produto)
+    adiconarUser(user: Usuario): Observable<Usuario>{
+      return this.http.post<Usuario>(this.API, user)
       //a gente "posta" um usuario na Api
       //a sintaxe é: http.post< O tipo de objeto que você vai colocar > (aonde, objeto que vai ser colocado (ele é o parametro da função)  ) 
     }
   
-    removerProduto(id: number): Observable<Usuario>{
+    removerUser(id: number): Observable<Usuario>{
       return this.http.delete<Usuario>(`/${this.API}/${id}`)
       //aqui é mais fácil, você dá o id como parametro e ele deleta, a sintace dos paranteses pode mudar dependendo do comando
     }
   
-    editarProduto(produto: Usuario){
-      const url = `${this.API}/${produto.id}`
+    editarUser(user: Usuario){
+      const url = `${this.API}/${user.id}`
       //essa função recebe o objeto já editado, então, pega o id desse objeto e acessa o correspondente dele no banco de dados atraves da url
       //a gente precisa da url porque você apenas passa um objeto qualquer
 

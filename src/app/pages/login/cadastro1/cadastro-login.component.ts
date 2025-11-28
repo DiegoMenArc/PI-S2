@@ -1,17 +1,63 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router'; // Necessário para rotas filhas
-
-// Imports desnecessários (ActivatedRoute, FormsModule, CardCadastroComponent) removidos
-// pois eles devem ser usados no componente filho.
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { FormControl, FormGroup, FormsModule, NgModel, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Usuario } from '../../../core/types/types';
+import { UsuarioService } from '../../../core/services/usuario.service';
+import { AutenticadorService } from '../../../core/services/autenticador.service';
 
 @Component({
   selector: 'app-cadastro-login',
-  // Usa apenas o RouterOutlet para injetar o componente filho
-  imports: [ RouterOutlet ], 
+  imports: [FormsModule, ReactiveFormsModule, RouterLink],
   templateUrl: './cadastro-login.component.html',
   styleUrl: './cadastro-login.component.css'
 })
-export class CadastroLoginComponent {
-    // Esta classe não precisa de lógica de rota (constructor) ou inputs.
-    // Ela apenas contém a estrutura visual.
+export class CadastroLoginComponent implements OnInit {
+
+  titulo: String = "CADASTRO";
+  aviso: String = ''
+
+  user: Usuario = {
+    nome: '',
+    sobrenome: '',
+    user_name: '',
+    email: '',
+    senha: ''
+  }
+
+  constructor(private serv: UsuarioService, private auth: AutenticadorService, private router: Router) {
+  
+  }
+
+  formulario = new FormGroup({
+    email: new FormControl('', [Validators.required]),
+    nome: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    sobrenome: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    senha: new FormControl('', [Validators.required, Validators.minLength(8)]),
+  })
+
+  cadastrarUser() {
+    if (this.formulario.invalid) {
+      this.formulario.markAllAsTouched;
+      this.aviso = "Preencha as Informações"
+      return;
+    } else if (this.formulario.valid) {
+      const { nome, sobrenome, email, senha } = this.formulario.value;
+
+      this.user.nome = nome ?? '';
+      //garante que tenha uma string.mesmo que não tenha valor nela
+      this.user.sobrenome = sobrenome ?? '';
+      this.user.email = email ?? '';
+      this.user.senha = senha ?? '';
+
+      this.serv.adiconarUser(this.user).subscribe(() => {
+        this.auth.login(this.user.nome, this.user.senha)
+        this.router.navigate(['perfil']);
+      })
+    }
+  }
+
+
+  ngOnInit(): void {
+    this.user = this.auth.getUser()
+  }
 }

@@ -4,7 +4,7 @@ import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-busca',
-  imports: [FormsModule, RouterLink],
+  imports: [FormsModule],
   templateUrl: './busca.component.html',
   styleUrl: './busca.component.css'
 })

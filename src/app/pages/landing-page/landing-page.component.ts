@@ -10,7 +10,8 @@ import { CategoriasComponent } from '../../components/principal/categorias/categ
 import { CarrosselComponent } from '../../components/principal/carrossel/carrossel.component';
 import { RouterLink } from "@angular/router";
 import { ProdutosService } from '../../core/services/produtos.service';
-import { Produto } from '../../core/types/types';
+import { Produto, Usuario } from '../../core/types/types';
+import { AutenticadorService } from '../../core/services/autenticador.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -30,9 +31,13 @@ import { Produto } from '../../core/types/types';
 export class LandingPageComponent implements OnInit {
 
   listarP: Produto[] = [];
-  constructor(private produtosService: ProdutosService) { }
+  constructor(private produtosService: ProdutosService, private auth: AutenticadorService) { }
+
+  user!: Usuario
 
   ngOnInit(): void {
+
+    this.user = this.auth.getUser();
 
     this.produtosService.listarProdutos().subscribe({
       next: (produtos) => {

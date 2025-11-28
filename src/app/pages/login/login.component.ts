@@ -1,50 +1,59 @@
-import { Component, inject } from '@angular/core';  
-import { FormsModule } from '@angular/forms';
+import { Component} from '@angular/core';  
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UsuarioService } from '../../core/services/usuario.service';
 import { MenuHeaderComponent } from "../../components/principal/menu-header/menu-header.component";
 import { FooterComponent } from "../../components/principal/footer/footer.component";
+import { Observable, of } from 'rxjs';
+import { AutenticadorService } from '../../core/services/autenticador.service';
+import { Usuario } from '../../core/types/types';
 
 @Component({
   selector: 'login',
-  imports: [FormsModule, MenuHeaderComponent, FooterComponent],
+  imports: [FormsModule, ReactiveFormsModule, MenuHeaderComponent, FooterComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  constructor(
-    private router: Router
-  ){}
+  constructor(private router: Router, private auth: AutenticadorService, private serv: UsuarioService){}
+  
+  aviso = '';
+  user!: Usuario;
 
-  _usuarioAtual = inject(UsuarioService);
-  usuario = "";
-  senha = "";
-  credenciais = "";
-  verificar = false;
+  form = new FormGroup({
+    email: new FormControl('', [Validators.required]),
+    senha: new FormControl('', [Validators.required])
+  })
 
+  verificar(){
+    this.logar().subscribe(user => {
+      if(user){
+        this.user = user;
+        this.aviso = 'logado';
+        this.router.navigate(['perfil']);
+      }else{
+        if(this.form.valid){
+          this.aviso = 'user ou senha invalidos'
+        }
+      }
+    })
+  }
 
-  verificarLink(e:any){
-    let user = e.form.value.usuario;
-    let pass = e.form.value.senha;
-    
-    if(user === "admin" && pass === "1234" ){
-      this._usuarioAtual.fazerLogin(user);
-      this.router.navigate(['/adm/produto']);
-    }
-    else if(user === "valdir" && pass === "1234"){
-      this._usuarioAtual.fazerLogin(user);
-      this.router.navigate(['/'])
-    }
-    else{
-      this.validar();
+  logar(): Observable<Usuario | null>{
+    if(this.form.invalid){
+      this.form.markAllAsTouched();
+      return of (null)
+    }else{
+      const {email, senha} = this.form.value
+
+      return this.auth.login(email??'', senha??'')
+      //garantia de que email e senha não sejam mandados como null
     }
   }
 
-  validar(){
-    this.verificar = true;
-    this.credenciais="Credenciais invalidas";
-  }
   clicarCadastro(){
-    this.router.navigate(['cadastro/email']);
-  }  
+    this.router.navigate(['/cadastro']);
+  }
+
 }
+
