@@ -379,232 +379,1386 @@
   "produtos": [
     {
       "img": [
-        "/img/prod1.jpg"
+        "/img/funko-harry-173.jpg"
       ],
-      "id": "1",
-      "nome": "Ferrorama XP-300",
-      "descricao": "Um dos trens elétricos mais icônicos dos anos 80, com trilhos modulares e locomotiva a pilha.",
-      "anoLancamento": "1984",
-      "marca": "Estrela",
-      "preco": "399,90",
-      "precoDesconto": "359,91",
-      "parcelas": "5x de 71,99",
-      "frete": "Frete Gratis",
-      "tamanho": "Médio",
-      "qtd": 12,
-      "data": "07/11/2025",
-      "categoria": "Brinquedo Clássico",
-      "especificacoes": [
-        {
-          "especificacao": "Material",
-          "valor": "Plástico ABS e metal"
-        },
-        {
-          "especificacao": "Alimentação",
-          "valor": "2 pilhas grandes"
-        },
-        {
-          "especificacao": "Indicado para",
-          "valor": "Crianças acima de 5 anos"
-        }
-      ],
-      "disponibilidade": true,
-      "avaliacoes": {
-        "media": 4.8,
-        "totalAvaliacoes": 352
-      }
-    },
-    {
-      "especificacoes": [
-        {
-          "especificacao": "Material",
-          "valor": "Vinil e tecido"
-        },
-        {
-          "especificacao": "Acessórios",
-          "valor": "Roupas e sapatos inclusos"
-        },
-        {
-          "especificacao": "Movimentos",
-          "valor": "Braços e pernas articulados"
-        }
-      ],
-      "id": "2",
-      "img": [
-        "/img/prod1.jpg"
-      ],
-      "nome": "Boneca Bacana",
-      "descricao": "A famosa boneca brasileira que marcou gerações com seus looks variados e acessórios.",
-      "anoLancamento": "1982",
-      "marca": "Estrela",
-      "preco": "149,90",
-      "precoDesconto": "134,91",
-      "parcelas": "5x de 26,99",
-      "frete": "Frete Gratis",
-      "tamanho": "30 cm",
-      "qtd": 25,
-      "data": "07/11/2025",
-      "categoria": "Boneca",
-      "disponibilidade": true,
-      "avaliacoes": {
-        "media": 4.6,
-        "totalAvaliacoes": 187
-      }
-    },
-    {
-      "img": [
-        "/img/prod1.jpg"
-      ],
-      "id": "3",
-      "nome": "Pogobol",
-      "descricao": "O brinquedo que desafiava o equilíbrio das crianças nos anos 90 — diversão pura e tombos épicos!",
-      "anoLancamento": "1992",
-      "marca": "Estrela",
-      "preco": "119,90",
-      "precoDesconto": "107,91",
-      "parcelas": "5x de 21,59",
-      "frete": "Frete Gratis",
-      "tamanho": "Grande",
-      "qtd": 8,
-      "data": "07/11/2025",
-      "categoria": "Brinquedo de Equilíbrio",
-      "especificacoes": [
-        {
-          "especificacao": "Material",
-          "valor": "Borracha e plástico resistente"
-        },
-        {
-          "especificacao": "Peso máximo",
-          "valor": "60 kg"
-        },
-        {
-          "especificacao": "Cor",
-          "valor": "Azul e amarelo"
-        }
-      ],
-      "avaliacoes": {
-        "media": 4.2,
-        "totalAvaliacoes": 95
-      },
-      "disponibilidade": false
-    },
-    {
-      "img": [
-        "/img/prod1.jpg"
-      ],
-      "id": "4",
-      "nome": "Forte Apache",
-      "descricao": "Um clássico do velho oeste em miniatura — com índios, cowboys e cavalos para batalhas lendárias.",
-      "anoLancamento": "1985",
-      "marca": "Gulliver",
-      "preco": "329,90",
-      "precoDesconto": "296,91",
-      "parcelas": "2x de 148,46",
-      "frete": "Frete Gratis",
-      "tamanho": "Grande",
+      "id": "35",
+      "nome": "Funko Pop! Harry Potter #173 - Summer Convention 2024",
+      "descricao": "Uma peça rara para bruxos e trouxas! Esta edição exclusiva da Summer Convention 2024 traz Harry Potter em pose de batalha, lançando um feitiço com efeito de magia azul saindo de sua varinha.",
+      "anoLancamento": "2024",
+      "marca": "Funko",
+      "preco": "189,90",
+      "precoDesconto": "169,91",
+      "parcelas": "4x de 47,48",
+      "frete": "Frete Grátis",
+      "tamanho": "Standard (10 cm)",
       "qtd": 5,
-      "data": "07/11/2025",
-      "categoria": "Miniaturas",
+      "data": "28/11/2025",
+      "categoria": "Colecionáveis Geek",
+      "especificacoes": [
+        {
+          "especificacao": "Edição",
+          "valor": "Limitada (Summer Convention)"
+        },
+        {
+          "especificacao": "Detalhe",
+          "valor": "Efeito de magia na varinha"
+        },
+        {
+          "especificacao": "Universo",
+          "valor": "Wizarding World"
+        }
+      ],
+      "disponibilidade": true,
+      "avaliacoes": {
+        "media": 5.0,
+        "totalAvaliacoes": 42
+      }
+    },
+    {
+      "img": [
+        "/img/funko-spiderman-cover.jpg"
+      ],
+      "id": "34",
+      "nome": "Funko Pop! Comic Cover - Amazing Spider-Man",
+      "descricao": "Uma obra de arte para sua coleção! Este set exclusivo recria a capa clássica de 'The Amazing Spider-Man'. A figura vem lacrada dentro de um case de acrílico rígido, com a arte original da HQ ao fundo.",
+      "anoLancamento": "2023",
+      "marca": "Funko",
+      "preco": "249,90",
+      "precoDesconto": "224,91",
+      "parcelas": "5x de 49,98",
+      "frete": "Frete Grátis",
+      "tamanho": "Grande (com Case)",
+      "qtd": 10,
+      "data": "28/11/2025",
+      "categoria": "Colecionáveis Geek",
+      "especificacoes": [
+        {
+          "especificacao": "Linha",
+          "valor": "Pop! Comic Covers"
+        },
+        {
+          "especificacao": "Material",
+          "valor": "Vinil e Case de Acrílico"
+        },
+        {
+          "especificacao": "Diferencial",
+          "valor": "Pronto para pendurar na parede"
+        }
+      ],
+      "disponibilidade": true,
+      "avaliacoes": {
+        "media": 5.0,
+        "totalAvaliacoes": 158
+      }
+    },
+    {
+      "img": [
+        "/img/funko-vader.jpg"
+      ],
+      "id": "33",
+      "nome": "Funko Pop! Star Wars - Darth Vader #597",
+      "descricao": "O Lorde Sith mais temido da galáxia! Figura colecionável do Darth Vader empunhando seu sabre de luz vermelho. Edição especial Bobble-Head (cabeça oscilante) com base oficial Star Wars.",
+      "anoLancamento": "2023",
+      "marca": "Funko",
+      "preco": "129,90",
+      "precoDesconto": "116,91",
+      "parcelas": "3x de 43,30",
+      "frete": "Frete Grátis",
+      "tamanho": "Standard (10 cm)",
+      "qtd": 18,
+      "data": "28/11/2025",
+      "categoria": "Colecionáveis Geek",
       "especificacoes": [
         {
           "especificacao": "Material",
-          "valor": "Plástico rígido"
+          "valor": "Vinil"
         },
         {
-          "especificacao": "Peças inclusas",
-          "valor": "45 peças"
+          "especificacao": "Linha",
+          "valor": "Pop! Star Wars"
         },
         {
-          "especificacao": "Faixa etária",
-          "valor": "A partir de 6 anos"
+          "especificacao": "Tipo",
+          "valor": "Bobble-Head (Cabeça mexe)"
+        }
+      ],
+      "disponibilidade": true,
+      "avaliacoes": {
+        "media": 5.0,
+        "totalAvaliacoes": 312
+      }
+    },
+    {
+      "img": [
+        "/img/banco-imobiliario.jpg"
+      ],
+      "id": "32",
+      "nome": "Banco Imobiliário com Aplicativo",
+      "descricao": "O clássico mercado de imóveis ficou moderno! Compre, venda e administre suas propriedades. Esta versão traz interação com aplicativo gratuito para realizar transações bancárias e realidade aumentada.",
+      "anoLancamento": "2024",
+      "marca": "Estrela",
+      "preco": "169,90",
+      "precoDesconto": "149,90",
+      "parcelas": "3x de 49,96",
+      "frete": "Frete Grátis",
+      "tamanho": "Grande",
+      "qtd": 35,
+      "data": "28/11/2025",
+      "categoria": "Jogos de Tabuleiro",
+      "especificacoes": [
+        {
+          "especificacao": "Tecnologia",
+          "valor": "Compatível com App (Realidade Aumentada)"
+        },
+        {
+          "especificacao": "Jogadores",
+          "valor": "2 a 6 participantes"
+        },
+        {
+          "especificacao": "Faixa Etária",
+          "valor": "A partir de 8 anos"
         }
       ],
       "disponibilidade": true,
       "avaliacoes": {
         "media": 4.9,
-        "totalAvaliacoes": 421
+        "totalAvaliacoes": 620
       }
     },
     {
       "img": [
-        "/img/prod1.jpg"
+        "/img/pogobol-verde.jpg"
       ],
-      "id": "5",
-      "nome": "Tamagotchi Brasil",
-      "descricao": "O bichinho virtual que virou febre nos anos 90 — cuide, alimente e veja ele crescer!",
-      "anoLancamento": "1997",
-      "marca": "TecToy",
-      "preco": "99,90",
-      "precoDesconto": "89,91",
-      "parcelas": "2x de 44,96",
-      "frete": "Frete Gratis",
-      "tamanho": "Pequeno",
-      "qtd": 30,
-      "data": "07/11/2025",
-      "categoria": "Eletrônico Nostálgico",
+      "id": "31",
+      "nome": "Pogobol Estrela - Verde e Roxo",
+      "descricao": "Vai começar a brincadeira! O clássico que desafia o seu equilíbrio está de volta. Pule, faça manobras e gaste energia com essa combinação radical de bola e disco.",
+      "anoLancamento": "2024",
+      "marca": "Estrela",
+      "preco": "159,90",
+      "precoDesconto": "143,91",
+      "parcelas": "3x de 53,30",
+      "frete": "Frete Grátis",
+      "tamanho": "Médio",
+      "qtd": 25,
+      "data": "28/11/2025",
+      "categoria": "Ar Livre e Playground",
       "especificacoes": [
         {
-          "especificacao": "Tela",
-          "valor": "LCD monocromático"
+          "especificacao": "Cor",
+          "valor": "Bola Verde / Disco Roxo"
         },
         {
-          "especificacao": "Funções",
-          "valor": "Alimentar, brincar e limpar"
+          "especificacao": "Peso Máximo",
+          "valor": "Até 70 kg"
+        },
+        {
+          "especificacao": "Material",
+          "valor": "Vinil resistente e plástico"
+        }
+      ],
+      "disponibilidade": true,
+      "avaliacoes": {
+        "media": 4.6,
+        "totalAvaliacoes": 125
+      }
+    },
+    {
+      "img": [
+        "/img/pe-na-tabua.jpg"
+      ],
+      "id": "30",
+      "nome": "Pé na Tábua - Edição 80 Anos",
+      "descricao": "Prepare-se para a largada! O clássico carrinho de Fórmula 1 movido a ar. Basta pisar fundo no pedal-fole para o carro disparar em alta velocidade. Sem pilhas, pura diversão mecânica!",
+      "anoLancamento": "2017",
+      "marca": "Estrela",
+      "preco": "99,90",
+      "precoDesconto": "89,91",
+      "parcelas": "2x de 44,95",
+      "frete": "Frete Grátis",
+      "tamanho": "Médio",
+      "qtd": 15,
+      "data": "28/11/2025",
+      "categoria": "Brinquedos Clássicos",
+      "especificacoes": [
+        {
+          "especificacao": "Mecanismo",
+          "valor": "Impulsão por ar (Pedal Fole)"
         },
         {
           "especificacao": "Alimentação",
-          "valor": "1 pilha CR2032"
-        }
-      ],
-      "avaliacoes": {
-        "media": 4.5,
-        "totalAvaliacoes": 210
-      },
-      "disponibilidade": true
-    },
-    {
-      "id": "df74",
-      "especificacoes": [
+          "valor": "Não utiliza pilhas"
+        },
         {
-          "especificacao": "",
-          "valor": ""
+          "especificacao": "Faixa Etária",
+          "valor": "A partir de 3 anos"
         }
       ],
-      "nome": "Diego",
-      "descricao": "Urso de Pelucia",
-      "img": [
-        "/img/prod1.jpg"
-      ],
+      "disponibilidade": true,
       "avaliacoes": {
-        "totalAvaliacoes": 0,
-        "media": 0
-      },
-      "data": "07/11/2025"
-    },
-    {
-      "especificacoes": [
-        {
-          "especificacao": "",
-          "valor": ""
-        }
-      ],
-      "id": "bd1e",
-      "img": [
-        "/img/prod1.jpg"
-      ],
-      "nome": "Raphael ",
-      "descricao": ":0",
-      "anoLancamento": "-1000",
-      "marca": "senac",
-      "preco": "7900",
-      "tamanho": "grande",
-      "qtd": 35,
-      "data": "27/11/2025",
-      "categoria": "lendaria",
-      "avaliacoes": {
-        "totalAvaliacoes": 0,
-        "media": 0
+        "media": 4.7,
+        "totalAvaliacoes": 180
       }
-    }
+    },
+    {
+      "img": [
+        "/img/ferrorama-xp100.jpg"
+      ],
+      "id": "29",
+      "nome": "Ferrorama XP 100 - Edição Comemorativa",
+      "descricao": "O retorno da lenda! Relançamento fiel do primeiro Ferrorama lançado pela Estrela. Uma edição especial histórica com a locomotiva clássica a vapor e vagão de carvão.",
+      "anoLancamento": "2011",
+      "marca": "Estrela",
+      "preco": "369,90",
+      "precoDesconto": "332,91",
+      "parcelas": "6x de 61,65",
+      "frete": "Frete Grátis",
+      "tamanho": "Médio",
+      "qtd": 8,
+      "data": "28/11/2025",
+      "categoria": "Ferromodelismo Clássico",
+      "especificacoes": [
+        {
+          "especificacao": "Escala",
+          "valor": "1:64"
+        },
+        {
+          "especificacao": "Conteúdo",
+          "valor": "8 curvas, 1 reta, 1 locomotiva e 1 vagão"
+        },
+        {
+          "especificacao": "Faixa Etária",
+          "valor": "A partir de 4 anos"
+        }
+      ],
+      "disponibilidade": true,
+      "avaliacoes": {
+        "media": 5.0,
+        "totalAvaliacoes": 415
+      }
+    },
+    {
+      "img": [
+        "/img/autorama-senna.jpg"
+      ],
+      "id": "28",
+      "nome": "Autorama Ayrton Senna - Estrela",
+      "descricao": "Acelere com a lenda! Edição especial do clássico Autorama homenageando Ayrton Senna. Pista elétrica em formato de 8 com dois carros de Fórmula 1 ultra rápidos para disputas emocionantes.",
+      "anoLancamento": "2024",
+      "marca": "Estrela",
+      "preco": "599,90",
+      "precoDesconto": "539,91",
+      "parcelas": "10x de 59,99",
+      "frete": "Frete Grátis",
+      "tamanho": "Gigante",
+      "qtd": 6,
+      "data": "28/11/2025",
+      "categoria": "Pistas e Autoramas",
+      "especificacoes": [
+        {
+          "especificacao": "Tema",
+          "valor": "Ayrton Senna Racing"
+        },
+        {
+          "especificacao": "Jogadores",
+          "valor": "2 Pilotos"
+        },
+        {
+          "especificacao": "Alimentação",
+          "valor": "Pilhas ou Adaptador (não incluso)"
+        }
+      ],
+      "disponibilidade": true,
+      "avaliacoes": {
+        "media": 5.0,
+        "totalAvaliacoes": 230
+      }
+    },
+    {
+      "img": [
+        "/img/jogo-da-vida.jpg"
+      ],
+      "id": "27",
+      "nome": "Jogo da Vida - Estrela",
+      "descricao": "Neste jogo, as suas escolhas determinam o seu destino! Gire a roleta e decida seu futuro: faculdade, carreira, casamento e filhos. Uma simulação emocionante da vida real.",
+      "anoLancamento": "2024",
+      "marca": "Estrela",
+      "preco": "139,90",
+      "precoDesconto": "119,90",
+      "parcelas": "3x de 39,96",
+      "frete": "Frete Grátis",
+      "tamanho": "Grande",
+      "qtd": 40,
+      "data": "28/11/2025",
+      "categoria": "Jogos de Tabuleiro",
+      "especificacoes": [
+        {
+          "especificacao": "Jogadores",
+          "valor": "2 a 6 participantes"
+        },
+        {
+          "especificacao": "Faixa Etária",
+          "valor": "A partir de 7 anos"
+        },
+        {
+          "especificacao": "Objetivo",
+          "valor": "Chegar ao fim da vida com mais sucesso"
+        }
+      ],
+      "disponibilidade": true,
+      "avaliacoes": {
+        "media": 4.9,
+        "totalAvaliacoes": 540
+      }
+    },
+    {
+      "img": [
+        "/img/susi-disco.jpg"
+      ],
+      "id": "26",
+      "nome": "Boneca Susi Clássica - Era do Disco",
+      "descricao": "O retorno de um ícone! Celebrando a história da Estrela, a Susi volta com seu visual clássico de discoteca: macacão estampado psicodélico, cinto marcante e o charme inconfundível dos anos 70.",
+      "anoLancamento": "2024",
+      "marca": "Estrela",
+      "preco": "209,90",
+      "precoDesconto": "189,90",
+      "parcelas": "4x de 52,47",
+      "frete": "Frete Grátis",
+      "tamanho": "30 cm",
+      "qtd": 12,
+      "data": "28/11/2025",
+      "categoria": "Colecionáveis Estrela",
+      "especificacoes": [
+        {
+          "especificacao": "Linha",
+          "valor": "Susi Clássica (Relançamento)"
+        },
+        {
+          "especificacao": "Material",
+          "valor": "Vinil e Plástico"
+        },
+        {
+          "especificacao": "Articulação",
+          "valor": "Pescoço, braços e pernas"
+        }
+      ],
+      "disponibilidade": true,
+      "avaliacoes": {
+        "media": 5.0,
+        "totalAvaliacoes": 310
+      }
+    },
+    {
+      "img": [
+        "/img/barbie-professora-arte.jpg"
+      ],
+      "id": "25",
+      "nome": "Barbie Professora de Arte com Aluna",
+      "descricao": "Explore a criatividade! A Barbie ensina sua pequena aluna a pintar no cavalete. Inclui pincel, paleta e uma tela com surpresa mágica: use água para revelar a pintura 'obra de arte'.",
+      "anoLancamento": "2023",
+      "marca": "Mattel",
+      "preco": "189,90",
+      "precoDesconto": "170,91",
+      "parcelas": "4x de 47,48",
+      "frete": "Frete Grátis",
+      "tamanho": "Padrão",
+      "qtd": 8,
+      "data": "28/11/2025",
+      "categoria": "Barbie Profissões",
+      "especificacoes": [
+        {
+          "especificacao": "Itens Inclusos",
+          "valor": "2 Bonecas (Barbie e Aluna)"
+        },
+        {
+          "especificacao": "Acessórios",
+          "valor": "Cavalete, banquinho, pincel e paleta"
+        },
+        {
+          "especificacao": "Recurso Especial",
+          "valor": "Pintura revela com água"
+        }
+      ],
+      "disponibilidade": true,
+      "avaliacoes": {
+        "media": 4.8,
+        "totalAvaliacoes": 95
+      }
+    },
+    {
+      "img": [
+        "/img/barbie-sereia.jpg"
+      ],
+      "id": "24",
+      "nome": "Barbie Dreamtopia Sereia Luzes Brilhantes",
+      "descricao": "Mergulhe na magia! Ao apertar o botão no colar ou mergulhar a boneca na água, a cauda translúcida brilha com um show de luzes coloridas inspiradas no arco-íris.",
+      "anoLancamento": "2023",
+      "marca": "Mattel",
+      "preco": "149,90",
+      "precoDesconto": "134,91",
+      "parcelas": "3x de 49,96",
+      "frete": "Frete Grátis",
+      "tamanho": "30 cm",
+      "qtd": 20,
+      "data": "28/11/2025",
+      "categoria": "Bonecas e Fantasia",
+      "especificacoes": [
+        {
+          "especificacao": "Recursos",
+          "valor": "Luzes ativadas por água ou botão"
+        },
+        {
+          "especificacao": "À prova d'água",
+          "valor": "Sim (ideal para o banho)"
+        },
+        {
+          "especificacao": "Baterias",
+          "valor": "Inclusas (tipo botão)"
+        }
+      ],
+      "disponibilidade": true,
+      "avaliacoes": {
+        "media": 4.8,
+        "totalAvaliacoes": 112
+      }
+    },
+    {
+      "img": [
+        "/img/casa-barbie.jpg"
+      ],
+      "id": "23",
+      "nome": "Casa dos Sonhos da Barbie (Dreamhouse)",
+      "descricao": "O cenário definitivo para a diversão! Uma mansão de 3 andares com elevador funcional, escorregador tobogã, piscina e mais de 70 acessórios para mobiliar os cômodos.",
+      "anoLancamento": "2024",
+      "marca": "Mattel",
+      "preco": "1.299,90",
+      "precoDesconto": "1.169,91",
+      "parcelas": "10x de 129,99",
+      "frete": "Frete Grátis",
+      "tamanho": "Gigante (1m altura)",
+      "qtd": 4,
+      "data": "28/11/2025",
+      "categoria": "Playsets e Casas",
+      "especificacoes": [
+        {
+          "especificacao": "Dimensões",
+          "valor": "100cm de altura x 80cm de largura"
+        },
+        {
+          "especificacao": "Estrutura",
+          "valor": "3 andares e 8 cômodos"
+        },
+        {
+          "especificacao": "Recursos",
+          "valor": "Elevador manual, luzes e sons"
+        }
+      ],
+      "disponibilidade": true,
+      "avaliacoes": {
+        "media": 5.0,
+        "totalAvaliacoes": 45
+      }
+    },
+    {
+      "img": [
+        "/img/carro-barbie.jpg"
+      ],
+      "id": "22",
+      "nome": "Carro Conversível da Barbie com Boneca",
+      "descricao": "Acelere para a diversão com este conversível rosa brilhante! O carro possui rodas livres que giram de verdade, cintos de segurança realistas e acabamento com glitter. Acompanha uma boneca Barbie.",
+      "anoLancamento": "2023",
+      "marca": "Mattel",
+      "preco": "199,90",
+      "precoDesconto": "179,91",
+      "parcelas": "4x de 44,97",
+      "frete": "Frete Grátis",
+      "tamanho": "Grande (35 cm)",
+      "qtd": 10,
+      "data": "28/11/2025",
+      "categoria": "Veículos e Acessórios",
+      "especificacoes": [
+        {
+          "especificacao": "Material",
+          "valor": "Plástico resistente"
+        },
+        {
+          "especificacao": "Capacidade",
+          "valor": "2 Bonecas (Motorista e Carona)"
+        },
+        {
+          "especificacao": "Itens Inclusos",
+          "valor": "1 Veículo e 1 Boneca"
+        }
+      ],
+      "disponibilidade": true,
+      "avaliacoes": {
+        "media": 4.9,
+        "totalAvaliacoes": 88
+      }
+    },
+    {
+      "img": [
+        "/img/barbie-sortida.jpg"
+      ],
+      "id": "21",
+      "nome": "Boneca Barbie Fashionistas - Modelos Sortidos",
+      "descricao": "A coleção mais inclusiva da Barbie! Bonecas com diferentes tons de pele, tipos de corpo e estilos de moda únicos. Preço referente a 01 unidade (modelo enviado conforme disponibilidade).",
+      "anoLancamento": "2024",
+      "marca": "Mattel",
+      "preco": "89,90",
+      "precoDesconto": "79,90",
+      "parcelas": "2x de 39,95",
+      "frete": "Consulte o CEP",
+      "tamanho": "Standard (30 cm)",
+      "qtd": 50,
+      "data": "28/11/2025",
+      "categoria": "Bonecas",
+      "especificacoes": [
+        {
+          "especificacao": "Material",
+          "valor": "Plástico resistente e tecido"
+        },
+        {
+          "especificacao": "Faixa Etária",
+          "valor": "A partir de 3 anos"
+        },
+        {
+          "especificacao": "Observação",
+          "valor": "Modelos sortidos (envio aleatório)"
+        }
+      ],
+      "disponibilidade": true,
+      "avaliacoes": {
+        "media": 4.7,
+        "totalAvaliacoes": 156
+      }
+    },
+    {
+      "img": [
+        "/img/ken-movie.jpg"
+      ],
+      "id": "20",
+      "nome": "Boneco Ken - Barbie O Filme",
+      "descricao": "Leve para casa a energia do filme com este Ken colecionável! Vestindo seu conjunto jeans completo e a clássica roupa íntima à mostra, ele está pronto para a Barbieland.",
+      "anoLancamento": "2023",
+      "marca": "Mattel",
+      "preco": "249,90",
+      "precoDesconto": "219,91",
+      "parcelas": "4x de 54,97",
+      "frete": "Frete Grátis",
+      "tamanho": "30 cm",
+      "qtd": 15,
+      "data": "28/11/2025",
+      "categoria": "Colecionáveis",
+      "especificacoes": [
+        {
+          "especificacao": "Material",
+          "valor": "Vinil e Tecido Jeans"
+        },
+        {
+          "especificacao": "Coleção",
+          "valor": "Barbie The Movie"
+        },
+        {
+          "especificacao": "Articulado",
+          "valor": "Sim"
+        }
+      ],
+      "disponibilidade": true,
+      "avaliacoes": {
+        "media": 5.0,
+        "totalAvaliacoes": 42
+      }
+    },
+    [
+      {
+        "img": [
+          "/img/funko-spidey-1525.jpg"
+        ],
+        "id": "38",
+        "nome": "Funko Pop! Spider-Man (Symbiote Suit) #1525",
+        "descricao": "A transformação começou! O Homem-Aranha sendo consumido pelo simbionte Venom. Detalhes incríveis da gosma preta a tomar conta do uniforme clássico.",
+        "anoLancamento": "2024",
+        "marca": "Funko",
+        "preco": "149,90",
+        "precoDesconto": "134,91",
+        "parcelas": "3x de 49,96",
+        "frete": "Frete Grátis",
+        "tamanho": "Standard",
+        "qtd": 12,
+        "data": "28/11/2025",
+        "categoria": "Marvel",
+        "especificacoes": [
+          {
+            "especificacao": "Linha",
+            "valor": "Marvel Comics"
+          },
+          {
+            "especificacao": "Detalhe",
+            "valor": "Efeito Simbionte"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 4.9,
+          "totalAvaliacoes": 85
+        }
+      },
+      {
+        "img": [
+          "/img/funko-spidey-1501.jpg"
+        ],
+        "id": "39",
+        "nome": "Funko Pop! Spider-Man Symbiote Suit #1501",
+        "descricao": "O Aranha em sua versão mais sombria! Figura dinâmica do Homem-Aranha saltando com o traje preto completo. Edição exclusiva com detalhes em azul elétrico.",
+        "anoLancamento": "2024",
+        "marca": "Funko",
+        "preco": "159,90",
+        "precoDesconto": "143,91",
+        "parcelas": "3x de 53,30",
+        "frete": "Frete Grátis",
+        "tamanho": "Standard",
+        "qtd": 10,
+        "data": "28/11/2025",
+        "categoria": "Marvel",
+        "especificacoes": [
+          {
+            "especificacao": "Pose",
+            "valor": "Saltando / Jumping"
+          },
+          {
+            "especificacao": "Edição",
+            "valor": "Funko Exclusive"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 5.0,
+          "totalAvaliacoes": 92
+        }
+      },
+      {
+        "img": [
+          "/img/funko-peter-1478.jpg"
+        ],
+        "id": "40",
+        "nome": "Funko Pop! Peter Parker / Symbiote Suit #1478",
+        "descricao": "A dualidade do herói. Metade Peter Parker segurando sua câmera fotográfica, metade Homem-Aranha sendo tomado pelo simbionte. Uma peça única que mostra os dois lados do personagem.",
+        "anoLancamento": "2023",
+        "marca": "Funko",
+        "preco": "169,90",
+        "precoDesconto": "152,91",
+        "parcelas": "3x de 56,63",
+        "frete": "Frete Grátis",
+        "tamanho": "Standard",
+        "qtd": 8,
+        "data": "28/11/2025",
+        "categoria": "Marvel",
+        "especificacoes": [
+          {
+            "especificacao": "Estilo",
+            "valor": "Split (Meio a Meio)"
+          },
+          {
+            "especificacao": "Acessório",
+            "valor": "Câmera Fotográfica"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 4.8,
+          "totalAvaliacoes": 65
+        }
+      },
+      {
+        "img": [
+          "/img/funko-peter-1513.jpg"
+        ],
+        "id": "41",
+        "nome": "Funko Pop! Peter Parker / Iron Spider #1513",
+        "descricao": "Tecnologia Stark em ação! Metade Peter Parker casual, metade Aranha de Ferro (Iron Spider) com as patas mecânicas douradas expostas. Da Saga do Infinito.",
+        "anoLancamento": "2023",
+        "marca": "Funko",
+        "preco": "179,90",
+        "precoDesconto": "161,91",
+        "parcelas": "4x de 44,97",
+        "frete": "Frete Grátis",
+        "tamanho": "Standard",
+        "qtd": 7,
+        "data": "28/11/2025",
+        "categoria": "Marvel",
+        "especificacoes": [
+          {
+            "especificacao": "Traje",
+            "valor": "Iron Spider"
+          },
+          {
+            "especificacao": "Detalhe",
+            "valor": "Patas Mecânicas (Waldoes)"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 5.0,
+          "totalAvaliacoes": 110
+        }
+      },
+      {
+        "img": [
+          "/img/funko-batmobile.jpg"
+        ],
+        "id": "42",
+        "nome": "Funko Pop! Rides - Batman in Batmobile #522",
+        "descricao": "Para a Batcaverna! O Cavaleiro das Trevas no seu veículo mais icônico. Figura Super Deluxe do Batman pilotando o Batmóvel clássico.",
+        "anoLancamento": "2023",
+        "marca": "Funko",
+        "preco": "349,90",
+        "precoDesconto": "314,91",
+        "parcelas": "6x de 58,31",
+        "frete": "Frete Grátis",
+        "tamanho": "Super Deluxe (Grande)",
+        "qtd": 5,
+        "data": "28/11/2025",
+        "categoria": "DC Comics",
+        "especificacoes": [
+          {
+            "especificacao": "Linha",
+            "valor": "Pop! Rides (Veículos)"
+          },
+          {
+            "especificacao": "Veículo",
+            "valor": "Batmóvel 1989"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 5.0,
+          "totalAvaliacoes": 205
+        }
+      },
+      {
+        "img": [
+          "/img/funko-wednesday.jpg"
+        ],
+        "id": "43",
+        "nome": "Funko Pop! Wednesday Addams #1815",
+        "descricao": "Sombria e inexpressiva. A Wandinha Addams (Wednesday) da série de sucesso, com seu uniforme da Academia Nevermore e braços cruzados.",
+        "anoLancamento": "2023",
+        "marca": "Funko",
+        "preco": "129,90",
+        "precoDesconto": "116,91",
+        "parcelas": "3x de 43,30",
+        "frete": "Frete Grátis",
+        "tamanho": "Standard",
+        "qtd": 20,
+        "data": "28/11/2025",
+        "categoria": "Séries de TV",
+        "especificacoes": [
+          {
+            "especificacao": "Série",
+            "valor": "Wednesday (Netflix)"
+          },
+          {
+            "especificacao": "Uniforme",
+            "valor": "Nevermore Academy"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 4.9,
+          "totalAvaliacoes": 340
+        }
+      },
+      {
+        "img": [
+          "/img/funko-peter-1432.jpg"
+        ],
+        "id": "44",
+        "nome": "Funko Pop! Peter Parker / Spider-Man #1432",
+        "descricao": "A ciência encontra o herói. Metade Peter Parker segurando um tubo de ensaio e teia, metade Homem-Aranha clássico. Inspirado nos quadrinhos clássicos da Marvel.",
+        "anoLancamento": "2023",
+        "marca": "Funko",
+        "preco": "149,90",
+        "precoDesconto": "134,91",
+        "parcelas": "3x de 49,96",
+        "frete": "Frete Grátis",
+        "tamanho": "Standard",
+        "qtd": 9,
+        "data": "28/11/2025",
+        "categoria": "Marvel",
+        "especificacoes": [
+          {
+            "especificacao": "Estilo",
+            "valor": "Split (Meio a Meio)"
+          },
+          {
+            "especificacao": "Acessório",
+            "valor": "Tubo de Ensaio"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 4.7,
+          "totalAvaliacoes": 58
+        }
+      },
+    
+ 
+
+      {
+        "img": [
+          "/img/hw-legends-pack.jpg"
+        ],
+        "id": "45",
+        "nome": "Hot Wheels Legends Tour - Pack com 6 Carros",
+        "descricao": "Garagem de lendas! Um pack exclusivo da 'Silver Series' trazendo 6 dos carros mais icônicos que passaram pelo Legends Tour. Inclui modelos como o Pontiac GTO 1967, Deora II e o 2JetZ.",
+        "anoLancamento": "2024",
+        "marca": "Hot Wheels",
+        "preco": "199,90",
+        "precoDesconto": "179,91",
+        "parcelas": "4x de 49,97",
+        "frete": "Frete Grátis",
+        "tamanho": "Pack 6 Unidades",
+        "qtd": 10,
+        "data": "28/11/2025",
+        "categoria": "Veículos Die-Cast",
+        "especificacoes": [
+          {
+            "especificacao": "Série",
+            "valor": "Legends Tour / Silver Series"
+          },
+          {
+            "especificacao": "Material",
+            "valor": "Metal (Die-Cast)"
+          },
+          {
+            "especificacao": "Escala",
+            "valor": "1:64"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 5.0,
+          "totalAvaliacoes": 120
+        }
+      },
+      {
+        "img": [
+          "/img/hw-mario-luigi.jpg"
+        ],
+        "id": "46",
+        "nome": "Hot Wheels Mario Kart - Luigi (Mach 8)",
+        "descricao": "Acelere no Reino do Cogumelo! Miniatura detalhada do Luigi pilotando o kart Mach 8. Compatível com as pistas Hot Wheels, perfeito para recriar as corridas do videogame.",
+        "anoLancamento": "2023",
+        "marca": "Hot Wheels",
+        "preco": "49,90",
+        "precoDesconto": "44,91",
+        "parcelas": "1x de 44,91",
+        "frete": "Consulte o CEP",
+        "tamanho": "Padrão",
+        "qtd": 30,
+        "data": "28/11/2025",
+        "categoria": "Mario Kart",
+        "especificacoes": [
+          {
+            "especificacao": "Personagem",
+            "valor": "Luigi"
+          },
+          {
+            "especificacao": "Veículo",
+            "valor": "Mach 8"
+          },
+          {
+            "especificacao": "Compatibilidade",
+            "valor": "Pistas Hot Wheels"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 4.8,
+          "totalAvaliacoes": 215
+        }
+      },
+      {
+        "img": [
+          "/img/hw-skate-tony.jpg"
+        ],
+        "id": "47",
+        "nome": "Hot Wheels Skate - Tony Hawk + Tênis de Dedo",
+        "descricao": "Faça manobras radicais! Skate de dedo oficial com design exclusivo em colaboração com a lenda Tony Hawk. Inclui um par de tênis de skate removíveis para ajudar os dedos a segurar na lixa.",
+        "anoLancamento": "2024",
+        "marca": "Hot Wheels",
+        "preco": "39,90",
+        "precoDesconto": "35,91",
+        "parcelas": "1x de 35,91",
+        "frete": "Consulte o CEP",
+        "tamanho": "Pequeno",
+        "qtd": 40,
+        "data": "28/11/2025",
+        "categoria": "Skate de Dedo",
+        "especificacoes": [
+          {
+            "especificacao": "Linha",
+            "valor": "Hot Wheels Skate"
+          },
+          {
+            "especificacao": "Acessório",
+            "valor": "Par de Tênis de Dedo"
+          },
+          {
+            "especificacao": "Colaboração",
+            "valor": "Tony Hawk"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 4.7,
+          "totalAvaliacoes": 88
+        }
+      },
+      {
+        "img": [
+          "/img/hw-rainbow-road.jpg"
+        ],
+        "id": "48",
+        "nome": "Pista Hot Wheels Mario Kart - Rainbow Road",
+        "descricao": "A pista mais difícil do jogo na vida real! O circuito Rainbow Road (Estrada Arco-Íris) tem 5 faixas para corrida, luzes e sons de largada. Configurável em linha reta ou com curvas.",
+        "anoLancamento": "2023",
+        "marca": "Hot Wheels",
+        "preco": "899,90",
+        "precoDesconto": "809,91",
+        "parcelas": "10x de 89,99",
+        "frete": "Frete Grátis",
+        "tamanho": "Gigante (2 metros)",
+        "qtd": 3,
+        "data": "28/11/2025",
+        "categoria": "Pistas e Playsets",
+        "especificacoes": [
+          {
+            "especificacao": "Tema",
+            "valor": "Mario Kart Rainbow Road"
+          },
+          {
+            "especificacao": "Recursos",
+            "valor": "Luzes e Sons Eletrônicos"
+          },
+          {
+            "especificacao": "Inclui",
+            "valor": "2 Veículos (Mario e King Boo)"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 5.0,
+          "totalAvaliacoes": 95
+        }
+      },
+      {
+        "img": [
+          "/img/hw-dragon-demolition.jpg"
+        ],
+        "id": "49",
+        "nome": "Hot Wheels Monster Trucks - Dragon Demolition",
+        "descricao": "Sharks vs. Dinos! Uma arena de demolição onde os Monster Trucks precisam derrotar o dragão gigante. Lance os caminhões na rampa para acertar o ponto fraco da fera.",
+        "anoLancamento": "2025",
+        "marca": "Hot Wheels",
+        "preco": "249,90",
+        "precoDesconto": "224,91",
+        "parcelas": "5x de 49,98",
+        "frete": "Frete Grátis",
+        "tamanho": "Grande",
+        "qtd": 12,
+        "data": "28/11/2025",
+        "categoria": "Monster Trucks",
+        "especificacoes": [
+          {
+            "especificacao": "Tema",
+            "valor": "Tubarões vs Dinossauros"
+          },
+          {
+            "especificacao": "Inclui",
+            "valor": "2 Monster Trucks exclusivos"
+          },
+          {
+            "especificacao": "Escala",
+            "valor": "1:64"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 4.9,
+          "totalAvaliacoes": 60
+        }
+      },
+      {
+        "img": [
+          "/img/hw-shark-wash.jpg"
+        ],
+        "id": "50",
+        "nome": "Hot Wheels City - Lava-Rápido Mega Tubarão",
+        "descricao": "Cuidado com a mordida! Este lava-rápido gigante usa água de verdade. O carro muda de cor (Color Reveal) ao passar pela água quente ou fria, mas tem de escapar das mandíbulas do tubarão.",
+        "anoLancamento": "2023",
+        "marca": "Hot Wheels",
+        "preco": "499,90",
+        "precoDesconto": "449,91",
+        "parcelas": "8x de 62,48",
+        "frete": "Frete Grátis",
+        "tamanho": "Grande (90cm)",
+        "qtd": 6,
+        "data": "28/11/2025",
+        "categoria": "Pistas e Playsets",
+        "especificacoes": [
+          {
+            "especificacao": "Recurso Especial",
+            "valor": "Color Reveal (Muda de cor)"
+          },
+          {
+            "especificacao": "Interação",
+            "valor": "Usa água real"
+          },
+          {
+            "especificacao": "Inclui",
+            "valor": "1 Carro Color Reveal"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 4.8,
+          "totalAvaliacoes": 150
+        }
+      },
+      {
+        "img": [
+          "/img/hw-mega-maserati.jpg"
+        ],
+        "id": "51",
+        "nome": "Mega Hot Wheels - Maserati MC20 (Blocos de Montar)",
+        "descricao": "Construa e colecione! Conjunto premium da linha Mega (Brick Shop) para montar uma réplica detalhada da Maserati MC20. Acompanha também o carrinho Die-Cast original para exibir ao lado.",
+        "anoLancamento": "2024",
+        "marca": "Mattel Mega",
+        "preco": "179,90",
+        "precoDesconto": "161,91",
+        "parcelas": "4x de 44,97",
+        "frete": "Frete Grátis",
+        "tamanho": "Médio",
+        "qtd": 15,
+        "data": "28/11/2025",
+        "categoria": "Blocos de Montar",
+        "especificacoes": [
+          {
+            "especificacao": "Peças",
+            "valor": "250+ Peças"
+          },
+          {
+            "especificacao": "Diferencial",
+            "valor": "Inclui 1 carrinho Die-Cast de metal"
+          },
+          {
+            "especificacao": "Modelo",
+            "valor": "Maserati MC20"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 5.0,
+          "totalAvaliacoes": 45
+        }
+      },
+      {
+        "img": [
+          "/img/hw-sortido-avulso.jpg"
+        ],
+        "id": "52",
+        "nome": "Veículo Hot Wheels Colecionável - Modelo Sortido",
+        "descricao": "Acelere sua coleção! Carrinhos Hot Wheels em escala 1:64 com detalhes incríveis. Preço referente a 01 (uma) unidade. O modelo enviado é sortido e dependerá da disponibilidade de estoque (surpresa).",
+        "anoLancamento": "2024",
+        "marca": "Hot Wheels",
+        "preco": "19,90",
+        "precoDesconto": "17,91",
+        "parcelas": "1x de 17,91",
+        "frete": "Consulte o CEP",
+        "tamanho": "Pequeno (Escala 1:64)",
+        "qtd": 100,
+        "data": "28/11/2025",
+        "categoria": "Veículos Die-Cast",
+        "especificacoes": [
+          {
+            "especificacao": "Material",
+            "valor": "Metal (Die-Cast) e Plástico"
+          },
+          {
+            "especificacao": "Atenção",
+            "valor": "Modelo enviado aleatoriamente"
+          },
+          {
+            "especificacao": "Escala",
+            "valor": "1:64"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 4.6,
+          "totalAvaliacoes": 320
+        }
+      },
+      {
+        "img": [
+          "/img/lego-onepiece-merry.jpg"
+        ],
+        "id": "53",
+        "nome": "LEGO One Piece - O Navio Pirata Going Merry #75639",
+        "descricao": "O bando do Chapéu de Palha vai zarpar! Monte o icônico primeiro navio de Luffy e seus amigos. Inclui as minifiguras de Luffy, Zoro, Nami, Usopp e Sanji. Set incrível baseado na série Live Action da Netflix.",
+        "anoLancamento": "2024",
+        "marca": "LEGO",
+        "preco": "899,90",
+        "precoDesconto": "849,90",
+        "parcelas": "10x de 84,99",
+        "frete": "Frete Grátis",
+        "tamanho": "Grande (1376 peças)",
+        "qtd": 10,
+        "data": "28/11/2025",
+        "categoria": "LEGO Pop Culture",
+        "especificacoes": [
+          {
+            "especificacao": "Peças",
+            "valor": "1376"
+          },
+          {
+            "especificacao": "Minifiguras",
+            "valor": "5 Tripulantes"
+          },
+          {
+            "especificacao": "Tema",
+            "valor": "One Piece"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 5.0,
+          "totalAvaliacoes": 120
+        }
+      },
+      {
+        "img": [
+          "/img/lego-hogwarts-castle.jpg"
+        ],
+        "id": "54",
+        "nome": "LEGO Harry Potter - Castelo de Hogwarts #71043",
+        "descricao": "A magia em escala épica! Com mais de 6.000 peças, este é um dos maiores sets já criados. Recria as torres, as salas de aula, o Salão Principal e a Cabana de Hagrid com detalhes microscópicos.",
+        "anoLancamento": "2023",
+        "marca": "LEGO",
+        "preco": "4.199,90",
+        "precoDesconto": "3.999,90",
+        "parcelas": "12x de 333,32",
+        "frete": "Frete Grátis",
+        "tamanho": "Gigante (6020 peças)",
+        "qtd": 3,
+        "data": "28/11/2025",
+        "categoria": "LEGO Harry Potter",
+        "especificacoes": [
+          {
+            "especificacao": "Peças",
+            "valor": "6020"
+          },
+          {
+            "especificacao": "Escala",
+            "valor": "Microescala"
+          },
+          {
+            "especificacao": "Inclui",
+            "valor": "4 Fundadores de Hogwarts"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 5.0,
+          "totalAvaliacoes": 540
+        }
+      },
+      {
+        "img": [
+          "/img/lego-millennium-falcon.jpg"
+        ],
+        "id": "55",
+        "nome": "LEGO Star Wars - Millennium Falcon #75257",
+        "descricao": "A nave mais veloz da galáxia! Junte-se a Finn, Chewbacca, Lando Calrissian, C-3PO e R2-D2 nesta versão detalhada da Falcon baseada no filme 'A Ascensão Skywalker'.",
+        "anoLancamento": "2023",
+        "marca": "LEGO",
+        "preco": "1.299,90",
+        "precoDesconto": "1.169,91",
+        "parcelas": "10x de 116,99",
+        "frete": "Frete Grátis",
+        "tamanho": "Grande (1351 peças)",
+        "qtd": 8,
+        "data": "28/11/2025",
+        "categoria": "LEGO Star Wars",
+        "especificacoes": [
+          {
+            "especificacao": "Peças",
+            "valor": "1351"
+          },
+          {
+            "especificacao": "Recursos",
+            "valor": "Interior acessível e atiradores"
+          },
+          {
+            "especificacao": "Minifiguras",
+            "valor": "7 Personagens"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 4.9,
+          "totalAvaliacoes": 310
+        }
+      },
+      {
+        "img": [
+          "/img/lego-batmobile-penguin.jpg"
+        ],
+        "id": "56",
+        "nome": "LEGO DC Batman - Batmóvel: Perseguição ao Pinguim #76181",
+        "descricao": "Acelere pelas ruas de Gotham! Inspirado no filme 'The Batman', este Batmóvel tem um design 'muscle car' agressivo, com disparadores de mísseis e chamas azuis no escapamento.",
+        "anoLancamento": "2023",
+        "marca": "LEGO",
+        "preco": "249,90",
+        "precoDesconto": "224,91",
+        "parcelas": "5x de 44,98",
+        "frete": "Frete Grátis",
+        "tamanho": "Médio (392 peças)",
+        "qtd": 15,
+        "data": "28/11/2025",
+        "categoria": "LEGO DC Super Heroes",
+        "especificacoes": [
+          {
+            "especificacao": "Peças",
+            "valor": "392"
+          },
+          {
+            "especificacao": "Filme",
+            "valor": "The Batman (2022)"
+          },
+          {
+            "especificacao": "Minifiguras",
+            "valor": "Batman e Pinguim"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 4.7,
+          "totalAvaliacoes": 180
+        }
+      },
+      {
+        "img": [
+          "/img/lego-minecraft-creeper.jpg"
+        ],
+        "id": "57",
+        "nome": "LEGO Minecraft - The Creeper (Figura Grande) #21276",
+        "descricao": "Cuidado, vai explodir! Construa sua própria figura gigante do mob mais famoso do Minecraft. O Creeper possui cabeça móvel e acompanha um porquinho e um bloco de TNT.",
+        "anoLancamento": "2024",
+        "marca": "LEGO",
+        "preco": "349,90",
+        "precoDesconto": "314,91",
+        "parcelas": "6x de 52,48",
+        "frete": "Frete Grátis",
+        "tamanho": "Médio (665 peças)",
+        "qtd": 12,
+        "data": "28/11/2025",
+        "categoria": "LEGO Minecraft",
+        "especificacoes": [
+          {
+            "especificacao": "Peças",
+            "valor": "665"
+          },
+          {
+            "especificacao": "Altura",
+            "valor": "Mais de 10cm"
+          },
+          {
+            "especificacao": "Interatividade",
+            "valor": "Articulado"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 4.8,
+          "totalAvaliacoes": 95
+        }
+      },
+      {
+        "img": [
+          "/img/lego-mario-kart-18.jpg"
+        ],
+        "id": "58",
+        "nome": "LEGO Mario Kart - Mario & Kart Padrão (18+) #72037",
+        "descricao": "Nostalgia em alta velocidade! Um set de exibição premium para adultos. Construa uma réplica detalhada e gigante do Mario em seu Kart Padrão. Perfeito para decorar estantes de gamers.",
+        "anoLancamento": "2024",
+        "marca": "LEGO",
+        "preco": "1.099,90",
+        "precoDesconto": "989,91",
+        "parcelas": "10x de 98,99",
+        "frete": "Frete Grátis",
+        "tamanho": "Grande (1972 peças)",
+        "qtd": 5,
+        "data": "28/11/2025",
+        "categoria": "LEGO Super Mario",
+        "especificacoes": [
+          {
+            "especificacao": "Peças",
+            "valor": "1972"
+          },
+          {
+            "especificacao": "Faixa Etária",
+            "valor": "18+ (Adultos)"
+          },
+          {
+            "especificacao": "Série",
+            "valor": "Mario Kart"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 5.0,
+          "totalAvaliacoes": 65
+        }
+      },
+      {
+        "img": [
+          "/img/lego-infinity-gauntlet.jpg"
+        ],
+        "id": "59",
+        "nome": "LEGO Marvel - Manopla do Infinito #76191",
+        "descricao": "Eu sou inevitável. Construa a arma mais poderosa do universo Marvel. Com dedos articulados e as 6 Joias do Infinito, este modelo dourado é uma peça de exibição deslumbrante.",
+        "anoLancamento": "2023",
+        "marca": "LEGO",
+        "preco": "599,90",
+        "precoDesconto": "539,91",
+        "parcelas": "8x de 67,48",
+        "frete": "Frete Grátis",
+        "tamanho": "Médio (590 peças)",
+        "qtd": 10,
+        "data": "28/11/2025",
+        "categoria": "LEGO Marvel",
+        "especificacoes": [
+          {
+            "especificacao": "Peças",
+            "valor": "590"
+          },
+          {
+            "especificacao": "Altura",
+            "valor": "31 cm"
+          },
+          {
+            "especificacao": "Recurso",
+            "valor": "Dedos Móveis"
+          }
+        ],
+        "disponibilidade": true,
+        "avaliacoes": {
+          "media": 4.9,
+          "totalAvaliacoes": 430
+        }
+      }
+    ]
   ]
 }

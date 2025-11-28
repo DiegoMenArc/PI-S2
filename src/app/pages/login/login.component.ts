@@ -7,10 +7,11 @@ import { FooterComponent } from "../../components/principal/footer/footer.compon
 import { Observable, of } from 'rxjs';
 import { AutenticadorService } from '../../core/services/autenticador.service';
 import { Usuario } from '../../core/types/types';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'login',
-  imports: [FormsModule, ReactiveFormsModule, MenuHeaderComponent, FooterComponent, RouterLink],
+  imports: [FormsModule, ReactiveFormsModule, RouterLink, CommonModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
