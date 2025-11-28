@@ -250,14 +250,14 @@
       },
       "telefone": 0,
       "data_nasc": {
-        "dia": null,
-        "mes_num": null,
-        "ano": null
+        "dia": 0,
+        "mes_num": 0,
+        "ano": 0
       },
       "Cpf": ""
     },
     {
-      "id": 15,
+      "id": "15",
       "nome": "Administrador",
       "sobrenome": "1",
       "email": "admin@gmail",
@@ -410,7 +410,7 @@
       ],
       "disponibilidade": true,
       "avaliacoes": {
-        "media": 5.0,
+        "media": 5,
         "totalAvaliacoes": 42
       }
     },
@@ -447,7 +447,7 @@
       ],
       "disponibilidade": true,
       "avaliacoes": {
-        "media": 5.0,
+        "media": 5,
         "totalAvaliacoes": 158
       }
     },
@@ -484,7 +484,7 @@
       ],
       "disponibilidade": true,
       "avaliacoes": {
-        "media": 5.0,
+        "media": 5,
         "totalAvaliacoes": 312
       }
     },
@@ -632,7 +632,7 @@
       ],
       "disponibilidade": true,
       "avaliacoes": {
-        "media": 5.0,
+        "media": 5,
         "totalAvaliacoes": 415
       }
     },
@@ -669,7 +669,7 @@
       ],
       "disponibilidade": true,
       "avaliacoes": {
-        "media": 5.0,
+        "media": 5,
         "totalAvaliacoes": 230
       }
     },
@@ -743,7 +743,7 @@
       ],
       "disponibilidade": true,
       "avaliacoes": {
-        "media": 5.0,
+        "media": 5,
         "totalAvaliacoes": 310
       }
     },
@@ -854,7 +854,7 @@
       ],
       "disponibilidade": true,
       "avaliacoes": {
-        "media": 5.0,
+        "media": 5,
         "totalAvaliacoes": 45
       }
     },
@@ -965,7 +965,7 @@
       ],
       "disponibilidade": true,
       "avaliacoes": {
-        "media": 5.0,
+        "media": 5,
         "totalAvaliacoes": 42
       }
     },
@@ -1032,7 +1032,7 @@
         ],
         "disponibilidade": true,
         "avaliacoes": {
-          "media": 5.0,
+          "media": 5,
           "totalAvaliacoes": 92
         }
       },
@@ -1098,7 +1098,7 @@
         ],
         "disponibilidade": true,
         "avaliacoes": {
-          "media": 5.0,
+          "media": 5,
           "totalAvaliacoes": 110
         }
       },
@@ -1131,7 +1131,7 @@
         ],
         "disponibilidade": true,
         "avaliacoes": {
-          "media": 5.0,
+          "media": 5,
           "totalAvaliacoes": 205
         }
       },
@@ -1201,9 +1201,6 @@
           "totalAvaliacoes": 58
         }
       },
-    
- 
-
       {
         "img": [
           "/img/hw-legends-pack.jpg"
@@ -1237,7 +1234,7 @@
         ],
         "disponibilidade": true,
         "avaliacoes": {
-          "media": 5.0,
+          "media": 5,
           "totalAvaliacoes": 120
         }
       },
@@ -1348,7 +1345,7 @@
         ],
         "disponibilidade": true,
         "avaliacoes": {
-          "media": 5.0,
+          "media": 5,
           "totalAvaliacoes": 95
         }
       },
@@ -1459,7 +1456,7 @@
         ],
         "disponibilidade": true,
         "avaliacoes": {
-          "media": 5.0,
+          "media": 5,
           "totalAvaliacoes": 45
         }
       },
@@ -1533,7 +1530,7 @@
         ],
         "disponibilidade": true,
         "avaliacoes": {
-          "media": 5.0,
+          "media": 5,
           "totalAvaliacoes": 120
         }
       },
@@ -1570,7 +1567,7 @@
         ],
         "disponibilidade": true,
         "avaliacoes": {
-          "media": 5.0,
+          "media": 5,
           "totalAvaliacoes": 540
         }
       },
@@ -1718,7 +1715,7 @@
         ],
         "disponibilidade": true,
         "avaliacoes": {
-          "media": 5.0,
+          "media": 5,
           "totalAvaliacoes": 65
         }
       },

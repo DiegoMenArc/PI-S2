@@ -9,39 +9,39 @@ import { ProdutosService } from '../../core/services/produtos.service';
 
 @Component({
   selector: 'busca',
-  imports: [BreadcumbsComponent,CardPadraoComponent, CarrosselprodComponent, FooterComponent],
+  imports: [BreadcumbsComponent, CardPadraoComponent, CarrosselprodComponent, FooterComponent],
   templateUrl: './busca.component.html',
   styleUrl: './busca.component.css'
 })
-export class BuscaComponent implements OnInit{
+export class BuscaComponent implements OnInit {
   _caminho = inject(ActivatedRoute);
-  rotaAtual:string ="";
-  listaProdutos:Produto[] = [];
-  produtosFiltrados:Produto[] = [];
+  rotaAtual: string = "";
+  listaProdutos: Produto[] = [];
+  produtosFiltrados: Produto[] = [];
 
   constructor(
     private service: ProdutosService
-  ){}
+  ) { }
 
   busca() {
-    if(this.rotaAtual !=  this._caminho.snapshot.url[1].path){
+    if (this.rotaAtual != this._caminho.snapshot.url[1].path) {
       window.location.reload();
     }
-    return  this._caminho.snapshot.url[1].path;
+    return this._caminho.snapshot.url[1].path;
   }
 
   // Variável para controlar a visibilidade do menu
-  menuAberto: boolean = false; 
+  menuAberto: boolean = false;
 
   ngOnInit(): void {
-     this.rotaAtual = this._caminho.snapshot.paramMap.get('busca')||"";
+    this.rotaAtual = this._caminho.snapshot.paramMap.get('busca') || "";
 
     this.service.listarProdutos().subscribe((produtos) => {
-      this.listaProdutos = produtos.filter(produto => 
-        produto.nome.toLowerCase().includes(this.rotaAtual.toLowerCase())
+      this.listaProdutos = produtos.filter(produto =>
+        produto.nome?.toLowerCase().includes(this.rotaAtual.toLowerCase())
       );
-    }); 
-    }
+    });
+  }
 
   anos = ['2000', '90', '80', '70']
   categorias = ['Classicos', 'Articulaveis', 'Pelucia', 'Blocos  de construção', 'Peões', 'Veiculos', 'Esportes', 'Inflaveis']
