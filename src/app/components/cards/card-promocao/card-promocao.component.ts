@@ -4,7 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-card-promocao',
   imports: [],
   templateUrl: './card-promocao.component.html',
-  styleUrl: './card-promocao.component.css'
+  styleUrls: [
+    './card-promocao.component.css',
+  ],
 })
 export class CardPromocaoComponent {
 
