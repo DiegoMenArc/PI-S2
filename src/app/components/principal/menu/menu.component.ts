@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { UsuarioService } from '../../../core/services/usuario.service';
 import { AutenticadorService } from '../../../core/services/autenticador.service';
 import { Usuario } from '../../../core/types/types';
@@ -16,13 +16,12 @@ import { Usuario } from '../../../core/types/types';
 
 export class MenuComponent implements OnInit {
 
-    constructor(private auth: AutenticadorService, private serv: UsuarioService) { }
+    constructor(private auth: AutenticadorService, private serv: UsuarioService, private router: Router) { }
 
     @Input() visivel: boolean = false;
     @Output() fecharMenu = new EventEmitter<void>();
 
     submenuAberto = false;
-    router: any;
     user!: Usuario
     usuarioLogado: String = ''
 
@@ -37,6 +36,7 @@ export class MenuComponent implements OnInit {
     logout() {
         this.auth.logout();
         this.fechar();
+        this.router.navigate(['/login'])
     }
 
     clicarCadastro() {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators, NgModel, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AutenticadorService } from '../../../core/services/autenticador.service';
 import { UsuarioService } from '../../../core/services/usuario.service';
@@ -7,7 +7,7 @@ import { Usuario } from '../../../core/types/types';
 
 @Component({
   selector: 'app-dados-user',
-  imports: [],
+  imports: [ReactiveFormsModule, FormsModule],
   templateUrl: './dados-user.component.html',
   styleUrl: './dados-user.component.css'
 })
@@ -31,27 +31,27 @@ export class DadosUserComponent implements OnInit {
   private numero = 0;
 
   constructor(private serv: UsuarioService, private auth: AutenticadorService, private router: Router) {
-
   }
+
+  user!: Usuario;
 
   form = new FormGroup({
     nome: new FormControl(this.nome, []),
     sobrenome: new FormControl(this.sobrenome, []),
     email: new FormControl(this.email, []),
     telefone: new FormControl(this.telefone, [Validators.maxLength(11), Validators.minLength(11)]),
-    dia: new FormControl<string>('', []),
-    mes: new FormControl<string>('', []),
-    ano: new FormControl<string>('', []),
+    dia: new FormControl<string>('', [Validators.min(1), Validators.max(31)]),
+    mes: new FormControl<string>('', [Validators.min(1), Validators.max(12)]),
+    ano: new FormControl<string>('', [Validators.min(1950), Validators.max(2025)]),
 
     CPF: new FormControl(this.CPF, []),
     endereco: new FormControl(this.endereco, []),
     numero: new FormControl(this.numero, []),
   })
 
-  user!: Usuario;
   ngOnInit(): void {
     this.user = this.auth.getUser() ?? {} as Usuario;
-    if(!this.user){
+    if (!this.user) {
       this.router.navigate(['/login'])
     }
     this.user.endereco = this.user.endereco ?? {
@@ -79,26 +79,30 @@ export class DadosUserComponent implements OnInit {
     this.numero = this.user.endereco?.numero ?? 0;
 
     this.form.patchValue({
-    nome: this.user.nome ?? '',
-    sobrenome: this.user.sobrenome ?? '',
-    email: this.user.email ?? '',
-    telefone: this.user.telefone ?? 0,
-    dia: String(this.user.data_nasc?.dia) ?? 0,
-    mes: String(this.user.data_nasc?.mes_num) ?? 0,
-    ano: String(this.user.data_nasc?.ano) ?? 0,
-    CPF: this.user.Cpf ?? '',
-    endereco: this.user.endereco?.logradouro ?? '',
-    numero: this.user.endereco?.numero ?? 0
-  });
+      nome: this.nome ?? '',
+      sobrenome: this.sobrenome ?? '',
+      email: this.email ?? '',
+      telefone: this.telefone ?? 0,
+      dia: this.data_nasc?.dia ? String(this.data_nasc.dia) : '',
+      mes: this.data_nasc?.mes_num ? String(this.data_nasc.mes_num) : '',
+      ano: this.data_nasc?.ano ? String(this.data_nasc.ano) : '',
+      CPF: this.user.Cpf ?? '',
+      endereco: this.user.endereco?.logradouro ?? '',
+      numero: this.user.endereco?.numero ?? 0
+    });
   }
 
+
+
   alterar() {
-    if(!this.user){
+    if (!this.user) {
+      debugger
+      console.log('sem user')
       return
     }
 
     const { nome, sobrenome, email, telefone, dia, mes, ano, CPF, endereco, numero } = this.form.value
-
+    debugger
     const dn =
       dia || mes || ano
         ? {
@@ -107,7 +111,7 @@ export class DadosUserComponent implements OnInit {
           ano: Number(ano ?? this.data_nasc?.ano ?? 0),
         }
         : this.data_nasc;
-
+    debugger
     this.user.nome = nome ?? this.nome;
     this.user.sobrenome = sobrenome ?? this.sobrenome;
     this.user.email = email ?? this.email;
@@ -125,13 +129,16 @@ export class DadosUserComponent implements OnInit {
         cep: 0
       };
     }
-
+    debugger
     this.user.endereco.logradouro = endereco ?? this.endereco;
     this.user.endereco.numero = numero ? Number(numero) : this.numero;
 
     this.serv.editarUser(this.user).subscribe((usuario) => {
       if (usuario) {
         this.router.navigate(['perfil'])
+        debugger
+      } else {
+        console.log('nao deu')
       }
     });
   }

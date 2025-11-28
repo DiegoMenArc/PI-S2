@@ -53,4 +53,9 @@ export class AutenticadorService {
     const user = localStorage.getItem(this.storageKey);
     return user ? JSON.parse(user) : null;
   }
+
+  setUser(user: Usuario) {
+    localStorage.setItem(this.storageKey, JSON.stringify(user));
+    this.router.navigate(['/perfil'])
+  }
 }

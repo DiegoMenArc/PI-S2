@@ -81,4 +81,26 @@ input{
     cursor: pointer;
     background-color: var(--azul3);
     transition: 400ms;
+    outline: none;
+    border: none;
+}
+
+.dn{
+   display: flex;
+   flex-direction: column;
+}
+
+.lbl{
+    height: fit-content;
+}
+
+.data-n{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.data-n input{
+    margin: 0 2px;
 }

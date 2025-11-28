@@ -95,6 +95,7 @@ input :focus {
 
 .aviso{
     font-size: 14px;
+    font-weight: 500;
 }
 
 .social-login {
@@ -128,5 +129,5 @@ input :focus {
 }
 
 label{
-    font-weight: 600;
+    font-weight: 700;
 }

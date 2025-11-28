@@ -10,7 +10,7 @@
     background-color: var(--fundo);
     font-family: "Montserrat", "Sans-serif";
     border: 1px solid var(--cinza2);
-    border-radius: 5vh;
+    border-radius: 3vh;
 }
 
 .cont-ttl{

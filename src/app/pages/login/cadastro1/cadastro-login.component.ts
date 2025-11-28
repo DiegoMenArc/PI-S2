@@ -50,8 +50,8 @@ export class CadastroLoginComponent {
       this.user.senha = senha ?? '';
 
       this.serv.adiconarUser(this.user).subscribe(() => {
-        this.auth.login(this.user.nome, this.user.senha)
-        this.router.navigate(['perfil']);
+        this.auth.login(this.user.nome, this.user.senha);
+        this.router.navigate(['login']);
       })
     }
   }
